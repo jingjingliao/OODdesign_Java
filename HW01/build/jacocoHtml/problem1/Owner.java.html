@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Owner.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW01</a> &gt; <a href="index.source.html" class="el_package">problem1</a> &gt; <span class="el_source">Owner.java</span></div><h1>Owner.java</h1><pre class="source lang-java linenums">package problem1;
+
+/**
+ * This class represnts an owner. The owner has a first name, last name and phone number
+ */
+public class Owner {
+    private String firstName;
+    private String lastName;
+    private String phoneNumber;
+    private static final int VALID_PHONE_LENGTH = 10;
+
+    /**
+     * Constructs an Owner object and initializes it with the given first name, last name,
+     * and the phone number
+     * @param firstName the first name of the owner
+     * @param lastName the last name of the owner
+     * @param phoneNumber the phone number of the owner
+     */
+<span class="fc" id="L19">    public Owner(String firstName, String lastName, String phoneNumber){</span>
+<span class="fc" id="L20">        this.firstName = firstName;</span>
+<span class="fc" id="L21">        this.lastName = lastName;</span>
+<span class="fc" id="L22">        this.phoneNumber = this.validPhoneNumber(phoneNumber);</span>
+<span class="fc" id="L23">    }</span>
+
+    /** Helper method that ensures the length of the phone number is valid, if the number if valid
+     * the invalid phone message will be returned
+     * @param phoneNumber the phone number
+     * @return the phone number if it is valid, otherwise return invalid phone message
+     */
+    private String validPhoneNumber(String phoneNumber){
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        if (phoneNumber.length() == VALID_PHONE_LENGTH){</span>
+<span class="fc" id="L32">            return phoneNumber;</span>
+        }else{
+<span class="fc" id="L34">            return &quot;Invalid phone number&quot;;</span>
+        }
+    }
+
+    /**
+     * get the first name of this owner
+     * @return the first name of this owner
+     */
+    public String getFirstName(){
+<span class="fc" id="L43">        return this.firstName;</span>
+    }
+
+    /**
+     * get the last name of this owner
+     * @return the last name of this owner
+     */
+    public String getLastName(){
+<span class="fc" id="L51">        return this.lastName;</span>
+    }
+
+    /**
+     * return the phone number of this owner
+     * @return the phone number of this owner
+     */
+    public String getPhoneNumber(){
+<span class="fc" id="L59">        return this.phoneNumber;</span>
+    }
+    /**
+     * Sets the owner's first name
+     * @param firstName firstName the new first name
+     */
+    public void setFirstName(String firstName){
+<span class="fc" id="L66">        this.firstName = firstName;</span>
+<span class="fc" id="L67">    }</span>
+
+    /**
+     * Sets the owner's last name
+     * @param lastName lastName the new last name
+     */
+    public void setLastName(String lastName){
+<span class="fc" id="L74">        this.lastName = lastName;</span>
+<span class="fc" id="L75">    }</span>
+
+    public void setPhoneNumber(String phoneNumber){
+<span class="fc" id="L78">        this.phoneNumber = this.validPhoneNumber(phoneNumber);</span>
+<span class="fc" id="L79">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

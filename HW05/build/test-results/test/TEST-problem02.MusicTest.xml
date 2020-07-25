@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem02.MusicTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2020-02-11T19:31:12" hostname="Jingjings-MacBook-Pro.local" time="4286.267">
+  <properties/>
+  <testcase name="testIsMatchArtistsBand" classname="problem02.MusicTest" time="4286.267">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

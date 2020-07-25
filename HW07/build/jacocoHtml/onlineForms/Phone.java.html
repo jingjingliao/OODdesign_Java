@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Phone.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW07</a> &gt; <a href="index.source.html" class="el_package">onlineForms</a> &gt; <span class="el_source">Phone.java</span></div><h1>Phone.java</h1><pre class="source lang-java linenums">package onlineForms;
+import java.util.Objects;
+
+/**
+ * Represents a Phone Validator.
+ */
+public class Phone implements IValidator&lt;String&gt;{
+  private int requiredLength;
+
+  /**
+   * The constructor of the Phone class.
+   * @param requiredLength the required length of the phone number, as an int.
+   */
+<span class="nc" id="L14">  public Phone(int requiredLength) {</span>
+<span class="nc" id="L15">    this.requiredLength = requiredLength;</span>
+<span class="nc" id="L16">  }</span>
+
+  /**
+   * Determines if the provided input meets the requirements. A valid phone number is a String
+   * that contains only digits and has a specified length supplied by client code. The length must
+   * match exactly.
+   * @param input the input, as a String.
+   * @return true if the provide input contains only digits and match the required length
+   */
+  @Override
+  public boolean isValid(String input){
+<span class="nc bnc" id="L27" title="All 4 branches missed.">    return (input.length() == this.requiredLength) &amp;&amp; validateDigits(input);</span>
+  }
+
+  /**
+   * A helper method to validate if all characters are digits.
+   * @param input the input as a String
+   * @return true if the provide input only contains digits.
+   */
+  private boolean validateDigits(String input){
+<span class="nc bnc" id="L36" title="All 4 branches missed.">    for(char c : input.toCharArray()){ if(!Character.isDigit(c)) return false; }</span>
+<span class="nc" id="L37">    return true;</span>
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="nc bnc" id="L42" title="All 2 branches missed.">    if (this == o) {</span>
+<span class="nc" id="L43">      return true;</span>
+    }
+<span class="nc bnc" id="L45" title="All 2 branches missed.">    if (!(o instanceof Phone)) {</span>
+<span class="nc" id="L46">      return false;</span>
+    }
+<span class="nc" id="L48">    Phone phone = (Phone) o;</span>
+<span class="nc bnc" id="L49" title="All 2 branches missed.">    return requiredLength == phone.requiredLength;</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="nc" id="L54">    return Objects.hash(requiredLength);</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="nc" id="L59">    return &quot;Phone{&quot; +</span>
+        &quot;requiredLength=&quot; + requiredLength +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

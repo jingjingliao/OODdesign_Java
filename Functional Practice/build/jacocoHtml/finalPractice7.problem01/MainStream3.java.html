@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MainStream3.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Functional Practice</a> &gt; <a href="index.source.html" class="el_package">finalPractice7.problem01</a> &gt; <span class="el_source">MainStream3.java</span></div><h1>MainStream3.java</h1><pre class="source lang-java linenums">package finalPractice7.problem01;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.OptionalDouble;
+import java.util.stream.Collectors;
+
+<span class="nc" id="L8">public class MainStream3 {</span>
+  public static void main(String[] args) {
+<span class="nc" id="L10">    List&lt;Runner&gt; runners = new ArrayList&lt;&gt;();</span>
+
+<span class="nc" id="L12">    List&lt;Double&gt; fiveKTimes = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L13">    fiveKTimes.add(35.00);</span>
+<span class="nc" id="L14">    fiveKTimes.add(40.00);</span>
+<span class="nc" id="L15">    fiveKTimes.add(38.45);</span>
+<span class="nc" id="L16">    fiveKTimes.add(36.00);</span>
+<span class="nc" id="L17">    fiveKTimes.add(33.45);</span>
+
+<span class="nc" id="L19">    List&lt;Double&gt; tenKTimes = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L20">    tenKTimes.add(67.50);</span>
+<span class="nc" id="L21">    tenKTimes.add(70.00);</span>
+<span class="nc" id="L22">    tenKTimes.add(80.50);</span>
+
+<span class="nc" id="L24">    Runner runnerA = new Runner(&quot;Jane Smith&quot;, fiveKTimes, tenKTimes);</span>
+
+<span class="nc" id="L26">    fiveKTimes = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L27">    fiveKTimes.add(33.00);</span>
+<span class="nc" id="L28">    fiveKTimes.add(41.00);</span>
+<span class="nc" id="L29">    fiveKTimes.add(42.45);</span>
+
+<span class="nc" id="L31">    tenKTimes = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L32">    tenKTimes.add(71.50);</span>
+<span class="nc" id="L33">    tenKTimes.add(75.00);</span>
+<span class="nc" id="L34">    tenKTimes.add(72.50);</span>
+
+<span class="nc" id="L36">    Runner runnerB = new Runner(&quot;Ruth Barr&quot;, fiveKTimes, tenKTimes);</span>
+
+<span class="nc" id="L38">    runners.add(runnerA);</span>
+<span class="nc" id="L39">    runners.add(runnerB);</span>
+
+<span class="nc" id="L41">    long num = runners.stream()</span>
+<span class="nc bnc" id="L42" title="All 2 branches missed.">                        .filter(runner -&gt; runner.getFiveKRaceTimes().size() &gt;= 4)</span>
+<span class="nc bnc" id="L43" title="All 2 branches missed.">                        .filter(runner -&gt; calculateAvg(runner.getFiveKRaceTimes()) &lt; 38.00).count();</span>
+
+<span class="nc" id="L45">    System.out.println(num);</span>
+<span class="nc" id="L46">  }</span>
+
+  public static double calculateAvg(List&lt;Double&gt; raceTime){
+//    double count = (double)raceTime.stream().count();
+<span class="nc" id="L50">    double count = raceTime.size();</span>
+<span class="nc" id="L51">   double total = raceTime.stream().reduce(0.0, Double::sum);</span>
+<span class="nc" id="L52">   return total / count;</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

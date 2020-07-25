@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DestinationProcessor.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final-exam</a> &gt; <a href="index.source.html" class="el_package">p1</a> &gt; <span class="el_source">DestinationProcessor.java</span></div><h1>DestinationProcessor.java</h1><pre class="source lang-java linenums">package p1;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function; import java.util.stream.Collectors;
+
+public class DestinationProcessor {
+<span class="nc" id="L9">  private List&lt;Destination&gt; destinations = new ArrayList&lt;&gt;();</span>
+
+<span class="nc" id="L11">  public DestinationProcessor(List&lt;Destination&gt; destinations){this.destinations = destinations;}</span>
+
+<span class="nc" id="L13">  public DestinationProcessor(Destination destination1, Destination destination2){</span>
+<span class="nc" id="L14">    this.destinations.add(destination1);</span>
+<span class="nc" id="L15">    this.destinations.add(destination2);</span>
+<span class="nc" id="L16">  }</span>
+
+  public static Map&lt;Destination, Long&gt; countDestinations(List&lt;Destination&gt; destinations) {
+<span class="nc" id="L19">    return destinations.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));</span>
+  }
+
+  public List&lt;Item&gt; filterByDistance(Float distance){
+    //YOUR CODE HERE
+<span class="nc" id="L24">    return null;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

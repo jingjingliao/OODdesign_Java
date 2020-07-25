@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ReservationSystem.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW10</a> &gt; <a href="index.source.html" class="el_package">controller</a> &gt; <span class="el_source">ReservationSystem.java</span></div><h1>ReservationSystem.java</h1><pre class="source lang-java linenums">package controller;
+
+import controller.CommandLineValidation;
+import controller.InvalidArgumentsException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+import controller.ReservationService;
+import model.Row;
+import model.Seat;
+import model.Theater;
+
+/**
+ * Reservation system to reserve seats
+ */
+<span class="fc" id="L17">public class ReservationSystem {</span>
+
+  private static final int wheelChairRow1 = 5;
+  private static final int wheelChairRow2 = 11;
+
+  private static final int MIN_ROW = 15;
+  private static final int MIN_COLUMN = 10;
+  private static final int NUM_TO_STRING = 65;
+
+<span class="fc" id="L26">  private static String TODO_QUERY = &quot;What would you like to do?&quot;;</span>
+<span class="fc" id="L27">  private static String RESERVE_OVER = &quot;Have a nice day!&quot;;</span>
+
+<span class="fc" id="L29">  private static Scanner scanner = new Scanner(System.in);</span>
+
+  public static void main(String[] args) throws InvalidArgumentsException {
+<span class="nc" id="L32">    ArrayList&lt;Integer&gt; wheelChairRow = new ArrayList&lt;&gt;(Arrays.asList(wheelChairRow1, wheelChairRow2));</span>
+<span class="nc" id="L33">    Seat[][] allSeats = creatSeats();</span>
+<span class="nc" id="L34">    List&lt;Row&gt; rows = creatRows(allSeats);</span>
+<span class="nc" id="L35">    Theater theater = Theater.createTheater(&quot;Roxy&quot;, rows, wheelChairRow);</span>
+
+    while (true) {
+<span class="nc" id="L38">      System.out.println(TODO_QUERY);</span>
+<span class="nc" id="L39">      String answer = scanner.nextLine();</span>
+<span class="nc" id="L40">      CommandLineValidation validation = new CommandLineValidation(answer);</span>
+<span class="nc" id="L41">      String command = validation.getAnswer();</span>
+
+<span class="nc bnc" id="L43" title="All 4 branches missed.">      if (command != null &amp;&amp; command.equals(&quot;done&quot;)) {</span>
+<span class="nc" id="L44">        System.out.println(RESERVE_OVER);</span>
+<span class="nc" id="L45">        break;</span>
+      }
+<span class="nc bnc" id="L47" title="All 2 branches missed.">      if (command != null) {</span>
+<span class="nc" id="L48">        reserveSeats(theater, command);</span>
+<span class="nc" id="L49">        System.out.println(&quot;&quot;);</span>
+      }
+<span class="nc" id="L51">    }</span>
+<span class="nc" id="L52">  }</span>
+
+  /**
+   * Reserve seats
+   * @param theater theater
+   * @param answer answer
+   */
+  private static void reserveSeats (Theater theater, String answer) {
+<span class="nc" id="L60">    ReservationService.service(theater, answer);</span>
+<span class="nc" id="L61">  }</span>
+
+  /**
+   * Create seats
+   * @return a list of seats
+   * @throws InvalidArgumentsException if seat name is not valid, throw exception
+   */
+  private static Seat[][] creatSeats () throws InvalidArgumentsException {
+<span class="nc" id="L69">        Seat[][] allSeats = new Seat[MIN_ROW][MIN_COLUMN];</span>
+<span class="nc bnc" id="L70" title="All 2 branches missed.">        for (int i = 0; i &lt; MIN_ROW; i++) {</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">          for (int j = 0; j &lt; MIN_COLUMN; j++) {</span>
+<span class="nc" id="L72">            allSeats[i][j] = new Seat(String.valueOf((char) (i + NUM_TO_STRING)) + String</span>
+<span class="nc" id="L73">                .valueOf((char) (j + NUM_TO_STRING)));</span>
+          }
+        }
+<span class="nc" id="L76">        return allSeats;</span>
+  }
+
+  /**
+   * Create Rows
+   * @param allSeats allSeats
+   * @return a list of rows
+   * @throws InvalidArgumentsException if seats's name are invalid
+   */
+  private static List&lt;Row&gt; creatRows (Seat[][]allSeats) throws InvalidArgumentsException {
+<span class="nc" id="L86">    List&lt;Row&gt; rows = new ArrayList&lt;&gt;();</span>
+<span class="nc bnc" id="L87" title="All 2 branches missed.">    for (int i = 0; i &lt; MIN_ROW; i++) {</span>
+<span class="nc bnc" id="L88" title="All 4 branches missed.">      if (i == wheelChairRow1 - 1 || i == wheelChairRow2 - 1)</span>
+<span class="nc" id="L89">        rows.add(new Row(allSeats[i], i + 1, true));</span>
+      else
+<span class="nc" id="L91">        rows.add(new Row(allSeats[i], i + 1, false));</span>
+    }
+<span class="nc" id="L93">    return rows;</span>
+  }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

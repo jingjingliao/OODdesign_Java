@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Functional Practice</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">import books.Book;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.OptionalDouble;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+<span class="nc" id="L12">public class Main {</span>
+
+  public static void main(String[] args) throws Exception {
+<span class="nc" id="L15">    Book b1 = new Book(&quot;A book&quot;, &quot;An author&quot;, 1990, 4.999f);</span>
+<span class="nc" id="L16">    Book b2 = new Book(&quot;A book2&quot;, &quot;An author&quot;, 1991, 8.99f);</span>
+<span class="nc" id="L17">    Book b3 = new Book(&quot;A book3&quot;, &quot;An author&quot;, 1994, 6.99f);</span>
+<span class="nc" id="L18">    Book b4 = new Book(&quot;A book4&quot;, &quot;An author&quot;, 1998, 12.99f);</span>
+<span class="nc" id="L19">    List&lt;Book&gt; books = new ArrayList&lt;&gt;(Arrays.asList(b1, b2, b3, b4));</span>
+    // Exercise 1
+
+    // 1. Make a new List containing only books published before a certain date
+
+<span class="nc bnc" id="L24" title="All 2 branches missed.">    List&lt;Book&gt; filterBookByYear = books.stream().filter(book -&gt; book.getYear() &lt; 1994).collect(Collectors.toList());</span>
+<span class="nc" id="L25">    System.out.println(filterBookByYear);</span>
+
+    // 2. Make a new List containing only books in a particular price range
+
+<span class="nc bnc" id="L29" title="All 4 branches missed.">    List&lt;Book&gt; filterBookByPriceRange = books.stream().filter(book -&gt; book.getYear() &gt; 1990 &amp;&amp; book.getYear() &lt; 1998).collect(</span>
+<span class="nc" id="L30">        Collectors.toList());</span>
+<span class="nc" id="L31">    System.out.println(filterBookByPriceRange);</span>
+
+    // 3. Get the total price of all books in the list
+<span class="nc" id="L34">    double total = books.stream().mapToDouble(book -&gt; book.getPrice()).sum();</span>
+
+    // 4. Get the average price of all books in the list
+<span class="nc" id="L37">    OptionalDouble averate = books.stream().mapToDouble(book -&gt; book.getPrice()).average();</span>
+
+<span class="nc bnc" id="L39" title="All 2 branches missed.">    List&lt;Book&gt; salesBooks = books.stream().filter(book -&gt; book.getYear() &lt;= 1994)</span>
+<span class="nc" id="L40">                                          .map(book -&gt; {</span>
+<span class="nc" id="L41">                                            book.setPrice(book.getPrice()*0.9f);</span>
+<span class="nc" id="L42">                                            return book;</span>
+                                              })
+<span class="nc" id="L44">                                          .collect(Collectors.toList());</span>
+
+//    List&lt;String&gt; lines = new ArrayList&lt;&gt;(Arrays.asList(&quot;aa&quot;, &quot;bb&quot;, &quot;ccc&quot;));
+//    List&lt;String&gt; res = lines.stream()
+//        .filter(s -&gt; s.length() &lt; 6)
+//        .collect(Collectors.toList());
+//    System.out.println(res);
+//    res.forEach(System.out::println);
+//
+//    System.out.println(&quot;===========&quot;);
+//
+//    List&lt;String&gt; captilizeWord = lines.stream()
+//        .map(s -&gt; s.toUpperCase())
+//        .collect(Collectors.toList());
+//    System.out.println(captilizeWord);
+
+//    List&lt;Integer&gt; integers = new ArrayList&lt;&gt;(Arrays.asList(1,2,3,4,5,6));
+//    int total = integers.stream().filter(i -&gt; i % 2 == 0).mapToInt(integer -&gt; integer).sum();
+//    System.out.println(total);
+
+//    List&lt;String&gt; strings = new ArrayList&lt;&gt;(Arrays.asList(&quot;1&quot;, &quot;2&quot;, &quot;12&quot;, &quot;14&quot;, &quot;15&quot;));
+//    int total = strings.stream().mapToInt(s -&gt; Integer.parseInt(s))
+//                    .filter(s -&gt; s % 2 == 0)
+//                    .sum();
+//    System.out.println(total);
+//    List&lt;String&gt; items = Arrays.asList(&quot;apple&quot;, &quot;pear&quot;, &quot;apple&quot;, &quot;banana&quot;);
+//    Map&lt;String, Long&gt; result = items.stream()
+//                                  .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+//
+//    System.out.println(result);
+//
+//    Map&lt;String, String&gt; map = new HashMap&lt;&gt;();
+//    map.put(&quot;A&quot;, &quot;Jingjing&quot;);
+//    map.put(&quot;B&quot;, &quot;Kelly&quot;);
+//
+//    map
+
+<span class="nc" id="L81">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

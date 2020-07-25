@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CommandLineParserTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2020-03-25T18:26:10" hostname="Jingjings-MacBook-Pro.local" time="0.043">
+  <properties/>
+  <testcase name="invalidParseNoCSVCommand" classname="CommandLineParserTest" time="0.005"/>
+  <testcase name="testToString" classname="CommandLineParserTest" time="0.001"/>
+  <testcase name="invalidParseNoLetterCommand" classname="CommandLineParserTest" time="0.001"/>
+  <testcase name="invalidParseNoOutputDirCommand" classname="CommandLineParserTest" time="0.004"/>
+  <testcase name="invalidParseNoEmailTemplateCommand" classname="CommandLineParserTest" time="0.0"/>
+  <testcase name="invalidParseNoEmailTemplate" classname="CommandLineParserTest" time="0.001"/>
+  <testcase name="invalidParseNoLetterTemplateCommand" classname="CommandLineParserTest" time="0.0"/>
+  <testcase name="validParseEmail" classname="CommandLineParserTest" time="0.001"/>
+  <testcase name="invalidParseNoEmailCommand" classname="CommandLineParserTest" time="0.0"/>
+  <testcase name="testHashCode" classname="CommandLineParserTest" time="0.0"/>
+  <testcase name="validParseDuplicatedCommands" classname="CommandLineParserTest" time="0.002"/>
+  <testcase name="validParseBoth" classname="CommandLineParserTest" time="0.004"/>
+  <testcase name="invalidParseNoOutputDir" classname="CommandLineParserTest" time="0.0"/>
+  <testcase name="testEquals" classname="CommandLineParserTest" time="0.0"/>
+  <testcase name="validParseLetter" classname="CommandLineParserTest" time="0.002"/>
+  <testcase name="invalidParseNullArgs" classname="CommandLineParserTest" time="0.001"/>
+  <testcase name="invalidParseNoEmailOrLetter" classname="CommandLineParserTest" time="0.0"/>
+  <testcase name="invalidParseEmptyArgs" classname="CommandLineParserTest" time="0.001"/>
+  <testcase name="invalidParseUnknownCommand" classname="CommandLineParserTest" time="0.0"/>
+  <testcase name="invalidParseNoFileInput" classname="CommandLineParserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

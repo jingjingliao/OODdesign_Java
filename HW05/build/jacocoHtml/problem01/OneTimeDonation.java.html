@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OneTimeDonation.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW05</a> &gt; <a href="index.source.html" class="el_package">problem01</a> &gt; <span class="el_source">OneTimeDonation.java</span></div><h1>OneTimeDonation.java</h1><pre class="source lang-java linenums">package problem01;
+
+import java.time.LocalDate;
+import java.util.Objects;
+
+/**
+ * One time donation class represents one time donation, including amount and creation time
+ */
+public class OneTimeDonation extends AbstractDonation {
+
+
+  /**
+   * Create a constructor with amount and creation time
+   *
+   * @param amount       amount
+   * @param creationTime creation time
+   */
+  public OneTimeDonation(int amount, LocalDate creationTime) {
+<span class="fc" id="L19">    super(amount, creationTime);</span>
+<span class="fc" id="L20">  }</span>
+
+  /**
+   * Create a constructor with amount
+   *
+   * @param amount amount
+   */
+  public OneTimeDonation(int amount) {
+<span class="fc" id="L28">    super(amount);</span>
+<span class="fc" id="L29">  }</span>
+
+  /**
+   * Get total amount
+   *
+   * @param year calculate the total amount in a specific year
+   * @return total amount
+   */
+  @Override
+  public double getTotalAmount(int year) {
+<span class="fc" id="L39">    double amount = 0;</span>
+<span class="fc bfc" id="L40" title="All 2 branches covered.">    if (year == this.getCreationTime().getYear()) {</span>
+<span class="fc" id="L41">      amount += this.getAmount();</span>
+<span class="fc" id="L42">      return amount;</span>
+    } else {
+<span class="fc" id="L44">      return amount;</span>
+    }
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L50" title="All 2 branches covered.">    if (this == o)</span>
+<span class="fc" id="L51">      return true;</span>
+<span class="pc bpc" id="L52" title="1 of 4 branches missed.">    if (o == null || getClass() != o.getClass())</span>
+<span class="fc" id="L53">      return false;</span>
+<span class="fc" id="L54">    OneTimeDonation oneTimeDonation = (OneTimeDonation) o;</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">    return Objects.equals(getCreationTime(), oneTimeDonation.getCreationTime()) &amp;&amp;</span>
+<span class="pc bpc" id="L56" title="1 of 2 branches missed.">        Double.compare(getAmount(), oneTimeDonation.getAmount()) == 0;</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L61">    return Objects.hash(getCreationTime(), getAmount());</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L66">    return &quot;OneTimeDonation{&quot; +</span>
+<span class="fc" id="L67">        &quot;amount='&quot; + this.getAmount() + '\'' +</span>
+<span class="fc" id="L68">        &quot;creation time='&quot; + this.getCreationTime() + '\'' +</span>
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

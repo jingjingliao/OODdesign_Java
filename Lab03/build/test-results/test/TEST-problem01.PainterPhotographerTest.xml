@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem01.PainterPhotographerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-01-30T06:38:20" hostname="Jingjings-MacBook-Pro.local" time="0.012">
+  <properties/>
+  <testcase name="getAge" classname="problem01.PainterPhotographerTest" time="0.0"/>
+  <testcase name="artistReceivedAward" classname="problem01.PainterPhotographerTest" time="0.0"/>
+  <testcase name="getExhibits" classname="problem01.PainterPhotographerTest" time="0.0"/>
+  <testcase name="getName" classname="problem01.PainterPhotographerTest" time="0.0"/>
+  <testcase name="getAwards" classname="problem01.PainterPhotographerTest" time="0.001"/>
+  <testcase name="getGenres" classname="problem01.PainterPhotographerTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem01.GardeningServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-01-29T01:03:02" hostname="Jingjings-MacBook-Pro.local" time="0.008">
+  <properties/>
+  <testcase name="testToString" classname="problem01.GardeningServiceTest" time="0.001"/>
+  <testcase name="calculatePrice" classname="problem01.GardeningServiceTest" time="0.0"/>
+  <testcase name="beforeDiscountCalculatePrice" classname="problem01.GardeningServiceTest" time="0.001"/>
+  <testcase name="getPropertySize" classname="problem01.GardeningServiceTest" time="0.001"/>
+  <testcase name="testHashcode" classname="problem01.GardeningServiceTest" time="0.001"/>
+  <testcase name="getCompleteTime" classname="problem01.GardeningServiceTest" time="0.0"/>
+  <testcase name="testEquality" classname="problem01.GardeningServiceTest" time="0.001"/>
+  <testcase name="getPreviouslyNumberOfService" classname="problem01.GardeningServiceTest" time="0.001"/>
+  <testcase name="getPropertyAddress" classname="problem01.GardeningServiceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

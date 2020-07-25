@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MainStream1.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Functional Practice</a> &gt; <a href="index.source.html" class="el_package">finalPractice7.problem01</a> &gt; <span class="el_source">MainStream1.java</span></div><h1>MainStream1.java</h1><pre class="source lang-java linenums">package finalPractice7.problem01;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+
+<span class="nc" id="L10">public class MainStream1 {</span>
+
+  public static void main(String[] args) {
+//    List&lt;Double&gt; listDoubles = new ArrayList&lt;&gt;(
+//        Arrays.asList(171.98, 223.45, 345.79, 545.77, 121.33));
+
+//    listDoubles.stream()
+//        .map((Double element) -&gt; Math.ceil(element))
+//        .filter((Double value) -&gt; value &lt; 225.00)
+//        .forEach(System.out::println);
+//  }
+
+//    listDoubles.stream()
+//        .map(elment -&gt; Math.ceil(elment))
+//        .filter(value -&gt; value &lt; 225.00)
+//        .forEach(System.out::println);
+
+<span class="nc" id="L27">    List&lt;String&gt; phoneNums = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L28">    phoneNums.add(&quot;(206) 123-5678&quot;);</span>
+<span class="nc" id="L29">    phoneNums.add(&quot;(425) 345-5678&quot;);</span>
+<span class="nc" id="L30">    phoneNums.add(&quot;(505) 5676678&quot;);</span>
+<span class="nc" id="L31">    phoneNums.add(&quot;(206) 3455678&quot;);</span>
+
+<span class="nc" id="L33">    List&lt;String&gt; areaCodes = phoneNums.stream()</span>
+<span class="nc" id="L34">        .map(MainStream1::getAreaCodes)</span>
+<span class="nc" id="L35">        .collect(Collectors.toList());</span>
+
+<span class="nc" id="L37">    areaCodes.stream().forEach(System.out::println);</span>
+<span class="nc" id="L38">  }</span>
+
+  public static String getAreaCodes (String s){
+<span class="nc" id="L41">    StringBuilder resultingString = new StringBuilder();</span>
+
+<span class="nc" id="L43">    Pattern pattern = Pattern.compile(&quot;(\\d{3})&quot;);</span>
+<span class="nc" id="L44">    Matcher matcher = pattern.matcher(s);</span>
+<span class="nc bnc" id="L45" title="All 2 branches missed.">    if (matcher.find()){</span>
+<span class="nc" id="L46">      resultingString.append(matcher.group(0));</span>
+<span class="nc" id="L47">      return resultingString.toString();</span>
+    }
+<span class="nc" id="L49">    return null;</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

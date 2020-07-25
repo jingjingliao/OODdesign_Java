@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Account.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW01</a> &gt; <a href="index.source.html" class="el_package">problem3</a> &gt; <span class="el_source">Account.java</span></div><h1>Account.java</h1><pre class="source lang-java linenums">package problem3;
+
+/**
+ * This class represents the account which has holder's name and amount
+ */
+public class Account {
+    private Holder name;
+    private Amount amount;
+
+    /**
+     * Constructs an account object and initializes it with the given name and amount
+     * @param name the name of the account
+     * @param amount the amount of the account
+     */
+<span class="fc" id="L15">    public Account(Holder name, Amount amount){</span>
+<span class="fc" id="L16">        this.name = name;</span>
+<span class="fc" id="L17">        this.amount = amount;</span>
+<span class="fc" id="L18">    }</span>
+
+    /**
+     * Get the name of the account
+     * @return the name of the account
+     */
+    public Holder getName(){
+<span class="fc" id="L25">        return this.name;</span>
+    }
+
+    /**
+     * Get the amount of the account
+     * @return the amount of the account
+     */
+    public Amount getAmount(){
+<span class="fc" id="L33">        return this.amount;</span>
+    }
+
+    /**
+     * Create an account object with the different holder's name, but the same amount
+     * @param name the new name of the account
+     * @return a new account object
+     */
+    public Account changeName(Holder name){
+<span class="fc" id="L42">        return new Account(name, this.amount);</span>
+    }
+
+    /**
+     * Create an account object with the different amount, but the same name
+     * @param amount the new amount
+     * @return a new account object
+     */
+    public Account changeAmount(Amount amount){
+<span class="fc" id="L51">        return new Account(this.name, amount);</span>
+    }
+
+    /**
+     * @param deposit put the deposit into account
+     * @return an amount object which has the total dollar and cents
+     */
+    public Amount deposit(Amount deposit){
+<span class="fc" id="L59">        int totalAmount = amount.dollarToCents() + deposit.dollarToCents();</span>
+<span class="fc" id="L60">        return Amount.convertToDollars(totalAmount);</span>
+    }
+
+    /**
+     * @param withdraw withdraw some money out of the account
+     * @return  an amount object shows how much dollars and cents left after withdrawing from account
+     */
+    public Amount withdraw(Amount withdraw){
+<span class="fc" id="L68">        int totalAmount = amount.dollarToCents() - withdraw.dollarToCents();</span>
+<span class="fc" id="L69">        return Amount.convertToDollars(totalAmount);</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

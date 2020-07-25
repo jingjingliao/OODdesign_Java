@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="onlineForms.NumberTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-03-04T20:49:46" hostname="Jingjings-MacBook-Pro.local" time="0.023">
+  <properties/>
+  <testcase name="isValidMoreOrLess" classname="onlineForms.NumberTest" time="0.002"/>
+  <testcase name="testToString" classname="onlineForms.NumberTest" time="0.003"/>
+  <testcase name="isValidInvalidDots" classname="onlineForms.NumberTest" time="0.001"/>
+  <testcase name="isValidInvalidDecimalNUmber" classname="onlineForms.NumberTest" time="0.002"/>
+  <testcase name="isValidIllegalChars" classname="onlineForms.NumberTest" time="0.002"/>
+  <testcase name="testHashcode" classname="onlineForms.NumberTest" time="0.001"/>
+  <testcase name="testEquality" classname="onlineForms.NumberTest" time="0.0"/>
+  <testcase name="isValid" classname="onlineForms.NumberTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

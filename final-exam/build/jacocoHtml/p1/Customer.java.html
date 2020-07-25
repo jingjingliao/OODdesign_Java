@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Customer.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final-exam</a> &gt; <a href="index.source.html" class="el_package">p1</a> &gt; <span class="el_source">Customer.java</span></div><h1>Customer.java</h1><pre class="source lang-java linenums">package p1;
+
+import java.util.List;
+import java.util.Objects;
+
+/**
+ * Class represents a customer. The customer has a first name, last name and a
+ * list of items they bought in the last year.
+ */
+class Customer {
+    private String firstName;
+    private String lastName;
+    private List&lt;Item&gt; boughtItems;
+
+
+    /**
+     * Constructs a Customer object and initializes it
+     * to the given first name, last name and the list of bought products
+     * @param firstName the first name of this person
+     * @param lastName the last name of this person
+     * @param boughtItems list of items they bought in the last year.
+     */
+
+<span class="fc" id="L24">    public Customer(String firstName, String lastName, List&lt;Item&gt; boughtItems) {</span>
+<span class="fc" id="L25">        this.firstName = firstName;</span>
+<span class="fc" id="L26">        this.lastName = lastName;</span>
+<span class="fc" id="L27">        this.boughtItems = boughtItems;</span>
+<span class="fc" id="L28">    }</span>
+
+    public String getFirstName() {
+<span class="fc" id="L31">        return firstName;</span>
+    }
+
+    public String getLastName() {
+<span class="fc" id="L35">        return lastName;</span>
+    }
+
+    public String getName() {
+<span class="fc" id="L39">        return this.getFirstName() + &quot; &quot; + this.getLastName();</span>
+    }
+
+    public List&lt;Item&gt; getBoughtItems() {
+<span class="fc" id="L43">        return boughtItems;</span>
+    }
+
+    @Override
+  public boolean equals(Object o) {
+<span class="nc bnc" id="L48" title="All 2 branches missed.">    if (this == o) return true;</span>
+<span class="nc bnc" id="L49" title="All 4 branches missed.">    if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="nc" id="L50">        Customer customer = (Customer) o;</span>
+<span class="nc" id="L51">    return</span>
+<span class="nc bnc" id="L52" title="All 2 branches missed.">        Objects.equals(getFirstName(), customer.getFirstName()) &amp;&amp;</span>
+<span class="nc bnc" id="L53" title="All 2 branches missed.">        Objects.equals(getLastName(), customer.getLastName()) &amp;&amp;</span>
+<span class="nc bnc" id="L54" title="All 2 branches missed.">            Objects.equals(getName(), customer.getName()) &amp;&amp;</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">            Objects.equals(getBoughtItems(), customer.getBoughtItems()) ;</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L60">    return Objects.hash(getFirstName(), getLastName(), getName(), getBoughtItems());</span>
+  }
+
+    @Override
+    public String toString() {
+<span class="nc" id="L65">        return &quot;Customer{&quot; +</span>
+            &quot;firstName='&quot; + firstName + '\'' +
+            &quot;, lastName='&quot; + lastName + '\'' +
+            &quot;, boughtItems=&quot; + boughtItems +
+            '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

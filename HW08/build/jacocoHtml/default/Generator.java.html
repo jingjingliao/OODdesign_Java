@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Generator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW08</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Generator.java</span></div><h1>Generator.java</h1><pre class="source lang-java linenums">import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.InvalidPathException;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * Represents a generator which generates text files
+ */
+<span class="fc" id="L18">public class Generator implements IGenerator{</span>
+
+<span class="fc" id="L20">  protected static String PLACEHOLDER_L = &quot;\\[\\[&quot;;</span>
+<span class="fc" id="L21">  protected static String PLACEHOLDER_R = &quot;]]&quot;;</span>
+
+  /**
+   * Main method of Generator class. Generate output files by given template and csv data.
+   * @param templateData The template text and tags, given as a TemplateDataReader object.
+   * @param csvData The csv information and tags, given as a CSVDataReader object.
+   * @param outputPath The outputPath, given as a String.
+   * @throws Exception If error happens while generating txt files.
+   */
+  public void generate(TemplateDataReader templateData, CSVDataReader csvData, String outputPath) throws Exception{
+
+    // Check data
+<span class="fc bfc" id="L33" title="All 6 branches covered.">    if (templateData == null || csvData == null || outputPath == null)</span>
+<span class="fc" id="L34">      throw new NullPointerException(&quot;No data given.&quot;);</span>
+
+    // Generate Tag Mapping
+<span class="fc" id="L37">    Map&lt;String, Integer&gt; tagMapping = buildTagIndex(templateData.tags, csvData.tags);</span>
+
+    // Write Files
+<span class="fc" id="L40">    writeFiles(templateData.template, csvData.info, tagMapping, outputPath);</span>
+<span class="fc" id="L41">  }</span>
+
+  /**
+   * A helper method to build the pairs of tags (which appears in template) and index (which is
+   * relevant to it's corresponding column index in the csv file)
+   * @param templateTags all tags in the template, as a set of Strings
+   * @param csvTags all tags in the csv file, as a list of Strings
+   * @return the mapping of &lt;tags, index&gt; as &lt;String, Integer&gt;
+   * @throws TagsMismatchException if tags cannot match.
+   */
+  protected Map&lt;String, Integer&gt; buildTagIndex(Set&lt;String&gt; templateTags,
+                                            List&lt;String&gt; csvTags) throws TagsMismatchException{
+
+<span class="fc bfc" id="L54" title="All 4 branches covered.">    if (csvTags == null || templateTags == null){</span>
+<span class="fc" id="L55">      throw new NullPointerException(&quot;No Tags.&quot;);</span>
+    }
+<span class="fc bfc" id="L57" title="All 2 branches covered.">    else if(!csvTags.containsAll(templateTags)){</span>
+<span class="fc" id="L58">      throw new TagsMismatchException(&quot;Cannot accommodate CSV file to the template.&quot;);</span>
+    }
+    else{
+<span class="fc" id="L61">      Map&lt;String, Integer&gt; mapping = new HashMap&lt;&gt;();</span>
+<span class="fc bfc" id="L62" title="All 2 branches covered.">      for(String tag: templateTags){</span>
+<span class="fc" id="L63">        mapping.put(tag, csvTags.indexOf(tag));</span>
+<span class="fc" id="L64">      }</span>
+<span class="fc" id="L65">      return mapping;</span>
+    }
+  }
+
+  /**
+   * A helper method to write multiple files for all supporters.
+   * @param template The template, given as a list of Strings.
+   * @param csvDataInfo All info from csv file, given as a list of list of Strings.
+   * @param tagMapping The pre-process mapping of tags, &lt;tags, index&gt; as &lt;String, Integer&gt;
+   * @param outputDirectory The assigned output path, as a string
+   * @throws Exception If any error happens while writing the files.
+   */
+  protected void writeFiles(List&lt;String&gt; template, List&lt;List&lt;String&gt;&gt; csvDataInfo,
+                            Map&lt;String, Integer&gt; tagMapping, String outputDirectory) throws Exception{
+
+<span class="fc" id="L80">    outputDirectory = outputDirectory.replaceAll(&quot;(^/)|(/$)&quot;, &quot;&quot;);</span>
+<span class="fc" id="L81">    createFolder(outputDirectory);</span>
+
+<span class="fc bfc" id="L83" title="All 2 branches covered.">    for (int idx = 0; idx &lt; csvDataInfo.size(); idx++) {       // Loop through every supporter</span>
+<span class="fc" id="L84">      List&lt;String&gt; output = buildOutputText(template, csvDataInfo.get(idx), tagMapping);</span>
+<span class="fc" id="L85">      writeSingleFile(output,  outputDirectory + &quot;/&quot; + idx + &quot;.txt&quot;);</span>
+    }
+<span class="fc" id="L87">  }</span>
+
+  /**
+   * A helper method to create folders for output files.
+   * @param outputFileDirectory The given output directory as a String
+   * @throws Exception If any error happens while creating the folder.
+   */
+  protected void createFolder(String outputFileDirectory) throws Exception{
+<span class="fc bfc" id="L95" title="All 2 branches covered.">    if (outputFileDirectory == null)</span>
+<span class="fc" id="L96">      throw new NullPointerException(&quot;No output file path given.&quot;);</span>
+
+    try {
+<span class="fc" id="L99">      Paths.get(outputFileDirectory);</span>
+<span class="nc" id="L100">    } catch (InvalidPathException e) {</span>
+<span class="nc" id="L101">      throw new IllegalArgumentException(outputFileDirectory + &quot; is an invalid path. &quot; + e.getReason());</span>
+<span class="fc" id="L102">    }</span>
+
+<span class="fc" id="L104">    File ROOT_DIRECTORY = new File(System.getProperty(&quot;user.dir&quot;));</span>
+<span class="fc" id="L105">    File newDirectory = new File(ROOT_DIRECTORY, outputFileDirectory);</span>
+
+
+<span class="fc bfc" id="L108" title="All 4 branches covered.">    if (newDirectory.exists() &amp;&amp; newDirectory.isFile()){</span>
+<span class="fc" id="L109">      throw new IllegalArgumentException(&quot;New Directory exists as a file.&quot;);</span>
+    }
+
+    try{
+<span class="fc" id="L113">      newDirectory.mkdirs();</span>
+    }
+<span class="nc" id="L115">    catch (Exception e){</span>
+<span class="nc" id="L116">      throw new Exception(&quot;Something went wrong while creating the folder. &quot;, e.getCause());</span>
+<span class="fc" id="L117">    }</span>
+<span class="fc" id="L118">  }</span>
+
+  /**
+   * A helper method to generate output text.
+   * @param template The input template, given as a list of Strings.
+   * @param individualInfo An individual's info, given as a list of Strings.
+   * @param tagMapping The pre-process mapping of tags, &lt;tags, index&gt; as &lt;String, Integer&gt;
+   * @return the output text as a list of Strings
+   */
+  protected ArrayList&lt;String&gt; buildOutputText(List&lt;String&gt; template, List&lt;String&gt; individualInfo, Map&lt;String, Integer&gt; tagMapping) {
+<span class="fc" id="L128">    ArrayList&lt;String&gt; outputText = new ArrayList&lt;&gt;(template);</span>
+
+<span class="fc bfc" id="L130" title="All 2 branches covered.">    for (Map.Entry&lt;String, Integer&gt; pair : tagMapping.entrySet()) {  // loop through every tag</span>
+<span class="fc" id="L131">      String tag = pair.getKey();</span>
+<span class="fc" id="L132">      Integer tagId = pair.getValue();</span>
+
+<span class="fc" id="L134">      String regex = PLACEHOLDER_L + tag + PLACEHOLDER_R;</span>
+<span class="fc" id="L135">      Pattern pattern = Pattern.compile(regex);</span>
+<span class="fc bfc" id="L136" title="All 2 branches covered.">      for (int i = 0; i &lt; outputText.size(); i++) {                 // loop through every line</span>
+<span class="fc" id="L137">        Matcher matcher = pattern.matcher(outputText.get(i));</span>
+<span class="fc" id="L138">        String stringToBeReplaced = individualInfo.get(tagId);</span>
+<span class="fc" id="L139">        outputText.set(i, matcher.replaceAll(stringToBeReplaced));</span>
+      }
+<span class="fc" id="L141">    }</span>
+<span class="fc" id="L142">    return outputText;</span>
+  }
+
+  /**
+   * A helper method to write single file for an individual.
+   * @param outputText The output text to be written, given as a list of Strings.
+   * @param outputFileName The output file name, given as a String.
+   * @throws Exception If any error happens while creating the folder.
+   */
+  protected static void writeSingleFile(List&lt;String&gt; outputText, String outputFileName) throws Exception{
+<span class="fc" id="L152">    try (BufferedWriter outputFile = new BufferedWriter(new FileWriter(outputFileName))) {</span>
+<span class="fc bfc" id="L153" title="All 2 branches covered.">      for (String line: outputText){</span>
+<span class="fc" id="L154">        outputFile.write(line + System.lineSeparator());</span>
+<span class="fc" id="L155">      }</span>
+    }
+<span class="nc" id="L157">    catch (IOException ioe) {</span>
+<span class="nc" id="L158">      throw new IOException(&quot;Something went wrong while writing the file: &quot; + outputFileName + ioe.getMessage());</span>
+<span class="fc" id="L159">    }</span>
+<span class="fc" id="L160">  }</span>
+
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L164" title="All 2 branches covered.">    if (this == o) return true;</span>
+<span class="fc bfc" id="L165" title="All 4 branches covered.">    if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L166">    return true;</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L171">    return 41;</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L176">    return &quot;Generator{}&quot;;</span>
+  }
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

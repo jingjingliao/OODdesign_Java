@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>model</OriginalElement>
+  <nodes>
+    <node x="0.0" y="351.0">model.SeatTest</node>
+    <node x="418.8457105064249" y="351.0">model.Row</node>
+    <node x="197.0" y="704.0">model.RowTest</node>
+    <node x="650.5997732426305" y="1133.0">model.TheaterTest</node>
+    <node x="410.0" y="737.0">model.Theater</node>
+    <node x="157.0957105064249" y="0.0">model.Seat</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="model.RowTest" target="model.Row">
+      <point x="48.0" y="-179.5" />
+      <point x="341.0" y="664.0" />
+      <point x="434.2028533635678" y="664.0" />
+      <point x="-92.14285714285711" y="146.5" />
+    </edge>
+    <edge source="model.RowTest" target="model.Seat">
+      <point x="-16.0" y="-179.5" />
+      <point x="277.0" y="684.0" />
+      <point x="274.5224867724869" y="684.0" />
+      <point x="274.5224867724869" y="331.0" />
+      <point x="271.6790438397582" y="331.0" />
+      <point x="-10.416666666666686" y="135.5" />
+    </edge>
+    <edge source="model.Theater" target="model.Row">
+      <point x="106.25" y="-146.5" />
+      <point x="728.75" y="684.0" />
+      <point x="557.0599962207106" y="684.0" />
+      <point x="30.714285714285666" y="146.5" />
+    </edge>
+    <edge source="model.TheaterTest" target="model.Row">
+      <point x="28.77777777777783" y="-190.5" />
+      <point x="808.8775510204083" y="1093.0" />
+      <point x="856.5" y="1093.0" />
+      <point x="856.5" y="664.0" />
+      <point x="618.488567649282" y="664.0" />
+      <point x="92.14285714285711" y="146.5" />
+    </edge>
+    <edge source="model.Row" target="model.Seat">
+      <point x="53.75" y="-146.5" />
+      <point x="580.0957105064249" y="321.0" />
+      <point x="334.17904383975815" y="321.0" />
+      <point x="52.08333333333326" y="135.5" />
+    </edge>
+    <edge source="model.SeatTest" target="model.Seat">
+      <point x="-44.0" y="-146.5" />
+      <point x="44.0" y="311.0" />
+      <point x="167.51237717309158" y="311.0" />
+      <point x="-114.58333333333331" y="135.5" />
+    </edge>
+    <edge source="model.TheaterTest" target="model.Seat">
+      <point x="115.11111111111109" y="-190.5" />
+      <point x="895.2108843537416" y="1113.0" />
+      <point x="889.5" y="1113.0" />
+      <point x="889.5" y="291.0" />
+      <point x="396.6790438397581" y="291.0" />
+      <point x="114.5833333333332" y="135.5" />
+    </edge>
+    <edge source="model.TheaterTest" target="model.Theater">
+      <point x="-28.77777777777783" y="-190.5" />
+      <point x="751.3219954648526" y="1113.0" />
+      <point x="728.75" y="1113.0" />
+      <point x="106.25" y="146.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="123.0" y="125.5" />
+  <SelectedNodes>
+    <node>model.SeatTest</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

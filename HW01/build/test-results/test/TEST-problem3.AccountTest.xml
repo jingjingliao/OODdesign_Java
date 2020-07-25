@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem3.AccountTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-01-14T18:20:43" hostname="Jingjings-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="changeName" classname="problem3.AccountTest" time="0.001"/>
+  <testcase name="withdraw" classname="problem3.AccountTest" time="0.0"/>
+  <testcase name="changeAmount" classname="problem3.AccountTest" time="0.0"/>
+  <testcase name="getName" classname="problem3.AccountTest" time="0.0"/>
+  <testcase name="getAmount" classname="problem3.AccountTest" time="0.0"/>
+  <testcase name="deposit" classname="problem3.AccountTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

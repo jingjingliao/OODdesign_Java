@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85e6a5f4-6fbd-4bf9-95b0-bc3ab2791da6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalCheatSheet/commandLineProcessor/InvalidArgumentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalCheatSheet/commandLineProcessor/InvalidArgumentException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalCheatSheet/commandLineProcessor/MainRE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalCheatSheet/commandLineProcessor/MainRE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalCheatSheet/compatatorAndIterator/Swimmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalCheatSheet/compatatorAndIterator/Swimmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalCheatSheet/compatatorAndIterator/SwimmerIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalCheatSheet/compatatorAndIterator/SwimmerIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab07/src/main/java/problem01/FrequencyCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab07/src/main/java/problem01/FrequencyCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab08/src/main/java/problem01/TrendingTopics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab08/src/main/java/problem01/TrendingTopics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final-exam/src/main/java/p3/Traveler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../final-exam/src/main/java/p3/Traveler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final-exam/src/main/java/p3/TripRecommender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../final-exam/src/main/java/p3/TripRecommender.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Functional Practice" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Functional Practice" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Functional Practice" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Functional Practice" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1aYvP5rl6UtbYugFA1qWpDRsKni" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/finalCheatSheet" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="finalPractice7.problem02" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="finalPractice4.problem03" />
+      <recent name="finalPractice6.problem04" />
+      <recent name="finalPractice6.problem03" />
+      <recent name="finalPractice6.problem02" />
+      <recent name="finalCheatSheet" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/finalCheatSheet" />
+      <recent name="$PROJECT_DIR$/src/main/java/ComparatorIterator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Functional_Practice.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainStream3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="finalPractice4.problem01.MainStream3" />
+      <module name="Functional_Practice.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="finalPractice4.problem01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainStreams2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="finalPractice4.problem01.MainStreams2" />
+      <module name="Functional_Practice.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="finalPractice4.problem01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunnerIterator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="finalPractice6.problem04.RunnerIterator" />
+      <module name="Functional_Practice.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="finalPractice6.problem04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="frequency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="finalPractice4.problem02.frequency" />
+      <module name="Functional_Practice.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="finalPractice4.problem02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.frequency" />
+        <item itemvalue="Application.MainStream3" />
+        <item itemvalue="Application.MainStreams2" />
+        <item itemvalue="Application.RunnerIterator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85e6a5f4-6fbd-4bf9-95b0-bc3ab2791da6" name="Default Changelist" comment="" />
+      <created>1586925314407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586925314407</updated>
+      <workItem from="1586925316379" duration="4357000" />
+      <workItem from="1586994759540" duration="31799000" />
+      <workItem from="1587360816935" duration="19518000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1361" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1587533678021">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1361" y="231" key="#com.intellij.ide.util.MemberChooser/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587533678021" />
+    <state x="671" y="575" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587354103737">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="671" y="575" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587354103737" />
+    <state width="1398" height="324" key="GridCell.Tab.0.bottom" timestamp="1587597376845">
+      <screen x="1920" y="158" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1586931989424" />
+    <state width="1398" height="545" key="GridCell.Tab.0.bottom/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587574858470" />
+    <state width="1398" height="324" key="GridCell.Tab.0.bottom/1920.158.1440.877/0.23.1920.1057@1920.158.1440.877" timestamp="1587597376845" />
+    <state width="1398" height="324" key="GridCell.Tab.0.center" timestamp="1587597376844">
+      <screen x="1920" y="158" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1586931989421" />
+    <state width="1398" height="545" key="GridCell.Tab.0.center/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587574858469" />
+    <state width="1398" height="324" key="GridCell.Tab.0.center/1920.158.1440.877/0.23.1920.1057@1920.158.1440.877" timestamp="1587597376844" />
+    <state width="1398" height="324" key="GridCell.Tab.0.left" timestamp="1587597376843">
+      <screen x="1920" y="158" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1586931989420" />
+    <state width="1398" height="545" key="GridCell.Tab.0.left/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587574858469" />
+    <state width="1398" height="324" key="GridCell.Tab.0.left/1920.158.1440.877/0.23.1920.1057@1920.158.1440.877" timestamp="1587597376843" />
+    <state width="1398" height="324" key="GridCell.Tab.0.right" timestamp="1587597376844">
+      <screen x="1920" y="158" width="1440" height="877" />
+    </state>
+    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1586931989422" />
+    <state width="1398" height="545" key="GridCell.Tab.0.right/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587574858469" />
+    <state width="1398" height="324" key="GridCell.Tab.0.right/1920.158.1440.877/0.23.1920.1057@1920.158.1440.877" timestamp="1587597376844" />
+    <state width="1878" height="345" key="GridCell.Tab.1.bottom" timestamp="1587360808821">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="345" key="GridCell.Tab.1.bottom/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587360808821" />
+    <state width="1878" height="345" key="GridCell.Tab.1.center" timestamp="1587360808820">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="345" key="GridCell.Tab.1.center/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587360808820" />
+    <state width="1878" height="345" key="GridCell.Tab.1.left" timestamp="1587360808820">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="345" key="GridCell.Tab.1.left/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587360808820" />
+    <state width="1878" height="345" key="GridCell.Tab.1.right" timestamp="1587360808821">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="345" key="GridCell.Tab.1.right/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587360808821" />
+    <state x="1297" y="434" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1587097859596">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1297" y="434" key="com.intellij.testIntegration.createTest.CreateTestDialog/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587097859596" />
+    <state x="626" y="187" width="667" height="729" key="find.popup" timestamp="1587344027016">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="626" y="187" width="667" height="729" key="find.popup/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587344027016" />
+    <state x="453" y="138" key="new project wizard" timestamp="1587585674484">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="453" y="138" key="new project wizard/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1587585674484" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/finalPractice7/problem01/MainStream1.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/finalPractice7/problem04/Swimmer.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

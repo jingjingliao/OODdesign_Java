@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c1bd0e2-b5ba-4632-8e5d-13d5e75975a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/classes/java/main/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/classes/java/main/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/classes/java/main/Email.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/classes/java/main/Email.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/classes/java/main/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/classes/java/main/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/Address.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/Address.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/Author.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/Author.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/Email.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/Email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/Person.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/Person.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/index-all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/member-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/package-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/docs/javadoc/type-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/jacoco/test.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Author.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Author.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Author.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Author.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Email.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Email.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Email.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Person.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Person.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Person.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/Person.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/default/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/jacocoHtml/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/classes/AddressTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/classes/AddressTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/classes/AuthorTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/classes/AuthorTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/classes/EmailTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/classes/EmailTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/classes/PersonTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/classes/PersonTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/test-results/test/TEST-AddressTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/test-results/test/TEST-AddressTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/test-results/test/TEST-AuthorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/test-results/test/TEST-AuthorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/test-results/test/TEST-EmailTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/test-results/test/TEST-EmailTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/test-results/test/TEST-PersonTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/test-results/test/TEST-PersonTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/src/main/java/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/src/main/java/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/src/main/java/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/src/main/java/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab01/src/main/java/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab01/src/main/java/Person.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Lab03" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Lab03" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Lab03" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Lab03" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Lab03" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1X63OoU7PysexC6VhocTBkkKtSI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="problem01" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Lab03 [javadoc]">
+    <configuration name="Lab03 [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="check" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Lab03 [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="javadoc" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MusicianTest.artistReceivedAward" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;problem01.MusicianTest.artistReceivedAward&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PainterPhotographerTest.getExhibits" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;problem01.PainterPhotographerTest.getExhibits&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PoemTest.artistReceivedAward" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;problem01.PoemTest.artistReceivedAward&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Lab03 [javadoc]" />
+        <item itemvalue="Gradle.Lab03 [check]" />
+        <item itemvalue="Gradle.PoemTest.artistReceivedAward" />
+        <item itemvalue="Gradle.PainterPhotographerTest.getExhibits" />
+        <item itemvalue="Gradle.MusicianTest.artistReceivedAward" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c1bd0e2-b5ba-4632-8e5d-13d5e75975a3" name="Default Changelist" comment="" />
+      <created>1580352687574</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580352687574</updated>
+      <workItem from="1580352690937" duration="12249000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="916" y="385" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1580355570883">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="916" y="385" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.877@0.23.1440.877" timestamp="1580355570883" />
+    <state x="1037" y="216" key="#com.intellij.ide.util.MemberChooser" timestamp="1580365335176">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="1037" y="216" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1580365335175" />
+    <state width="1741" height="350" key="GridCell.Tab.0.bottom" timestamp="1580366709952">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1741" height="350" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580366709952" />
+    <state width="1741" height="350" key="GridCell.Tab.0.center" timestamp="1580366709950">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1741" height="350" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580366709950" />
+    <state width="1741" height="350" key="GridCell.Tab.0.left" timestamp="1580366709949">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1741" height="350" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580366709949" />
+    <state width="1741" height="350" key="GridCell.Tab.0.right" timestamp="1580366709951">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1741" height="350" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580366709951" />
+    <state x="723" y="204" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1580360953184">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="723" y="204" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.877@0.23.1440.877" timestamp="1580360953184" />
+    <state x="0" y="146" key="refactoring.ChangeSignatureDialog" timestamp="1580355379375">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="0" y="146" key="refactoring.ChangeSignatureDialog/0.23.1440.877@0.23.1440.877" timestamp="1580355379375" />
+  </component>
+</project>

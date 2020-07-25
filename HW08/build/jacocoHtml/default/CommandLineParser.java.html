@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CommandLineParser.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW08</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">CommandLineParser.java</span></div><h1>CommandLineParser.java</h1><pre class="source lang-java linenums">import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+
+/**
+ * Represents a CommandLineParser
+ */
+public class CommandLineParser {
+  /**
+   * Specified commands
+   */
+  protected static final String PREFIX = &quot;--&quot;;
+  protected static final String EMAIL = &quot;email&quot;;
+  protected static final String LETTER = &quot;letter&quot;;
+  protected static final String TEMPLATE = &quot;-template&quot;;
+  protected static final String OUTPUT_DIR = &quot;output-dir&quot;;
+  protected static final String CSV_FILE = &quot;csv-file&quot;;
+
+  /**
+   * Paths is a map that stores the relevant intput/output path in the command line arguments
+   */
+  protected Map&lt;String, String&gt; paths;
+  /**
+   * Indicates if email is required
+   */
+  protected boolean emailRequired;
+  /**
+   * Indicates if letter is required
+   */
+  protected boolean letterRequired;
+  /**
+   * Command line arguments
+   */
+  private String[] args;
+
+  /**
+   * Constructs a new CommandLineParser where emailRequired and letterRequired are set to be false by default
+   * @param args Command line arguments
+   */
+<span class="fc" id="L41">  public CommandLineParser(String[] args){</span>
+<span class="fc" id="L42">    this.args = args;</span>
+<span class="fc" id="L43">    this.paths = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L44">    this.emailRequired = false;</span>
+<span class="fc" id="L45">    this.letterRequired = false;</span>
+<span class="fc" id="L46">  }</span>
+
+  /**
+   * Calls processArgs() and checks if the command line arguments are valid;
+   * @throws InvalidArgumentsException thrown when invalid argument is found
+   */
+  public void parse() throws InvalidArgumentsException{
+<span class="fc" id="L53">    this.processArgs();</span>
+<span class="fc bfc" id="L54" title="All 4 branches covered.">    if(emailRequired &amp;&amp; !this.paths.containsKey(EMAIL+TEMPLATE)){</span>
+<span class="fc" id="L55">      throw new InvalidArgumentsException(&quot;Error: &quot; + PREFIX+EMAIL  + &quot; provided but no &quot; + PREFIX+EMAIL+TEMPLATE + &quot; was given.&quot;);</span>
+<span class="fc bfc" id="L56" title="All 4 branches covered.">    }else if(!emailRequired &amp;&amp; this.paths.containsKey(EMAIL+TEMPLATE)){</span>
+<span class="fc" id="L57">      throw new InvalidArgumentsException(&quot;Error: &quot; + PREFIX+EMAIL+TEMPLATE + &quot; provided but no &quot; + PREFIX+EMAIL + &quot; was given.&quot;);</span>
+    }
+<span class="fc bfc" id="L59" title="All 4 branches covered.">    if(letterRequired &amp;&amp; !this.paths.containsKey(LETTER+TEMPLATE)){</span>
+<span class="fc" id="L60">      throw new InvalidArgumentsException(&quot;Error: &quot; + PREFIX+LETTER  + &quot; provided but no &quot; + PREFIX+LETTER+TEMPLATE + &quot; was given.&quot;);</span>
+<span class="fc bfc" id="L61" title="All 4 branches covered.">    }else if(!letterRequired &amp;&amp; this.paths.containsKey(LETTER+TEMPLATE)){</span>
+<span class="fc" id="L62">      throw new InvalidArgumentsException(&quot;Error: &quot; + PREFIX+LETTER+TEMPLATE + &quot; provided but no &quot; + PREFIX+LETTER + &quot; was given.&quot;);</span>
+    }
+<span class="fc bfc" id="L64" title="All 4 branches covered.">    if(!emailRequired &amp;&amp; !letterRequired){</span>
+<span class="fc" id="L65">      throw new InvalidArgumentsException(&quot;Neither email or letter is indicated.&quot;);</span>
+    }
+<span class="fc bfc" id="L67" title="All 2 branches covered.">    if(!this.paths.containsKey(CSV_FILE)){</span>
+<span class="fc" id="L68">      throw new InvalidArgumentsException(&quot;Error: no &quot; + CSV_FILE + &quot; was given.&quot;);</span>
+    }
+<span class="fc bfc" id="L70" title="All 2 branches covered.">    if(!this.paths.containsKey(OUTPUT_DIR)){</span>
+<span class="fc" id="L71">      throw new InvalidArgumentsException(&quot;Error: no &quot; + OUTPUT_DIR + &quot; was given.&quot;);</span>
+    }
+<span class="fc" id="L73">  }</span>
+
+
+
+  /**
+   * Checks and processes the input/output path; when there are duplicated valid commands involving input/output paths,
+   * the latest will overwrite the previous
+   * @param argIdx the index of the path in arguments array
+   * @param type a string that indicates what type of path we are processing
+   * @throws InvalidArgumentsException thrown when an invalid argument is found
+   */
+  private void processPath(int argIdx, String type) throws InvalidArgumentsException {
+<span class="fc bfc" id="L85" title="All 4 branches covered.">    if (argIdx &gt;= this.args.length || this.args[argIdx].startsWith(PREFIX)){</span>
+<span class="fc" id="L86">      throw new InvalidArgumentsException((&quot;Missing output path: &quot; +  type));</span>
+    }
+<span class="fc" id="L88">    this.paths.put(type, this.args[argIdx]);</span>
+<span class="fc" id="L89">  }</span>
+
+  /**
+   * Parses command line arguments and checks if the arguments are valid
+   * @throws InvalidArgumentsException thrown when an invalid argument is found
+   */
+  private void processArgs() throws InvalidArgumentsException{
+<span class="fc bfc" id="L96" title="All 4 branches covered.">    if (this.args == null || this.args.length == 0){ throw new InvalidArgumentsException(&quot;No command given&quot;); }</span>
+<span class="fc bfc" id="L97" title="All 2 branches covered.">    for (int i = 0; i &lt; this.args.length; i++) {</span>
+<span class="fc bfc" id="L98" title="All 7 branches covered.">      switch(this.args[i]) {</span>
+<span class="fc" id="L99">        case PREFIX+EMAIL: this.emailRequired = true; break;</span>
+<span class="fc" id="L100">        case PREFIX+LETTER: this.letterRequired = true; break;</span>
+        case PREFIX+EMAIL+TEMPLATE:
+<span class="fc" id="L102">          processPath(++i, EMAIL+TEMPLATE);</span>
+<span class="fc" id="L103">          break;</span>
+        case PREFIX+LETTER+TEMPLATE:
+<span class="fc" id="L105">          processPath(++i, LETTER+TEMPLATE);</span>
+<span class="fc" id="L106">          break;</span>
+        case PREFIX+CSV_FILE:
+<span class="fc" id="L108">          processPath(++i, CSV_FILE);</span>
+<span class="fc" id="L109">          break;</span>
+        case PREFIX+OUTPUT_DIR:
+<span class="fc" id="L111">          processPath(++i, OUTPUT_DIR);</span>
+<span class="fc" id="L112">          break;</span>
+        default:
+<span class="fc" id="L114">          throw new InvalidArgumentsException(&quot;Unknown command: &quot; + this.args[i]);</span>
+      }
+    }
+<span class="fc" id="L117">  }</span>
+
+  /**
+   * Overrides the equals() method for CommandLineParser
+   * @param o the object being compared to this CommandLineParser
+   * @return true if o equals CommandLineParser, false otherwise
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L126" title="All 2 branches covered.">    if (this == o) return true;</span>
+<span class="fc bfc" id="L127" title="All 4 branches covered.">    if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L128">    CommandLineParser that = (CommandLineParser) o;</span>
+<span class="fc bfc" id="L129" title="All 4 branches covered.">    return emailRequired == that.emailRequired &amp;&amp;</span>
+            letterRequired == that.letterRequired &amp;&amp;
+<span class="fc bfc" id="L131" title="All 2 branches covered.">            paths.equals(that.paths) &amp;&amp;</span>
+<span class="fc bfc" id="L132" title="All 2 branches covered.">            Arrays.equals(args, that.args);</span>
+  }
+
+  /**
+   * Overrides the hashCode() method for CommandLineParser
+   * @return the hashcode of this CommandLineParser
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L141">    int result = Objects.hash(paths, emailRequired, letterRequired);</span>
+<span class="fc" id="L142">    result = 31 * result + Arrays.hashCode(args);</span>
+<span class="fc" id="L143">    return result;</span>
+  }
+
+  /**
+   * Overrides the toString() method for CommandLineParser
+   * @return the string representation of this CommandLineParser
+   */
+  @Override
+  public String toString() {
+<span class="fc" id="L152">    return &quot;CommandLineParser{&quot; +</span>
+            &quot;paths=&quot; + paths +
+            &quot;, emailRequired=&quot; + emailRequired +
+            &quot;, letterRequired=&quot; + letterRequired +
+<span class="fc" id="L156">            &quot;, args=&quot; + Arrays.toString(args) +</span>
+            '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

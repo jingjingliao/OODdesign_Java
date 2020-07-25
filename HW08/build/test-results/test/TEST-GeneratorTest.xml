@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GeneratorTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2020-03-25T18:26:09" hostname="Jingjings-MacBook-Pro.local" time="0.068">
+  <properties/>
+  <testcase name="buildTagIndexFailedMismatch1" classname="GeneratorTest" time="0.003"/>
+  <testcase name="buildTagIndexFailedMismatch2" classname="GeneratorTest" time="0.003"/>
+  <testcase name="writeFile" classname="GeneratorTest" time="0.009"/>
+  <testcase name="buildTagIndex" classname="GeneratorTest" time="0.003"/>
+  <testcase name="testEqual" classname="GeneratorTest" time="0.002"/>
+  <testcase name="testToString" classname="GeneratorTest" time="0.001"/>
+  <testcase name="createFolderFailed2" classname="GeneratorTest" time="0.002"/>
+  <testcase name="buildOutputText2" classname="GeneratorTest" time="0.006"/>
+  <testcase name="generateFailed1" classname="GeneratorTest" time="0.001"/>
+  <testcase name="generateFailed2" classname="GeneratorTest" time="0.002"/>
+  <testcase name="generateFailed3" classname="GeneratorTest" time="0.003"/>
+  <testcase name="buildOutputText" classname="GeneratorTest" time="0.002"/>
+  <testcase name="createFolderFailed" classname="GeneratorTest" time="0.0"/>
+  <testcase name="buildTagIndexFailedNull1" classname="GeneratorTest" time="0.001"/>
+  <testcase name="buildTagIndexFailedNull2" classname="GeneratorTest" time="0.003"/>
+  <testcase name="buildTagIndexFailedNull3" classname="GeneratorTest" time="0.001"/>
+  <testcase name="createFolder" classname="GeneratorTest" time="0.001"/>
+  <testcase name="createFolder2" classname="GeneratorTest" time="0.001"/>
+  <testcase name="generate" classname="GeneratorTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

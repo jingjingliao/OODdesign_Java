@@ -1,0 +1,11 @@
+-classpath '/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW04/build/classes/java/main:/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW04/build/resources/main'
+-d '/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW04/build/docs/javadoc'
+-doctitle 'HW04 1.0-SNAPSHOT API'
+-quiet 
+-windowtitle 'HW04 1.0-SNAPSHOT API'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW04/src/main/java/problem01/IStack.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW04/src/main/java/problem01/EmptyQueueException.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW04/src/main/java/problem01/IQueue.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW04/src/main/java/problem02/SetOfIntegers.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW04/src/main/java/problem02/ElementAlreadyExistedException.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW04/src/main/java/problem02/ISetOfIntegers.java'

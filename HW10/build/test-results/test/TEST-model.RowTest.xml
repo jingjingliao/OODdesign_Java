@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.RowTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-04-14T22:52:05" hostname="Jingjings-MacBook-Pro.local" time="0.038">
+  <properties/>
+  <testcase name="isWheelchairRow" classname="model.RowTest" time="0.007"/>
+  <testcase name="tostring" classname="model.RowTest" time="0.0"/>
+  <testcase name="setRowNum" classname="model.RowTest" time="0.001"/>
+  <testcase name="getRowNum" classname="model.RowTest" time="0.011"/>
+  <testcase name="testHashCode" classname="model.RowTest" time="0.01"/>
+  <testcase name="testEquals" classname="model.RowTest" time="0.001"/>
+  <testcase name="getSeats" classname="model.RowTest" time="0.0"/>
+  <testcase name="setSeat" classname="model.RowTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

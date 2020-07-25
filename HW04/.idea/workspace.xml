@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8d057928-2dff-458d-8bd9-f081a2be5720" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW04" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW04" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW04" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW04" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XC5WlkbQhSq8NixW439DE8pnzk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="problem02" />
+      <recent name="problem01" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.HW04 [javadoc]">
+    <configuration name="HW04 [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="check" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="HW04 [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="javadoc" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SetOfIntegersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;problem02.SetOfIntegersTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SetOfIntegersTest.removeLast" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;problem02.SetOfIntegersTest.removeLast&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SetOfIntegersTest.removeMiddle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;problem02.SetOfIntegersTest.removeMiddle&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.HW04 [javadoc]" />
+        <item itemvalue="Gradle.HW04 [check]" />
+        <item itemvalue="Gradle.SetOfIntegersTest" />
+        <item itemvalue="Gradle.SetOfIntegersTest.removeMiddle" />
+        <item itemvalue="Gradle.SetOfIntegersTest.removeLast" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d057928-2dff-458d-8bd9-f081a2be5720" name="Default Changelist" comment="" />
+      <created>1580537269233</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580537269233</updated>
+      <workItem from="1580537271125" duration="25486000" />
+      <workItem from="1580796573159" duration="6160000" />
+      <workItem from="1580878115736" duration="72000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="178" key="#com.intellij.ide.util.MemberChooser" timestamp="1580754113956">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="549" y="178" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1580754113956" />
+    <state x="499" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580754240466">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="499" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.877@0.23.1440.877" timestamp="1580754240466" />
+    <state x="880" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580767867801">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="880" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1580767867801" />
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom" timestamp="1580866237540">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580866237540" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center" timestamp="1580866237539">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580866237539" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left" timestamp="1580866237539">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580866237539" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right" timestamp="1580866237540">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580866237540" />
+    <state width="1184" height="265" key="GridCell.Tab.1.bottom" timestamp="1580866237511">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1184" height="265" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580866237511" />
+    <state width="1184" height="265" key="GridCell.Tab.1.center" timestamp="1580866237510">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1184" height="265" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1580866237510" />
+    <state width="1184" height="265" key="GridCell.Tab.1.left" timestamp="1580866237510">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1184" height="265" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1580866237510" />
+    <state width="1184" height="265" key="GridCell.Tab.1.right" timestamp="1580866237511">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1184" height="265" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1580866237511" />
+    <state x="381" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1580796574356">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="381" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1580796574356" />
+    <state x="375" y="83" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580775766859">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="375" y="83" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.877@0.23.1440.877" timestamp="1580775766859" />
+    <state x="950" y="338" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1580760850508">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="950" y="338" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.877@0.23.1440.877" timestamp="1580760850508" />
+  </component>
+</project>

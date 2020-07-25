@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem02.SetOfIntegersTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2020-02-04T20:12:18" hostname="Jingjings-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="addSameElement" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="removeMiddle" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="contains" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="removeFirst" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="add" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="size" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="isNotEmpty" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="NotInSetemove" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="testHashcode" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="removeLast" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="emptySet" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="testEquals" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <testcase name="didNotContains" classname="problem02.SetOfIntegersTest" time="0.001"/>
+  <testcase name="isEmpty" classname="problem02.SetOfIntegersTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

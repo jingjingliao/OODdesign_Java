@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem01.WindowCleaningServiceTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2020-01-29T01:03:02" hostname="Jingjings-MacBook-Pro.local" time="0.016">
+  <properties/>
+  <testcase name="noAdditionalService" classname="problem01.WindowCleaningServiceTest" time="0.001"/>
+  <testcase name="invalidNumberOfFloor" classname="problem01.WindowCleaningServiceTest" time="0.0"/>
+  <testcase name="testToString" classname="problem01.WindowCleaningServiceTest" time="0.002"/>
+  <testcase name="calculatePrice" classname="problem01.WindowCleaningServiceTest" time="0.0"/>
+  <testcase name="getAdditionalFee" classname="problem01.WindowCleaningServiceTest" time="0.001"/>
+  <testcase name="FloorNumBelowZero" classname="problem01.WindowCleaningServiceTest" time="0.0"/>
+  <testcase name="beforeDiscountCalculatePrice" classname="problem01.WindowCleaningServiceTest" time="0.0"/>
+  <testcase name="getPropertySize" classname="problem01.WindowCleaningServiceTest" time="0.0"/>
+  <testcase name="invalidAdditionalFee" classname="problem01.WindowCleaningServiceTest" time="0.001"/>
+  <testcase name="testHashcode" classname="problem01.WindowCleaningServiceTest" time="0.0"/>
+  <testcase name="getCompleteTime" classname="problem01.WindowCleaningServiceTest" time="0.0"/>
+  <testcase name="testEquality" classname="problem01.WindowCleaningServiceTest" time="0.0"/>
+  <testcase name="getPreviouslyNumberOfService" classname="problem01.WindowCleaningServiceTest" time="0.0"/>
+  <testcase name="getNumberOfFloor" classname="problem01.WindowCleaningServiceTest" time="0.0"/>
+  <testcase name="getPropertyAddress" classname="problem01.WindowCleaningServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

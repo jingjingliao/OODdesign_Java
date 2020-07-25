@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SetOfIntegers.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW04</a> &gt; <a href="index.source.html" class="el_package">problem02</a> &gt; <span class="el_source">SetOfIntegers.java</span></div><h1>SetOfIntegers.java</h1><pre class="source lang-java linenums">package problem02;
+
+import javax.security.sasl.SaslServer;
+import java.util.Objects;
+
+/**
+ * Create a SetOfIntegers class
+ */
+public class SetOfIntegers implements ISetOfIntegers {
+  private static final int NUM_SLOTS = 1;
+  private Integer[] items;
+  private int size;
+
+  /**
+   * Construct for a set of integers
+   */
+<span class="fc" id="L17">  public SetOfIntegers(){</span>
+<span class="fc" id="L18">    this.items = new Integer[NUM_SLOTS];</span>
+<span class="fc" id="L19">    this.size = 0;</span>
+<span class="fc" id="L20">  }</span>
+
+
+  /**
+   * Construct for a set of integers
+   * @param items Integer[]
+   * @param size the size of the set
+   */
+<span class="fc" id="L28">  public SetOfIntegers(Integer[] items, int size){</span>
+<span class="fc" id="L29">    this.items = items;</span>
+<span class="fc" id="L30">    this.size = size;</span>
+<span class="fc" id="L31">  }</span>
+
+  /**
+   * Create an empty set
+   * @return an empty set
+   */
+  @Override
+  public ISetOfIntegers emptySet() {
+<span class="fc" id="L39">    return new SetOfIntegers();</span>
+  }
+
+  /**
+   * Check the set is empty or not
+   * @return true if the set is empty, otherwise false
+   */
+  @Override
+  public Boolean isEmpty() {
+<span class="fc bfc" id="L48" title="All 2 branches covered.">    return this.size == 0;</span>
+  }
+
+  /**
+   * Add an item to the set
+   * @param n the item to add
+   * @throws ElementAlreadyExistedException if the element has already in the set,
+   * throw an exception
+   */
+  @Override
+  public void add(Integer n) throws ElementAlreadyExistedException{
+<span class="fc bfc" id="L59" title="All 2 branches covered.">    if (!this.contains(n)){</span>
+<span class="fc bfc" id="L60" title="All 2 branches covered.">      if (!this.inSizeRange()){</span>
+<span class="fc" id="L61">        this.resize();</span>
+<span class="fc" id="L62">      }this.items[this.size] = n;</span>
+<span class="fc" id="L63">      this.size++;</span>
+    }else{
+<span class="fc" id="L65">      throw new ElementAlreadyExistedException();</span>
+    }
+<span class="fc" id="L67">  }</span>
+
+  /**
+   * Helper function that checks if there is room in the set to add a new item to the set
+   * @return true if there is space available, false otherwise
+   */
+  private boolean inSizeRange() {
+<span class="fc bfc" id="L74" title="All 2 branches covered.">    return (this.size + 1 &lt;= this.items.length);</span>
+  }
+
+  /**
+   * Increase the size of the array. This involves creating a temporary new array, adding the
+   * existing data to the new array, then setting the data array to the new array.
+   */
+  private void resize() {
+<span class="fc" id="L82">    int newSize = this.size + NUM_SLOTS;</span>
+<span class="fc" id="L83">    Integer[] newItems = new Integer[newSize];</span>
+<span class="fc" id="L84">    this.copyItems(this.items, newItems);</span>
+<span class="fc" id="L85">    this.items = newItems;</span>
+<span class="fc" id="L86">  }</span>
+
+  /**
+   * Helper function used by add methods. Copies the items from one array to another.
+   * @param from The array to copy from.
+   * @param to The array to copy to.
+   * @param fromStart The index in the &quot;from&quot; array to start copying from.
+   * @param fromEnd The index in the &quot;from&quot; array to end at (exclusive).
+   * @param toStart The index in the &quot;to&quot; array to start copying to.
+   */
+  private void copyItems(Integer[] from, Integer[] to, int fromStart, int fromEnd, int toStart) {
+<span class="pc bpc" id="L97" title="1 of 2 branches missed.">    if (toStart &gt;= 0) {</span>
+<span class="fc bfc" id="L98" title="All 2 branches covered.">      for (int i = fromStart; i &lt; fromEnd; i++) {</span>
+<span class="fc" id="L99">        to[toStart] = from[i];</span>
+<span class="fc" id="L100">        toStart++;</span>
+      }
+    }
+<span class="fc" id="L103">  }</span>
+
+  /**
+   * Shortcut version of the helper method above. Will copy the entirety of the &quot;from&quot; array
+   * to the &quot;to&quot; array.
+   * @param from The array to copy from.
+   * @param to The array to copy to.
+   */
+  private void copyItems(Integer[] from, Integer[] to) {
+<span class="fc" id="L112">    this.copyItems(from, to, 0, from.length, 0);</span>
+<span class="fc" id="L113">  }</span>
+
+
+  /**
+   * check whether n is in the set
+   * @param n check whether n is in the set
+   * @return true if n is in the set otherwise false
+   */
+  @Override
+  public Boolean contains(Integer n) {
+<span class="fc bfc" id="L123" title="All 2 branches covered.">    for (int i = 0; i &lt; this.size; i++){</span>
+<span class="fc bfc" id="L124" title="All 2 branches covered.">      if (this.items[i].equals(n)){</span>
+<span class="fc" id="L125">        return true;</span>
+      }
+    }
+<span class="fc" id="L128">      return false;</span>
+  }
+
+  /**
+   * Remove an element in the set
+   * @param n remove n in the set
+   */
+  @Override
+  public SetOfIntegers remove(Integer n) {
+<span class="fc bfc" id="L137" title="All 2 branches covered.">    if (this.contains(n)) {</span>
+<span class="fc" id="L138">      int newSize = this.size - NUM_SLOTS;</span>
+<span class="fc" id="L139">      int idx = 0;</span>
+<span class="fc" id="L140">      Integer[] newItems = new Integer[newSize];</span>
+<span class="pc bpc" id="L141" title="1 of 2 branches missed.">      for (int i = 0; i &lt; this.size; i++){</span>
+<span class="fc bfc" id="L142" title="All 2 branches covered.">        if (!this.items[i].equals(n)){</span>
+<span class="fc" id="L143">          newItems[i] = this.items[i];</span>
+        }else{
+<span class="fc" id="L145">          idx = i;</span>
+<span class="fc" id="L146">          break;</span>
+        }
+      }
+<span class="fc bfc" id="L149" title="All 2 branches covered.">      for (int j = idx; j &lt; this.size - idx - 1; j++){</span>
+<span class="fc" id="L150">        newItems[j] = this.items[j+1];</span>
+      }
+<span class="fc" id="L152">      this.items = newItems;</span>
+<span class="fc" id="L153">      this.size--;</span>
+<span class="fc" id="L154">      return new SetOfIntegers(this.items, this.size);</span>
+    }
+    else{
+<span class="fc" id="L157">      return this;</span>
+    }
+  }
+
+  /**
+   * The number of items in the set
+   * @return the number of items in the set
+   */
+  @Override
+  public int size() {
+<span class="fc" id="L167">    return this.size;</span>
+  }
+
+  /**
+   * Check whether two sets are the same
+   * @param set another set
+   * @return true if two sets are the same, otherwise false
+   */
+  private boolean sameItems(SetOfIntegers set){
+<span class="fc bfc" id="L176" title="All 2 branches covered.">    for (int i = 0; i &lt; this.size; i++){</span>
+<span class="pc bpc" id="L177" title="2 of 4 branches missed.">      if (!set.contains(this.items[i]) || i &gt;= set.items.length)</span>
+<span class="nc" id="L178">        return false;</span>
+    }
+<span class="fc" id="L180">    return true;</span>
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L185" title="All 2 branches covered.">    if (this == o) return true;</span>
+<span class="pc bpc" id="L186" title="2 of 4 branches missed.">    if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L187">    SetOfIntegers that = (SetOfIntegers) o;</span>
+<span class="pc bpc" id="L188" title="1 of 4 branches missed.">    return size == that.size &amp;&amp; this.sameItems(that);</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L193">    int result = Objects.hash(size);</span>
+<span class="fc" id="L194">    result = 31 * result;</span>
+<span class="pc bpc" id="L195" title="1 of 2 branches missed.">    for (int i = 0; i &lt; this.size; i++)</span>
+<span class="nc" id="L196">      result += Objects.hash(this.items[i]);</span>
+<span class="fc" id="L197">    return result;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

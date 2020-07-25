@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="p1.CustomerProcessorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-22T20:43:31" hostname="Jingjings-MacBook-Pro.local" time="0.02">
+  <properties/>
+  <testcase name="noCustomers" classname="p1.CustomerProcessorTest" time="0.015"/>
+  <testcase name="countCustomers" classname="p1.CustomerProcessorTest" time="0.002"/>
+  <testcase name="moreThanOneCustomers" classname="p1.CustomerProcessorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

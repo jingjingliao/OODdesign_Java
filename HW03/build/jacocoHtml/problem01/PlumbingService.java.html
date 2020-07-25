@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PlumbingService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW03</a> &gt; <a href="index.source.html" class="el_package">problem01</a> &gt; <span class="el_source">PlumbingService.java</span></div><h1>PlumbingService.java</h1><pre class="source lang-java linenums">package problem01;
+
+import java.util.Objects;
+
+/**
+ * Representing a plumbing service, including propertyAddress, propertySize, hasMonthlyService,
+ *  * previouslyNumberOfService, numberOfLicensedEmployee, whether work is complex
+ */
+public class PlumbingService extends AbstractSpecialistService {
+  private static final int PERMIT_FEE = 20;
+
+  /**
+   * Contructs a plumbing service
+   * @param propertyAddress - property address
+   * @param propertySize - property size, (small, medium and large)
+   * @param hasMonthlyService - whether it has monthly service
+   * @param previouslyNumberOfService - the number of previous service
+   * @param numberOfLicensedEmployee - the number of licensed employee
+   * @param isComplex - whether the work is complex or not
+   * @throws OutOfMaximumException throw an exception
+   */
+  public PlumbingService(String propertyAddress, PropertySize propertySize,
+      boolean hasMonthlyService, int previouslyNumberOfService, int numberOfLicensedEmployee,
+      boolean isComplex) throws OutOfMaximumException {
+<span class="fc" id="L25">    super(propertyAddress, propertySize, hasMonthlyService, previouslyNumberOfService,</span>
+        numberOfLicensedEmployee, isComplex);
+<span class="fc" id="L27">    this.permittingFee = PERMIT_FEE;</span>
+<span class="fc" id="L28">  }</span>
+
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L32" title="All 2 branches covered.">    if (this == o)</span>
+<span class="fc" id="L33">      return true;</span>
+<span class="pc bpc" id="L34" title="1 of 4 branches missed.">    if (o == null || getClass() != o.getClass())</span>
+<span class="fc" id="L35">      return false;</span>
+<span class="fc" id="L36">    PlumbingService service = (PlumbingService) o;</span>
+<span class="pc bpc" id="L37" title="1 of 2 branches missed.">    return Objects.equals(getPropertyAddress(), service.getPropertyAddress()) &amp;&amp;</span>
+<span class="pc bpc" id="L38" title="1 of 4 branches missed.">        Objects.equals(getPropertySize(), service.getPropertySize()) &amp;&amp;</span>
+        hasMonthlyService == service.hasMonthlyService &amp;&amp;
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">        previouslyNumberOfService == service.getPreviouslyNumberOfService() &amp;&amp;</span>
+<span class="pc bpc" id="L41" title="1 of 2 branches missed.">        isComplex == service.isComplex() &amp;&amp;</span>
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">        numberOfLicensedEmployee == service.getNumberOfLicensedEmployee();</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L47">    return Objects.hash(getPropertyAddress(), getPropertySize(), hasMonthlyService,</span>
+<span class="fc" id="L48">        getPreviouslyNumberOfService(), isComplex, getNumberOfLicensedEmployee());</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L53">    return &quot;PlumbingService{&quot; +</span>
+        &quot;numberOfLicensedEmployee=&quot; + numberOfLicensedEmployee +
+        &quot;, isComplex=&quot; + isComplex +
+        &quot;, permittingFee=&quot; + permittingFee +
+        &quot;, propertyAddress='&quot; + propertyAddress + '\'' +
+        &quot;, propertySize=&quot; + propertySize +
+        &quot;, hasMonthlyService=&quot; + hasMonthlyService +
+        &quot;, previouslyNumberOfService=&quot; + previouslyNumberOfService +
+        &quot;, Before Discount Calculate Price = &quot; +
+<span class="fc" id="L62">        String.format(&quot;%.2f&quot;, this.beforeDiscountCalculatePrice()) +</span>
+<span class="fc" id="L63">        &quot;, Total Price = &quot; + String.format(&quot;%.2f&quot;, this.calculatePrice()) +</span>
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

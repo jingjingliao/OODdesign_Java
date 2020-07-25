@@ -1,0 +1,11 @@
+-classpath '/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab04/build/classes/java/main:/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab04/build/resources/main'
+-d '/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab04/build/docs/javadoc'
+-doctitle 'Lab04 1.0-SNAPSHOT API'
+-quiet 
+-windowtitle 'Lab04 1.0-SNAPSHOT API'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab04/src/main/java/problem0102/Train.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab04/src/main/java/problem0102/FleetManager.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab04/src/main/java/problem0102/Bus.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab04/src/main/java/problem0102/Vehicle.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab04/src/main/java/problem0102/TripReport.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab04/src/main/java/problem0102/Boat.java'

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PriorityQueue.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW06-1</a> &gt; <a href="index.source.html" class="el_package">problem01</a> &gt; <span class="el_source">PriorityQueue.java</span></div><h1>PriorityQueue.java</h1><pre class="source lang-java linenums">package problem01;
+
+import java.util.Objects;
+
+/**
+ * An immutable Priority Queue
+ */
+public class PriorityQueue implements IPriorityQueue {
+  private final ILinkedList pq;
+
+  /**
+   * Private constructor for an empty Priority Queue.
+   */
+<span class="fc" id="L14">  private PriorityQueue(){</span>
+<span class="fc" id="L15">    this.pq = new EmptyNode();</span>
+<span class="fc" id="L16">  }</span>
+
+  /**
+   * Private constructor for an Priority Queue that contains elements.
+   * @param element The elements in the Priority Queue.
+   */
+<span class="fc" id="L22">  private PriorityQueue(ILinkedList element){</span>
+<span class="fc" id="L23">    this.pq = element;</span>
+<span class="fc" id="L24">  }</span>
+
+  /**
+   * Creat an empty Priority Queue
+   * @return an empty Priority Queue
+   */
+  public static PriorityQueue creatEmpty(){
+<span class="fc" id="L31">    return new PriorityQueue();</span>
+  }
+
+  /**
+   * Check whether the priority queue is empty
+   * @return true if it is empty, otherwise false
+   */
+  @Override
+  public Boolean isEmpty() {
+<span class="fc" id="L40">    return this.pq.count().equals(0);</span>
+  }
+
+  /**
+   * Gets the number of items in the priority queue.
+   * @return The number of items in the priority queue.
+   */
+  @Override
+  public Integer size() {
+<span class="fc" id="L49">    return this.pq.count();</span>
+  }
+
+  /**
+   * Add a priority and value into a list, make it a non-increasing priority queue. If the inserted elements that have
+   * the same priority with the first element, insert it to the head of the list
+   * @param priority priority to add to the priority queue
+   * @param value value to add to the priority queue
+   * @return a new priority queue with new priority and value
+   */
+  @Override
+  public IPriorityQueue add(Integer priority, String value) {
+<span class="fc" id="L61">    ILinkedList element = this.pq.insert(priority, value);</span>
+<span class="fc" id="L62">    return new PriorityQueue(element);</span>
+  }
+
+  /**
+   * returns the String at the front of the priority queue if the Queue is not empty.
+   * @return The String at the front of the priority queue, if the Queue is not empty.
+   * @throws EmptyPriorityQueueException EmptyPriorityQueueException if the priority queue is empty.
+   */
+  @Override
+  public String peek() throws EmptyPriorityQueueException {
+<span class="fc bfc" id="L72" title="All 2 branches covered.">    if (this.isEmpty()){</span>
+<span class="fc" id="L73">      throw new EmptyPriorityQueueException();</span>
+    }
+<span class="fc" id="L75">    return this.pq.getValue();</span>
+  }
+
+  /**
+   * Removes and returns the String at the front of the priority queue if the priority queue is not empty.
+   * @return A copy of the priority queue without the removed item..
+   * @throws EmptyPriorityQueueException EmptyPriorityQueueException if the priority queue is empty.
+   */
+  @Override
+  public IPriorityQueue pop() throws EmptyPriorityQueueException {
+<span class="pc bpc" id="L85" title="1 of 2 branches missed.">    if (this.isEmpty()){</span>
+<span class="fc" id="L86">      throw new EmptyPriorityQueueException();</span>
+    } else {
+<span class="nc" id="L88">      return new PriorityQueue(this.pq.getRest());</span>
+    }
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L94" title="All 2 branches covered.">    if (this == o) return true;</span>
+<span class="pc bpc" id="L95" title="1 of 4 branches missed.">    if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L96">    PriorityQueue that = (PriorityQueue) o;</span>
+<span class="fc" id="L97">    return Objects.equals(pq, that.pq);</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L102">    return Objects.hash(pq);</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L107">    return &quot;PriorityQueue{&quot; +</span>
+        &quot;pq=&quot; + pq +
+        '}';
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

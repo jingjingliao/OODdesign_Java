@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.8.0" timestamp="2020-01-13T22:45:51.821">
+<file name="/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW01/src/main/java/problem1/Vehicle.java">
+<violation beginline="8" endline="8" begincolumn="17" endcolumn="19" rule="FieldNamingConventions" ruleset="Code Style" package="problem1" class="Vehicle" variable="VIN" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The field name 'VIN' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="8" endline="8" begincolumn="17" endcolumn="19" rule="VariableNamingConventions" ruleset="Code Style" package="problem1" class="Vehicle" variable="VIN" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'VIN' starts with uppercase character.
+</violation>
+<violation beginline="19" endline="19" begincolumn="24" endcolumn="26" rule="FormalParameterNamingConventions" ruleset="Code Style" package="problem1" class="Vehicle" method="Vehicle" variable="VIN" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#formalparameternamingconventions" priority="1">
+The method parameter name 'VIN' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="19" endline="19" begincolumn="24" endcolumn="26" rule="VariableNamingConventions" ruleset="Code Style" package="problem1" class="Vehicle" method="Vehicle" variable="VIN" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'VIN' starts with uppercase character.
+</violation>
+<violation beginline="51" endline="51" begincolumn="28" endcolumn="30" rule="FormalParameterNamingConventions" ruleset="Code Style" package="problem1" class="Vehicle" method="setVIN" variable="VIN" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#formalparameternamingconventions" priority="1">
+The method parameter name 'VIN' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="51" endline="51" begincolumn="28" endcolumn="30" rule="VariableNamingConventions" ruleset="Code Style" package="problem1" class="Vehicle" method="setVIN" variable="VIN" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'VIN' starts with uppercase character.
+</violation>
+</file>
+</pmd>

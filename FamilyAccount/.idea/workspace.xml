@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3bd97c2a-4628-458c-8fe0-9cdaab27602c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/InvalidArgumentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/InvalidArgumentException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/MainRE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/MainRE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/compatatorAndIterator/Swimmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/compatatorAndIterator/Swimmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/compatatorAndIterator/SwimmerIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/compatatorAndIterator/SwimmerIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab07/src/main/java/problem01/FrequencyCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab07/src/main/java/problem01/FrequencyCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab08/src/main/java/problem01/TrendingTopics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab08/src/main/java/problem01/TrendingTopics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final-exam/src/main/java/p3/Traveler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../final-exam/src/main/java/p3/Traveler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final-exam/src/main/java/p3/TripRecommender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../final-exam/src/main/java/p3/TripRecommender.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1bNhniwlMFIlAIV0df5ImLBNjbC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="FamilyAccount.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3bd97c2a-4628-458c-8fe0-9cdaab27602c" name="Default Changelist" comment="" />
+      <created>1588478628096</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588478628096</updated>
+      <workItem from="1588478632961" duration="8663000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1140" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1588483476178">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1140" y="211" key="#com.intellij.ide.util.MemberChooser/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1588483476178" />
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom" timestamp="1588564867112">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1588525010124" />
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1588564867112" />
+    <state width="1398" height="202" key="GridCell.Tab.0.center" timestamp="1588564867112">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1588525010123" />
+    <state width="1398" height="202" key="GridCell.Tab.0.center/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1588564867112" />
+    <state width="1398" height="202" key="GridCell.Tab.0.left" timestamp="1588564867111">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1588525010123" />
+    <state width="1398" height="202" key="GridCell.Tab.0.left/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1588564867111" />
+    <state width="1398" height="202" key="GridCell.Tab.0.right" timestamp="1588564867112">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1588525010124" />
+    <state width="1398" height="202" key="GridCell.Tab.0.right/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1588564867112" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1588564866583">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1588564866583" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1588564866582">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.center/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1588564866582" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1588564866582">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.left/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1588564866582" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1588564866582">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.right/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1588564866582" />
+    <state x="654" y="474" key="com.intellij.ide.util.TipDialog" timestamp="1588478632802">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="654" y="474" key="com.intellij.ide.util.TipDialog/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1588478632802" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/view/View.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

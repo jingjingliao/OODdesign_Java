@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TemplateDataReader.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW08</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">TemplateDataReader.java</span></div><h1>TemplateDataReader.java</h1><pre class="source lang-java linenums">import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * Represents TemplateDataReader which reads template file and extract useful information
+ */
+public class TemplateDataReader implements IDataReader{
+    protected Set&lt;String&gt; tags;
+    protected List&lt;String&gt; template;
+    private static final String PATTERN = &quot;(\\[\\[)([^]]*)(]])&quot;;
+
+    /**
+     * Constructs a TemplateDataReader
+     */
+<span class="fc" id="L24">    public TemplateDataReader() {</span>
+<span class="fc" id="L25">        this.tags = new HashSet&lt;&gt;();</span>
+<span class="fc" id="L26">        this.template =  new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L27">    }</span>
+
+    /**
+     * Read the file and extract information in tags and template
+     * @param templateLocation the file location that we want to read
+     * @throws Exception throw exception if file is not found or IOE errors
+     */
+    @Override
+    public void read(String templateLocation) throws Exception {
+<span class="fc" id="L36">        try (BufferedReader inputFile = new BufferedReader(new FileReader(templateLocation))){</span>
+            String line;
+<span class="fc bfc" id="L38" title="All 2 branches covered.">            while ((line = inputFile.readLine()) != null) {</span>
+<span class="fc" id="L39">                Pattern pattern = Pattern.compile(PATTERN);</span>
+<span class="fc" id="L40">                Matcher m = pattern.matcher(line);</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">                while (m.find()){</span>
+<span class="fc" id="L42">                    this.tags.add(m.group(2));</span>
+                }
+<span class="fc" id="L44">                this.template.add(line);</span>
+<span class="fc" id="L45">            }</span>
+<span class="fc" id="L46">        } catch (FileNotFoundException fnfe) {</span>
+<span class="fc" id="L47">            throw new FileNotFoundException(&quot;OOPS! A file was not found&quot;);</span>
+<span class="nc" id="L48">        } catch (IOException ioe) {</span>
+<span class="nc" id="L49">            throw new IOException(&quot;Something went wrong!&quot;);</span>
+<span class="fc" id="L50">        }</span>
+<span class="fc" id="L51">    }</span>
+
+    @Override
+    public boolean equals(Object o) {
+<span class="fc bfc" id="L55" title="All 2 branches covered.">        if (this == o) return true;</span>
+<span class="pc bpc" id="L56" title="2 of 4 branches missed.">        if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L57">        TemplateDataReader that = (TemplateDataReader) o;</span>
+<span class="pc bpc" id="L58" title="3 of 4 branches missed.">        return tags == that.tags &amp;&amp;</span>
+            template == that.template;
+    }
+
+    @Override
+    public int hashCode() {
+<span class="fc" id="L64">        return Objects.hash(this.tags, this.template);</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="fc" id="L69">        return &quot;TemplateDataReader{&quot; +</span>
+            &quot;tags=&quot; + tags +
+            &quot;, template=&quot; + template +
+            '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="application.task.ReadCSVTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-04-07T20:53:26" hostname="Jingjings-MacBook-Pro.local" time="0.093">
+  <properties/>
+  <testcase name="executeNullTodoList" classname="application.task.ReadCSVTest" time="0.025"/>
+  <testcase name="createSubTaskFailed" classname="application.task.ReadCSVTest" time="0.001"/>
+  <testcase name="execute" classname="application.task.ReadCSVTest" time="0.047"/>
+  <testcase name="testToString" classname="application.task.ReadCSVTest" time="0.001"/>
+  <testcase name="executeNotEmptyTodoList" classname="application.task.ReadCSVTest" time="0.001"/>
+  <testcase name="createSubTask" classname="application.task.ReadCSVTest" time="0.001"/>
+  <testcase name="assignCommands" classname="application.task.ReadCSVTest" time="0.001"/>
+  <testcase name="testHashCode" classname="application.task.ReadCSVTest" time="0.003"/>
+  <testcase name="testEquals" classname="application.task.ReadCSVTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

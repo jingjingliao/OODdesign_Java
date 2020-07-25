@@ -1,0 +1,9 @@
+-classpath '/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab01/build/classes/java/main:/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab01/build/resources/main'
+-d '/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab01/build/docs/javadoc'
+-doctitle 'Lab01 1.0-SNAPSHOT API'
+-quiet 
+-windowtitle 'Lab01 1.0-SNAPSHOT API'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab01/src/main/java/Address.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab01/src/main/java/Person.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab01/src/main/java/Email.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab01/src/main/java/Author.java'

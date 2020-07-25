@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Musician.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Lab03</a> &gt; <a href="index.source.html" class="el_package">problem01</a> &gt; <span class="el_source">Musician.java</span></div><h1>Musician.java</h1><pre class="source lang-java linenums">package problem01;
+
+import java.util.ArrayList;
+
+/**
+ * An immutable class representing the information of musician
+ */
+public class Musician extends ArtistsBasicInfo{
+  private String recordingCompany;
+  private String lastRecordAlbum;
+
+  /**
+   * Constructs for musician class
+   * @param name name
+   * @param age age
+   * @param genres genres
+   * @param awards awards
+   * @param recordingCompany recording company
+   * @param lastRecordAlbum last record album
+   * @throws InvalidAgeException if age is invalid, throw an exception
+   */
+  public Musician(Name name, int age, ArrayList&lt;String&gt; genres,
+      ArrayList&lt;String&gt; awards, String recordingCompany, String lastRecordAlbum)
+      throws InvalidAgeException {
+<span class="fc" id="L25">    super(name, age, genres, awards);</span>
+<span class="fc" id="L26">    this.recordingCompany = recordingCompany;</span>
+<span class="fc" id="L27">    this.lastRecordAlbum = lastRecordAlbum;</span>
+<span class="fc" id="L28">  }</span>
+
+  /**
+   * Get recording company
+   * @return recording company
+   */
+  public String getRecordingCompany() {
+<span class="fc" id="L35">    return recordingCompany;</span>
+  }
+
+  /**
+   * Get last record album
+   * @return  last record album
+   */
+  public String getLastRecordAlbum() {
+<span class="fc" id="L43">    return lastRecordAlbum;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

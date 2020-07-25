@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW08</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums"><span class="nc" id="L1">public class Main {</span>
+  public static void main(String[] args) throws Exception {
+<span class="nc" id="L3">    String emailKey = CommandLineParser.EMAIL + CommandLineParser.TEMPLATE;</span>
+<span class="nc" id="L4">    String letterKey = CommandLineParser.LETTER + CommandLineParser.TEMPLATE;</span>
+<span class="nc" id="L5">    String outputKey = CommandLineParser.OUTPUT_DIR;</span>
+<span class="nc" id="L6">    String csvKey = CommandLineParser.CSV_FILE;</span>
+<span class="nc" id="L7">    String USAGE = &quot;Usage:\n&quot;</span>
+        + &quot;--email Generate email messages. If this option is provided, then\n&quot;
+        + &quot;--email-template must also be provided.\n&quot;
+        + &quot;--email-template &lt;path/to/file&gt; A filename for the email template.\n&quot;
+        + &quot;--letter Generate letters. If this option is provided, then\n&quot;
+        + &quot;--letter-template must also be provided.\n&quot;
+        + &quot;--letter-template &lt;path/to/file&gt; A filename for the letter\n&quot;
+        + &quot;template.\n&quot;
+        + &quot;--output-dir &lt;path/to/folder&gt; The folder to store all generated\n&quot;
+        + &quot;files. This option is required.\n&quot;
+        + &quot;--csv-file &lt;path/to/folder&gt; The CSV file to process. This option is\n&quot;
+        + &quot;required.\n&quot;
+        + &quot;Examples:\n&quot;
+        + &quot;--email --email-template email-template.txt --output-dir emails\n&quot;
+        + &quot;--csv-file customer.csv\n&quot;
+        + &quot;--letter --letter-template letter-template.txt --output-dir letters\n&quot;
+        + &quot;--csv-file customer.csv&quot;;
+
+    try {
+<span class="nc" id="L26">      CommandLineParser parser = new CommandLineParser(args);</span>
+<span class="nc" id="L27">      parser.parse();</span>
+
+<span class="nc bnc" id="L29" title="All 4 branches missed.">      if (parser.emailRequired || parser.letterRequired) {</span>
+
+<span class="nc" id="L31">        CSVDataReader csvReader = new CSVDataReader();</span>
+<span class="nc" id="L32">        csvReader.read(parser.paths.get(csvKey));</span>
+
+<span class="nc bnc" id="L34" title="All 2 branches missed.">        if (parser.emailRequired) {</span>
+<span class="nc" id="L35">          TemplateDataReader emailTemplateReader = new TemplateDataReader();</span>
+<span class="nc" id="L36">          emailTemplateReader.read(parser.paths.get(emailKey));</span>
+<span class="nc" id="L37">          Generator g = new Generator();</span>
+<span class="nc" id="L38">          g.generate(emailTemplateReader, csvReader, parser.paths.get(outputKey) + &quot;/email-folder&quot;);</span>
+<span class="nc" id="L39">          System.out.println(&quot;Emails created successfully.&quot;);</span>
+        }
+<span class="nc bnc" id="L41" title="All 2 branches missed.">        if (parser.letterRequired) {</span>
+<span class="nc" id="L42">          TemplateDataReader letterTemplateReader = new TemplateDataReader();</span>
+<span class="nc" id="L43">          letterTemplateReader.read(parser.paths.get(letterKey));</span>
+<span class="nc" id="L44">          Generator g = new Generator();</span>
+<span class="nc" id="L45">          g.generate(letterTemplateReader, csvReader, parser.paths.get(outputKey) + &quot;/letter-folder&quot;);</span>
+<span class="nc" id="L46">          System.out.println(&quot;Letters created successfully.&quot;);</span>
+        }
+      }
+<span class="nc" id="L49">    } catch (Exception e) {</span>
+<span class="nc" id="L50">      System.out.println(&quot;ERROR: &quot; + e.getMessage());</span>
+<span class="nc" id="L51">      System.out.println(USAGE);</span>
+<span class="nc" id="L52">    }</span>
+<span class="nc" id="L53">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

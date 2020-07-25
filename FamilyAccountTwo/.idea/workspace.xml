@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2fc2d63f-a55b-4729-8a77-c0aa63e9323c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../FamilyAccount/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FamilyAccount/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/HomebakeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/InvalidArgumentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/InvalidArgumentException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/MainRE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/commandLineProcessor/MainRE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/compatatorAndIterator/Swimmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/compatatorAndIterator/Swimmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/compatatorAndIterator/SwimmerIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional Practice/src/main/java/finalCheatSheet/compatatorAndIterator/SwimmerIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab07/src/main/java/problem01/FrequencyCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab07/src/main/java/problem01/FrequencyCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab08/src/main/java/problem01/TrendingTopics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab08/src/main/java/problem01/TrendingTopics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final-exam/src/main/java/p3/Traveler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../final-exam/src/main/java/p3/Traveler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../final-exam/src/main/java/p3/TripRecommender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../final-exam/src/main/java/p3/TripRecommender.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1bQWe2oqAYL5Zv8POLRyZl3HQ8P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2fc2d63f-a55b-4729-8a77-c0aa63e9323c" name="Default Changelist" comment="" />
+      <created>1588564889559</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588564889559</updated>
+      <workItem from="1588564891223" duration="2482000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

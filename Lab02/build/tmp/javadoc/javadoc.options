@@ -1,0 +1,9 @@
+-classpath '/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab02/build/classes/java/main:/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab02/build/resources/main'
+-d '/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab02/build/docs/javadoc'
+-doctitle 'Lab02 1.0-SNAPSHOT API'
+-quiet 
+-windowtitle 'Lab02 1.0-SNAPSHOT API'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab02/src/main/java/problem1/Athlete.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab02/src/main/java/problem1/Name.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab02/src/main/java/problem1/BaseballPlayer.java'
+'/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab02/src/main/java/problem1/Runner.java'

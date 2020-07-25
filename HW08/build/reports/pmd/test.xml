@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.8.0" timestamp="2020-03-25T11:26:15.654">
+<file name="/Users/jingjing/Documents/Team_repo_Chia_Wei_Lin_Chuan_Ti_Chen_Jingjing_Liao/HW08/src/test/java/CSVDataReaderTest.java">
+<violation beginline="68" endline="68" begincolumn="17" endcolumn="39" rule="EqualsNull" ruleset="Error Prone" class="CSVDataReaderTest" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#equalsnull" priority="1">
+Avoid using equals() to compare against null
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/Team_repo_Chia_Wei_Lin_Chuan_Ti_Chen_Jingjing_Liao/HW08/src/test/java/CommandLineParserTest.java">
+<violation beginline="189" endline="189" begincolumn="21" endcolumn="39" rule="EqualsNull" ruleset="Error Prone" class="CommandLineParserTest" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#equalsnull" priority="1">
+Avoid using equals() to compare against null
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/Team_repo_Chia_Wei_Lin_Chuan_Ti_Chen_Jingjing_Liao/HW08/src/test/java/GeneratorTest.java">
+<violation beginline="146" endline="146" begincolumn="17" endcolumn="30" rule="EqualsNull" ruleset="Error Prone" class="GeneratorTest" method="testEqual" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#equalsnull" priority="1">
+Avoid using equals() to compare against null
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/Team_repo_Chia_Wei_Lin_Chuan_Ti_Chen_Jingjing_Liao/HW08/src/test/java/TemplateDataReaderTest.java">
+<violation beginline="48" endline="50" begincolumn="10" endcolumn="3" rule="MethodNamingConventions" ruleset="Code Style" class="TemplateDataReaderTest" method="IOEException" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#methodnamingconventions" priority="1">
+The JUnit 4 test method name 'IOEException' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+</file>
+</pmd>

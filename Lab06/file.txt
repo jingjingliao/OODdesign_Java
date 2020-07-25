@@ -1,0 +1,4 @@
+Name, Address, Phone Number, City
+Bill Gates:1 Infinite Loop:(425)524-1234:Redmond
+Bonnie Dunbar:Museum of Flight:206.764.5720:Seattle
+Ichiro:Seattle Mariners:206-346-4000:Seattle

@@ -1,0 +1,30 @@
+#ƒid   text                                              completed      due            priority       category                      
+#ƒ1    Cleaning                                          false          ?              ?              Work                          
+#ƒ2    Cleaning                                          false          ?              ?              Work                          
+$ƒid   text                                              completed      due            priority       category                      
+$ƒ1    Cleaning                                          false          ?              ?              Work                          
+$ƒ2    Cleaning                                          false          ?              ?              Work                          
+%ƒid   text                                              completed      due            priority       category                      
+%ƒ1    Cleaning                                          false          ?              ?              Work                          
+%ƒ2    Cleaning                                          false          ?              ?              Work                          
+'ƒid   text                                              completed      due            priority       category                      
+'ƒ1    Cleaning                                          false          ?              ?              Work                          
+'ƒ2    Cleaning                                          false          ?              ?              Work                          
+(ƒid   text                                              completed      due            priority       category                      
+(ƒ1    Cleaning                                          false          ?              ?              Work                          
+(ƒ2    Cleaning                                          false          ?              ?              Work                          
+)$No todo satisfies these conditions.
+-/ƒid   text                                              completed      due            priority       category                      
+-/ƒ1    Finish HW9                                        true           3/22/2020      1              school                        
+-/ƒ2    Mail passport                                     true           12/28/2020     ?              ?                             
+-/ƒ3    Study for finals                                  false          ?              2              school                        
+-/ƒ4    Clean the house                                   false          3/22/2020      3              home                          
+-/ƒ5    Buy yarn for blanket, stuffed toy                 true           ?              ?              home                          
+-/ƒ6    finish                                            false          ?              ?              ?                             
+-/ƒ7    finish                                            false          ?              ?              ?                             
+-/ƒ8    finish                                            false          ?              ?              ?                             
+-/ƒ9    finish                                            false          ?              ?              ?                             
+-/ƒ10   finish                                            false          ?              ?              ?                             
+-/ƒ11   finish                                            false          ?              ?              ?                             
+-/ƒ12   finish                                            false          ?              ?              ?                             
+-/ƒ13   finish                                            false          ?              ?              ?                             

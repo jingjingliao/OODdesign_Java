@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ReservationService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW10</a> &gt; <a href="index.source.html" class="el_package">controller</a> &gt; <span class="el_source">ReservationService.java</span></div><h1>ReservationService.java</h1><pre class="source lang-java linenums">package controller;
+
+import static java.lang.Integer.MAX_VALUE;
+import static java.lang.StrictMath.abs;
+
+import java.util.List;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import model.Row;
+import model.Theater;
+import view.ShowSeats;
+
+
+/**
+ * Reservation service class
+ */
+<span class="nc" id="L18">public class ReservationService {</span>
+<span class="fc" id="L19">  private  static String WHEELCHAIR_QUERY = &quot;Do you need wheelchair accessible seats?&quot;;</span>
+<span class="fc" id="L20">  private static String NAME_QUERY = &quot;What's your name?&quot;;</span>
+  private static boolean needWheelChairSeat;
+  private static String validName;
+<span class="fc" id="L23">  private static Scanner scanner = new Scanner(System.in);</span>
+  private static int reserveNum;
+
+  /**
+   * Reservation method
+   * @param theater reserve seats in this specific theater
+   * @param reserveInfo reservation information
+   */
+  public static void service(Theater theater, String reserveInfo){
+<span class="pc bpc" id="L32" title="1 of 2 branches missed.">    if (reserveInfo.equals(&quot;show&quot;))</span>
+<span class="fc" id="L33">        ShowSeats.showSeats(theater.getRows());</span>
+    else {
+<span class="nc" id="L35">      reserveNum =  Integer.parseInt(reserveInfo);</span>
+<span class="nc" id="L36">      System.out.println(NAME_QUERY);</span>
+<span class="nc" id="L37">      String customerName = scanner.nextLine();</span>
+<span class="nc" id="L38">      checkCustomerName(customerName);</span>
+
+<span class="nc" id="L40">      System.out.println(WHEELCHAIR_QUERY);</span>
+<span class="nc" id="L41">      String wheelChairAnswer = scanner.nextLine();</span>
+<span class="nc" id="L42">      isValidwheelChairAnswer(wheelChairAnswer);</span>
+<span class="nc" id="L43">      reserveSeats(validName, needWheelChairSeat, reserveNum, theater);</span>
+    }
+<span class="fc" id="L45">  }</span>
+
+  /**
+   * Check whether the customer's name is valid
+   * @param customerName customer's name
+   */
+  private static void checkCustomerName(String customerName){
+<span class="nc" id="L52">      String newName = &quot;&quot;;</span>
+<span class="nc" id="L53">      Pattern p = Pattern.compile(&quot;([\\w\\s]+)&quot;);</span>
+<span class="nc" id="L54">      Matcher m = p.matcher(customerName);</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">      while (m.find())</span>
+<span class="nc" id="L56">        newName += m.group(1);</span>
+<span class="nc bnc" id="L57" title="All 2 branches missed.">      if (newName.equals(&quot;&quot;))</span>
+<span class="nc" id="L58">        validName = &quot;Anonymous Name&quot;;</span>
+      else
+<span class="nc" id="L60">       validName = newName;</span>
+<span class="nc" id="L61">    }</span>
+
+
+  /**
+   * Check whether the answer for wheelchair seat is valid or not
+   * @param wheelChairAnswer the answer for wheelchair seat
+   */
+  private static void isValidwheelChairAnswer(String wheelChairAnswer){
+<span class="nc bnc" id="L69" title="All 2 branches missed.">    if (wheelChairAnswer.toUpperCase().equals(&quot;YES&quot;))</span>
+<span class="nc" id="L70">      needWheelChairSeat = true;</span>
+<span class="nc bnc" id="L71" title="All 2 branches missed.">    else if (wheelChairAnswer.toUpperCase().equals(&quot;NO&quot;))</span>
+<span class="nc" id="L72">      needWheelChairSeat = false;</span>
+    else {
+<span class="nc" id="L74">      System.out.println(&quot;Unkown command, please enter 'YES' or 'NO'&quot;);</span>
+    }
+<span class="nc" id="L76">  }</span>
+
+  /**
+   * Reserve seats
+   * @param customerName customerName
+   * @param needWheelChairSeat needWheelChairSeat
+   * @param reserveNum reserveNum
+   * @param theater theater
+   */
+  private static void reserveSeats(String customerName, boolean needWheelChairSeat, int reserveNum, Theater theater) {
+<span class="nc" id="L86">    List&lt;Row&gt; rows = theater.getRows();</span>
+<span class="nc bnc" id="L87" title="All 4 branches missed.">    boolean mustReserveWheelChairSeat = needWheelChairSeat || nomarlChairFull(rows);</span>
+<span class="nc" id="L88">    Row bestRow = getBestRow(rows, reserveNum, mustReserveWheelChairSeat, theater);</span>
+<span class="nc bnc" id="L89" title="All 2 branches missed.">    if (bestRow == null)</span>
+<span class="nc" id="L90">      ShowSeats.noSeatsAvailable();</span>
+    else {
+<span class="nc" id="L92">      int count = reserveNum;</span>
+<span class="nc bnc" id="L93" title="All 4 branches missed.">      for (int i = 0; i &lt; bestRow.getSeats().length &amp;&amp; count &gt; 0; i++)</span>
+<span class="nc bnc" id="L94" title="All 2 branches missed.">        if (bestRow.getSeats()[i].getReserveFor() == null){</span>
+<span class="nc" id="L95">          bestRow.getSeats()[i].setReserveFor(customerName);</span>
+<span class="nc" id="L96">          count -= 1;</span>
+        }
+<span class="nc" id="L98">      ShowSeats.sucessfullyReserveSeat(reserveNum, customerName, bestRow.getRowNum(), theater.getTheaterName());</span>
+    }
+<span class="nc" id="L100">  }</span>
+
+  /**
+   * Check whether the normal chairs are full
+   * @param rows the rows in the theater
+   * @return true if it is full, otherwise false
+   */
+  private static boolean nomarlChairFull(List&lt;Row&gt; rows){
+<span class="nc bnc" id="L108" title="All 2 branches missed.">    for (int i = 0; i &lt; rows.size(); i++){</span>
+<span class="nc bnc" id="L109" title="All 2 branches missed.">      if (!rows.get(i).isWheelchairRow()){</span>
+<span class="nc bnc" id="L110" title="All 2 branches missed.">        if (rows.get(i).getSeats()[i].getReserveFor() == null)</span>
+<span class="nc" id="L111">          return false;</span>
+      }
+    }
+<span class="nc" id="L114">    return true;</span>
+  }
+
+  /**
+   * Get the best row
+   * @param rows rows
+   * @param reserveNum reserveNum
+   * @param mustReserveWheelChairSeat boolean whether it must reserve wheelchair seat
+   * @param theater theater
+   * @return the best row
+   */
+  private static Row getBestRow(List&lt;Row&gt; rows, int reserveNum, boolean mustReserveWheelChairSeat, Theater theater) {
+<span class="nc" id="L126">    int mid = rows.size() / 2 + 1;</span>
+<span class="nc bnc" id="L127" title="All 2 branches missed.">    if (mustReserveWheelChairSeat)</span>
+<span class="nc" id="L128">      return getBestRowForWheelChair(rows, mid);</span>
+    else
+<span class="nc" id="L130">      return getBestRowForNormalChair(rows, mid);</span>
+  }
+
+  /**
+   * Get the best row for wheelChair
+   * @param rows rows
+   * @param mid the mid row
+   * @return the best row for wheel chair
+   */
+  private static Row getBestRowForWheelChair(List&lt;Row&gt; rows, int mid) {
+<span class="nc" id="L140">    int bestInt = MAX_VALUE;</span>
+<span class="nc" id="L141">    Row bestRow = null;</span>
+<span class="nc bnc" id="L142" title="All 2 branches missed.">    for (Row row : rows) {</span>
+<span class="nc bnc" id="L143" title="All 6 branches missed.">      if (row.isWheelchairRow() &amp;&amp; abs(row.getRowNum() - mid) &lt;= bestInt &amp;&amp; isRowReservable(row, reserveNum)) {</span>
+<span class="nc" id="L144">        bestInt = abs(row.getRowNum() - mid);</span>
+<span class="nc" id="L145">        bestRow = row;</span>
+      }
+<span class="nc" id="L147">    }</span>
+<span class="nc" id="L148">    return bestRow;</span>
+  }
+
+  /**
+   * Get the best row for normal chair
+   * @param rows rows
+   * @param mid the mid row
+   * @return the best row for normal chair
+   */
+  private static Row getBestRowForNormalChair(List&lt;Row&gt; rows, int mid){
+<span class="nc" id="L158">    int bestInt = MAX_VALUE;</span>
+<span class="nc" id="L159">    Row bestRow = null;</span>
+<span class="nc bnc" id="L160" title="All 2 branches missed.">    for (Row row : rows) {</span>
+<span class="nc bnc" id="L161" title="All 6 branches missed.">      if (abs(row.getRowNum() - mid) &lt;= bestInt &amp;&amp; isRowReservable(row, reserveNum) &amp;&amp; !row.isWheelchairRow()) {</span>
+<span class="nc" id="L162">        bestInt = abs(row.getRowNum() - mid);</span>
+<span class="nc" id="L163">        bestRow = row;</span>
+      }
+<span class="nc" id="L165">    }</span>
+<span class="nc" id="L166">      return bestRow;</span>
+  }
+
+
+  /**
+   * Check whether the row can be reserved
+   * @param row row
+   * @param reserveNum reserveNum
+   * @return true if we can reserve this row
+   */
+  private static boolean isRowReservable(Row row, int reserveNum){
+<span class="nc" id="L177">    int count = 0;</span>
+<span class="nc bnc" id="L178" title="All 2 branches missed.">    for (int i = 0; i &lt; row.getSeats().length; i++){</span>
+<span class="nc bnc" id="L179" title="All 2 branches missed.">      if (row.getSeats()[i].getReserveFor() == null)</span>
+<span class="nc" id="L180">        count += 1;</span>
+    }
+<span class="nc bnc" id="L182" title="All 2 branches missed.">    return reserveNum &lt;= count;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

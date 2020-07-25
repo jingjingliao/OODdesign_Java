@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem01.linkedlist01.ILinkedListTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-02-18T19:16:08" hostname="Jingjings-MacBook-Pro.local" time="0.007">
+  <properties/>
+  <testcase name="equals" classname="problem01.linkedlist01.ILinkedListTest" time="0.0"/>
+  <testcase name="insert" classname="problem01.linkedlist01.ILinkedListTest" time="0.0"/>
+  <testcase name="getItem" classname="problem01.linkedlist01.ILinkedListTest" time="0.001"/>
+  <testcase name="getRest" classname="problem01.linkedlist01.ILinkedListTest" time="0.0"/>
+  <testcase name="count" classname="problem01.linkedlist01.ILinkedListTest" time="0.0"/>
+  <testcase name="hashcode" classname="problem01.linkedlist01.ILinkedListTest" time="0.0"/>
+  <testcase name="testImmutability" classname="problem01.linkedlist01.ILinkedListTest" time="0.001"/>
+  <testcase name="getValue" classname="problem01.linkedlist01.ILinkedListTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

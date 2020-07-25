@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CSVDataReader.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW08</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">CSVDataReader.java</span></div><h1>CSVDataReader.java</h1><pre class="source lang-java linenums">import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * Represents a CSV data reader which reads the CSV file and extracts the tags and information
+ */
+public class CSVDataReader implements IDataReader {
+
+  protected List&lt;String&gt; tags;
+  protected List&lt;List&lt;String&gt;&gt; info;
+  private static final String PATTERN = &quot;\&quot;([^\&quot;]*)\&quot;&quot;;
+
+  /**
+   * Constructs a CSVDataReader
+   */
+<span class="fc" id="L25">  public CSVDataReader() {</span>
+<span class="fc" id="L26">    this.tags = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L27">    this.info = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L28">  }</span>
+
+  /**
+   * Helper function that extract content between quotes by regular expression
+   * @param line the line that I need to read and extract
+   * @return an arraylist which contains correct information that extract from the line by given
+   * RE pattern
+   * @throws InvalidContentException throw exception if the given line is null
+   */
+  private List&lt;String&gt; extractContentBetweenQuotes(String line) throws InvalidContentException {
+<span class="fc bfc" id="L38" title="All 2 branches covered.">    if (line == null)</span>
+<span class="fc" id="L39">      throw new InvalidContentException(&quot;No content!&quot;);</span>
+<span class="fc" id="L40">    List&lt;String&gt; content = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L41">    Pattern pattern = Pattern.compile(PATTERN);</span>
+<span class="fc" id="L42">    Matcher m = pattern.matcher(line);</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">    while (m.find()) {</span>
+<span class="fc" id="L44">      content.add(m.group(1));</span>
+    }
+<span class="fc" id="L46">    return content;</span>
+  }
+
+  /**
+   * Helper function that checks whether contain duplicate elements in tags
+   * @param tags an arraylist that represents the elements in the first line of CSV file
+   * @return true if it contains duplicate, otherwise return false
+   */
+  private boolean containDuplicate(List&lt;String&gt; tags){
+<span class="fc" id="L55">    Set setTags = new HashSet(tags);</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">    return tags.size() != setTags.size();</span>
+  }
+
+  /**
+   * Read the file and extract information in tags and info
+   * @param csvLocation the file location that we want to read
+   * @throws Exception throw exception if the line is null or contain duplicate info
+   */
+  @Override
+  public void read(String csvLocation) throws Exception {
+<span class="fc" id="L66">    try (BufferedReader inputFile = new BufferedReader(new FileReader(csvLocation))) {</span>
+      String line;
+<span class="fc" id="L68">      line = inputFile.readLine();</span>
+<span class="fc" id="L69">      this.tags = this.extractContentBetweenQuotes(line);</span>
+<span class="fc bfc" id="L70" title="All 2 branches covered.">      if (this.containDuplicate(this.tags)){</span>
+<span class="fc" id="L71">        throw new InvalidContentException(&quot;There is no content or contains duplicate content.&quot;);</span>
+      }
+<span class="fc bfc" id="L73" title="All 2 branches covered.">      while ((line = inputFile.readLine()) != null) {</span>
+        List&lt;String&gt; newLine;
+<span class="fc" id="L75">        newLine = this.extractContentBetweenQuotes(line);</span>
+<span class="fc" id="L76">        this.info.add(newLine);</span>
+<span class="fc" id="L77">      }</span>
+<span class="fc" id="L78">    } catch (FileNotFoundException fnfe) {</span>
+<span class="fc" id="L79">      throw new FileNotFoundException(&quot;OOPS! A file was not found&quot;);</span>
+<span class="nc" id="L80">    } catch (IOException ioe) {</span>
+<span class="nc" id="L81">      throw new IOException(&quot;Something went wrong!&quot;);</span>
+<span class="fc" id="L82">    }</span>
+<span class="fc" id="L83">  }</span>
+
+
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L88" title="All 2 branches covered.">    if (this == o) return true;</span>
+<span class="pc bpc" id="L89" title="1 of 4 branches missed.">    if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L90">    CSVDataReader that = (CSVDataReader) o;</span>
+<span class="pc bpc" id="L91" title="3 of 4 branches missed.">    return tags == that.tags &amp;&amp;</span>
+        info == that.info;
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L97">    return Objects.hash(this.tags, this.info);</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L102">    return &quot;CSVDataReader{&quot; +</span>
+        &quot;tags=&quot; + tags +
+        &quot;, info=&quot; + info +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

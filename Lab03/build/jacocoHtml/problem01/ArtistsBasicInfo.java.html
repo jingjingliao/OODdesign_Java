@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ArtistsBasicInfo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Lab03</a> &gt; <a href="index.source.html" class="el_package">problem01</a> &gt; <span class="el_source">ArtistsBasicInfo.java</span></div><h1>ArtistsBasicInfo.java</h1><pre class="source lang-java linenums">package problem01;
+
+import java.util.ArrayList;
+
+/**
+ * An abstract class representing the information of artists
+ */
+public abstract class ArtistsBasicInfo implements ReceiveAward {
+  protected Name name;
+  protected int age;
+  protected ArrayList&lt;String&gt; genres;
+  protected ArrayList&lt;String&gt; awards;
+
+  /**
+   * Constructs for artist basic info class
+   * @param name name
+   * @param age age
+   * @param genres genres
+   * @param awards awards
+   * @throws InvalidAgeException if age is invalid, throw an exception
+   */
+  public ArtistsBasicInfo(Name name, int age, ArrayList&lt;String&gt; genres, ArrayList&lt;String&gt; awards)
+<span class="fc" id="L23">      throws InvalidAgeException{</span>
+<span class="fc" id="L24">    this.name = name;</span>
+<span class="fc" id="L25">    this.age = this.validAge(age);</span>
+<span class="fc" id="L26">    this.genres = genres;</span>
+<span class="fc" id="L27">    this.awards = awards;</span>
+<span class="fc" id="L28">  }</span>
+
+  /**
+   * Check whether the age is valid or not
+   * @param age age
+   * @return age if it is valid, otherwise throw an exception
+   * @throws InvalidAgeException if age is invalid, throw an exception
+   */
+  private int validAge(int age) throws InvalidAgeException{
+<span class="fc bfc" id="L37" title="All 4 branches covered.">    if (age &gt;= 0 &amp;&amp; age &lt;= 128){</span>
+<span class="fc" id="L38">      return age;</span>
+    }else{
+<span class="fc" id="L40">      throw new InvalidAgeException();</span>
+    }
+  }
+
+  /**
+   * Get name
+   * @return name
+   */
+  public Name getName(){
+<span class="fc" id="L49">    return this.name;</span>
+  }
+
+  /**
+   * Get age
+   * @return age
+   */
+  public int getAge(){
+<span class="fc" id="L57">    return this.age;</span>
+  }
+
+  /**
+   * Get genres
+   * @return a list of genres
+   */
+  public ArrayList&lt;String&gt; getGenres(){
+<span class="fc" id="L65">    return this.genres;</span>
+  }
+
+  /**
+   * Get awards
+   * @return a list of awards
+   */
+  public ArrayList&lt;String&gt; getAwards(){
+<span class="fc" id="L73">    return this.awards;</span>
+  }
+
+  /**
+   * add awards
+   * @param award  add awards
+   * @return new list of awards
+   */
+  public ArrayList&lt;String&gt; artistReceivedAward(String award) {
+<span class="fc" id="L82">    this.awards.add(award);</span>
+<span class="fc" id="L83">    return this.awards;</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Field.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW07</a> &gt; <a href="index.source.html" class="el_package">onlineForms</a> &gt; <span class="el_source">Field.java</span></div><h1>Field.java</h1><pre class="source lang-java linenums">package onlineForms;
+
+import java.util.Objects;
+
+/**
+ * Represents a Field class
+ * @param &lt;T&gt; The object type of Field's value corresponding to Field's validator
+ */
+public class Field&lt;T&gt; {
+    /**
+     * Field's label
+     */
+    private String label;
+    /**
+     * Field's value
+     */
+    private T value;
+    /**
+     * Indicates if this Field is required
+     */
+    private boolean required;
+    /**
+     * Field's validator
+     */
+    private IValidator validator;
+
+    /**
+     * Constructs a Field given its label, if it is required and its validator; Field's value is set to null by default
+     * @param label Field's label
+     * @param required Indicates if this Field is required
+     * @param validator Field's validator
+     */
+<span class="nc" id="L33">    public Field(String label, boolean required, IValidator validator) {</span>
+<span class="nc" id="L34">        this.label = label;</span>
+<span class="nc" id="L35">        this.value = null;</span>
+<span class="nc" id="L36">        this.required = required;</span>
+<span class="nc" id="L37">        this.validator = validator;</span>
+<span class="nc" id="L38">    }</span>
+
+    /**
+     * Update the ​Field​’s ​value​ if the ​input​ is valid according to the ​validator​
+     * @param value the value to be updated
+     * @throws InvalidInputException thrown if ​input​ is not valid
+     */
+    public void updateValue(T value) throws InvalidInputException{
+<span class="nc bnc" id="L46" title="All 2 branches missed.">        if(!validator.isValid(value)) throw new InvalidInputException(&quot;Invalid input!&quot;);</span>
+<span class="nc" id="L47">        this.value = value;</span>
+<span class="nc" id="L48">    }</span>
+
+    /**
+     * Returns this Field's value
+     * @return this Field's value
+     */
+    public T getValue() {
+<span class="nc" id="L55">        return this.value;</span>
+    }
+
+    /**
+     * Checks if the ​Field​ has been filled out
+     * @return true if the ​Field​ is required and its value meets the requirements specified by its validator, or the ​
+     * Field​ is optional (it does not matter what the ​Field​’s value is in this case; false otherwise
+     */
+    public boolean isFilled(){
+<span class="nc bnc" id="L64" title="All 6 branches missed.">        return (this.required &amp;&amp; this.validator.isValid(value)) || !this.required;</span>
+    }
+
+    @Override
+    public boolean equals(Object o) {
+<span class="nc bnc" id="L69" title="All 2 branches missed.">        if (this == o) return true;</span>
+<span class="nc bnc" id="L70" title="All 4 branches missed.">        if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="nc" id="L71">        Field&lt;?&gt; field = (Field&lt;?&gt;) o;</span>
+<span class="nc bnc" id="L72" title="All 2 branches missed.">        return required == field.required &amp;&amp;</span>
+<span class="nc bnc" id="L73" title="All 2 branches missed.">                label.equals(field.label) &amp;&amp;</span>
+<span class="nc bnc" id="L74" title="All 2 branches missed.">                Objects.equals(value, field.value) &amp;&amp;</span>
+<span class="nc bnc" id="L75" title="All 2 branches missed.">                validator.equals(field.validator);</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="nc" id="L80">        return Objects.hash(label, value, required, validator);</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="nc" id="L85">        return &quot;Field{&quot; +</span>
+                &quot;label='&quot; + label + '\'' +
+                &quot;, value=&quot; + value +
+                &quot;, required=&quot; + required +
+                &quot;, validator=&quot; + validator +
+                '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

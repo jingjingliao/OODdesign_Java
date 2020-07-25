@@ -1,0 +1,18 @@
+"id","text","completed","due","priority","category"
+"1","Finish HW9","true","3/22/2020","1","school"
+"2","Mail passport","true","12/28/2020","?","?"
+"3","Study for finals","false","?","2","school"
+"4","Clean the house","false","3/22/2020","3","home"
+<<<<<<< HEAD
+"5","Buy yarn for blanket, stuffed toy","true","?","?","home"
+"6","finish","false","?","?","?"
+"7","finish","false","?","?","?"
+"8","finish","false","?","?","?"
+"9","finish","false","?","?","?"
+"10","finish","false","?","?","?"
+"11","finish","false","?","?","?"
+"12","finish","false","?","?","?"
+"13","finish","false","?","?","?"
+=======
+"5","Buy yarn for blanket, stuffed toy","true","?","?","home"
+>>>>>>> master

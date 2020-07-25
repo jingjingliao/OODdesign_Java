@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.8.0" timestamp="2020-02-05T22:25:43.254">
+<file name="/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/Lab04/src/test/java/problem0102/FleetManagerTest.java">
+<violation beginline="39" endline="42" begincolumn="10" endcolumn="3" rule="MethodNamingConventions" ruleset="Code Style" package="problem0102" class="FleetManagerTest" method="BoatDrive" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#methodnamingconventions" priority="1">
+The JUnit 4 test method name 'BoatDrive' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="63" endline="63" begincolumn="15" endcolumn="22" rule="SuspiciousEqualsMethodName" ruleset="Error Prone" package="problem0102" class="FleetManagerTest" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#suspiciousequalsmethodname" priority="2">
+The method name and parameter number are suspiciously close to equals(Object)
+</violation>
+<violation beginline="64" endline="64" begincolumn="17" endcolumn="35" rule="EqualsNull" ruleset="Error Prone" package="problem0102" class="FleetManagerTest" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#equalsnull" priority="1">
+Avoid using equals() to compare against null
+</violation>
+</file>
+</pmd>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ElementNode.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW06-1</a> &gt; <a href="index.source.html" class="el_package">problem01</a> &gt; <span class="el_source">ElementNode.java</span></div><h1>ElementNode.java</h1><pre class="source lang-java linenums">package problem01;
+
+import java.util.Objects;
+
+/**
+ * The element node which includes Integer item, String value and the rest
+ */
+public class ElementNode implements ILinkedList {
+  private Integer item;
+  private String value;
+  private ILinkedList rest;
+
+  /**
+   * @param item Integer item
+   * @param value String value
+   * @param rest the rest of linkedlist
+   */
+<span class="fc" id="L18">  public ElementNode(Integer item, String value, ILinkedList rest){</span>
+<span class="fc" id="L19">    this.item = item;</span>
+<span class="fc" id="L20">    this.value = value;</span>
+<span class="fc" id="L21">    this.rest = rest;</span>
+<span class="fc" id="L22">  }</span>
+
+  /**
+   * Gets the number of elements in the list.
+   *
+   * @return THe number of elements in the list.
+   */
+  @Override
+  public Integer count() {
+<span class="fc" id="L31">    return 1 + this.rest.count();</span>
+  }
+
+  /**
+   * Get the item at the head of the list.
+   *
+   * @return The integer at the head of the list or null if the list is empty.
+   */
+  @Override
+  public Integer getItem() {
+<span class="fc" id="L41">    return this.item;</span>
+  }
+
+  /**
+   * Get the value at the head of the list.
+   *
+   * @return The String at the head of the list or null if the list is empty.
+   */
+  @Override
+  public String getValue() {
+<span class="fc" id="L51">    return this.value;</span>
+  }
+
+  /**
+   * Get the rest of the list.
+   *
+   * @return The rest of the list or null if the list is empty.
+   */
+  @Override
+  public ILinkedList getRest() {
+<span class="fc" id="L61">    return this.rest;</span>
+  }
+
+
+  /**
+   * insert an element into the list and make it a non-increasing linkedlist. If the inserted elements that have
+   * the same priority with the first element, insert it to the head of the list
+   * @param priority the priority item to insert
+   * @param value    the value item to insert
+   * @return a new linkedlist
+   */
+  @Override
+  public ILinkedList insert(Integer priority, String value) {
+<span class="fc bfc" id="L74" title="All 2 branches covered.">    if (this.getItem() &lt;= priority){</span>
+<span class="fc" id="L75">      ILinkedList thisCopy = new ElementNode(this.item, this.value, this.rest);</span>
+<span class="fc" id="L76">      return new ElementNode(priority, value, thisCopy);</span>
+    } else {
+<span class="fc" id="L78">      return new ElementNode(this.item, this.value, this.rest.insert(priority, value));</span>
+    }
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="pc bpc" id="L84" title="1 of 2 branches missed.">    if (this == o) return true;</span>
+<span class="fc bfc" id="L85" title="All 4 branches covered.">    if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L86">    ElementNode that = (ElementNode) o;</span>
+<span class="fc bfc" id="L87" title="All 2 branches covered.">    return Objects.equals(item, that.item) &amp;&amp;</span>
+<span class="pc bpc" id="L88" title="1 of 2 branches missed.">        Objects.equals(value, that.value) &amp;&amp;</span>
+<span class="pc bpc" id="L89" title="1 of 2 branches missed.">        Objects.equals(rest, that.rest);</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L94">    return Objects.hash(item, value, rest);</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L99">    return &quot;ElementNode{&quot; +</span>
+        &quot;item=&quot; + item +
+        &quot;value=&quot; + value +
+        &quot;, rest=&quot; + rest +
+        '}';
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

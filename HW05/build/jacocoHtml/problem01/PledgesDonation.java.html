@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PledgesDonation.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW05</a> &gt; <a href="index.source.html" class="el_package">problem01</a> &gt; <span class="el_source">PledgesDonation.java</span></div><h1>PledgesDonation.java</h1><pre class="source lang-java linenums">package problem01;
+
+import java.time.LocalDate;
+import java.util.Objects;
+
+/**
+ * Pledge donation class records pledge donation
+ */
+public class PledgesDonation extends AbstractDonation {
+  private LocalDate actualDonationDate;
+  private static final double ZERO_AMOUNT = 0;
+
+  /**
+   * Create a constructor with amount, actualDonationDate is null
+   * @param amount amount
+   */
+  public PledgesDonation(double amount) {
+<span class="fc" id="L18">    super(amount);</span>
+<span class="fc" id="L19">    this.actualDonationDate = null;</span>
+<span class="fc" id="L20">  }</span>
+
+  /**
+   * Create a constructor with amount, creation time and actualDonationDate
+   * @param amount amount
+   * @param creationTime creation time
+   * @param actualDonationDate actualDonationDate
+   * @throws InvalidDateException if date is invalid throw an exception
+   */
+  public PledgesDonation(double amount, LocalDate creationTime, LocalDate actualDonationDate)
+      throws InvalidDateException {
+<span class="fc" id="L31">    super(amount, creationTime);</span>
+<span class="fc" id="L32">    this.actualDonationDate = this.validDonationDate(actualDonationDate);</span>
+<span class="fc" id="L33">  }</span>
+
+  /**
+   * Create a constructor with amount and actualDonationDate, creation time is current time
+   * @param amount amount
+   * @param actualDonationDate actualDonationDate
+   * @throws InvalidDateException if date is invalid throw an exception
+   */
+  public PledgesDonation(double amount, LocalDate actualDonationDate) throws InvalidDateException {
+<span class="fc" id="L42">    super(amount);</span>
+<span class="fc" id="L43">    this.actualDonationDate = this.validDonationDate(actualDonationDate);</span>
+<span class="fc" id="L44">  }</span>
+
+  /**
+   * Get actual donation date
+   * @return actual donation date
+   */
+  public LocalDate getActualDonationDate() {
+<span class="fc" id="L51">    return actualDonationDate;</span>
+  }
+
+  /**
+   * Set actual donation date
+   * @param actualDonationDate new actual donation date
+   * @throws InvalidDateException if date is invalid throw an exception
+   */
+  public void setActualDonationDate(LocalDate actualDonationDate) throws InvalidDateException {
+<span class="fc" id="L60">    this.actualDonationDate = this.validChangeDonationDay(actualDonationDate);</span>
+<span class="fc" id="L61">  }</span>
+
+  /**
+   * Helper function that check whether the date is valid
+   * @param actualDonationDate actualDonationDate
+   * @return actualDonationDate if it is valid, otherwise throw an exception
+   * @throws InvalidDateException if date is invalid throw an exception
+   */
+  private LocalDate validDonationDate(LocalDate actualDonationDate) throws InvalidDateException {
+<span class="fc" id="L70">    LocalDate now = LocalDate.now();</span>
+<span class="pc bpc" id="L71" title="1 of 2 branches missed.">    if (actualDonationDate.isAfter(now)){</span>
+<span class="fc" id="L72">      return actualDonationDate;</span>
+    }else{
+<span class="nc" id="L74">      throw new InvalidDateException();</span>
+    }
+  }
+
+
+  /**
+   * Helper function that check whether the change date is valid
+   * @return true if it is valid, otherwise false
+   */
+  private boolean isValidTochangeTheDate(){
+<span class="fc" id="L84">    LocalDate now = LocalDate.now();</span>
+<span class="fc bfc" id="L85" title="All 2 branches covered.">    if (this.getActualDonationDate() != null){</span>
+<span class="fc" id="L86">      return now.isBefore(this.getActualDonationDate());</span>
+    } else {
+<span class="fc" id="L88">      return true;</span>
+    }
+  }
+
+
+  /**
+   * Helper function that check whether the change date is valid
+   * @param newDonationDay  newDonationDay
+   * @return new donation date if it is valid, otherwise throw an exception
+   * @throws InvalidDateException if date is invalid throw an exception
+   */
+  private LocalDate validChangeDonationDay(LocalDate newDonationDay) throws InvalidDateException {
+<span class="fc" id="L100">    LocalDate now = LocalDate.now();</span>
+<span class="pc bpc" id="L101" title="1 of 2 branches missed.">    if (this.isValidTochangeTheDate()){</span>
+<span class="fc bfc" id="L102" title="All 2 branches covered.">      if (newDonationDay.isAfter(now)){</span>
+<span class="fc" id="L103">        return newDonationDay;</span>
+      }else{
+<span class="fc" id="L105">        throw new InvalidDateException();</span>
+      }
+    } else{
+<span class="nc" id="L108">      throw new InvalidDateException();</span>
+    }
+  }
+
+  /**
+   * Calculate the total amount
+   * @param year calculate the total amount in a specific year
+   * @return total amount in a specific year
+   */
+  @Override
+  public double getTotalAmount(int year) {
+<span class="fc bfc" id="L119" title="All 2 branches covered.">    if (year == this.getActualDonationDate().getYear()){</span>
+<span class="fc" id="L120">      return this.getAmount();</span>
+    }else{
+<span class="fc" id="L122">      return ZERO_AMOUNT;</span>
+    }
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L128" title="All 2 branches covered.">    if (this == o)</span>
+<span class="fc" id="L129">      return true;</span>
+<span class="pc bpc" id="L130" title="1 of 4 branches missed.">    if (o == null || getClass() != o.getClass())</span>
+<span class="fc" id="L131">      return false;</span>
+<span class="fc" id="L132">    PledgesDonation pledgesDonation = (PledgesDonation) o;</span>
+<span class="fc bfc" id="L133" title="All 2 branches covered.">    return Objects.equals(getCreationTime(), pledgesDonation.getCreationTime()) &amp;&amp;</span>
+<span class="pc bpc" id="L134" title="1 of 2 branches missed.">        Objects.equals(getActualDonationDate(), pledgesDonation.getActualDonationDate()) &amp;&amp;</span>
+<span class="pc bpc" id="L135" title="1 of 2 branches missed.">        Double.compare(getAmount(), pledgesDonation.getAmount()) == 0;</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L140">    return Objects.hash(getCreationTime(), getAmount(), getActualDonationDate());</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L145">    return &quot;PledgesDonation{&quot; +</span>
+<span class="fc" id="L146">        &quot;amount='&quot; + this.getAmount() + '\'' +</span>
+<span class="fc" id="L147">        &quot;creation time='&quot; + this.getCreationTime() + '\'' +</span>
+<span class="fc" id="L148">        &quot;Actual DonationDate='&quot; + this.getActualDonationDate() + '\'' +</span>
+        '}';
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

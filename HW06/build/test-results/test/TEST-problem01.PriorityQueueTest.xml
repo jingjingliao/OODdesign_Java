@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem01.PriorityQueueTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-02-18T19:16:08" hostname="Jingjings-MacBook-Pro.local" time="0.016">
+  <properties/>
+  <testcase name="invalidPop" classname="problem01.PriorityQueueTest" time="0.008"/>
+  <testcase name="addSize" classname="problem01.PriorityQueueTest" time="0.001"/>
+  <testcase name="testToString" classname="problem01.PriorityQueueTest" time="0.0"/>
+  <testcase name="invalidPeek" classname="problem01.PriorityQueueTest" time="0.0"/>
+  <testcase name="add" classname="problem01.PriorityQueueTest" time="0.0"/>
+  <testcase name="peek" classname="problem01.PriorityQueueTest" time="0.0"/>
+  <testcase name="size" classname="problem01.PriorityQueueTest" time="0.001"/>
+  <testcase name="isNotEmpty" classname="problem01.PriorityQueueTest" time="0.0"/>
+  <testcase name="testHashCode" classname="problem01.PriorityQueueTest" time="0.0"/>
+  <testcase name="testEquals" classname="problem01.PriorityQueueTest" time="0.001"/>
+  <testcase name="isEmpty" classname="problem01.PriorityQueueTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

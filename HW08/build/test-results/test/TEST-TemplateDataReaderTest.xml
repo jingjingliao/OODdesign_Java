@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TemplateDataReaderTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-03-25T18:26:10" hostname="Jingjings-MacBook-Pro.local" time="0.013">
+  <properties/>
+  <testcase name="readTestTemplate" classname="TemplateDataReaderTest" time="0.002"/>
+  <testcase name="testToString" classname="TemplateDataReaderTest" time="0.001"/>
+  <testcase name="IOEException" classname="TemplateDataReaderTest" time="0.0"/>
+  <testcase name="testHashCode" classname="TemplateDataReaderTest" time="0.0"/>
+  <testcase name="testEquals" classname="TemplateDataReaderTest" time="0.0"/>
+  <testcase name="fileNotFoundException" classname="TemplateDataReaderTest" time="0.001"/>
+  <testcase name="readTestTag" classname="TemplateDataReaderTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Time.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW01</a> &gt; <a href="index.source.html" class="el_package">problem2</a> &gt; <span class="el_source">Time.java</span></div><h1>Time.java</h1><pre class="source lang-java linenums">package problem2;
+
+/**
+ * This class represents the time which has hour, minutes and seconds
+ */
+public class Time {
+    private int hour;
+    private int minutes;
+    private int seconds;
+    private static final int MIN_TIME = 0;
+    private static final int MAX_HOUR = 23;
+    private static final int MAX_MINUTES_SECONDS = 59;
+    private static final int INVALID_TIME = -1;
+    private static final int HOUR_TO_SECOND = 3600;
+    private static final int HOUR_TO_MINUTES = 60;
+
+    /**
+     * Constructs a Time object and initializes it with the given hour, minutes and seconds
+     * @param hour hour of the time
+     * @param minutes minutes of the time
+     * @param seconds seconds of the time
+     */
+<span class="fc" id="L23">    public Time(int hour, int minutes, int seconds){</span>
+<span class="fc" id="L24">        this.hour = this.validHour(hour);</span>
+<span class="fc" id="L25">        this.minutes = this.validMinutes(minutes);</span>
+<span class="fc" id="L26">        this.seconds = this.validSeconds(seconds);</span>
+<span class="fc" id="L27">    }</span>
+
+    /**
+     * Helper method that ensures the hour is valid (within 0 and 23),
+     * if it is invalid, return -1
+     * @param hour hour of the time
+     * @return hour if it is valid, otherwise return -1
+     */
+    private int validHour(int hour) {
+<span class="fc bfc" id="L36" title="All 4 branches covered.">        if (hour &gt;= MIN_TIME &amp;&amp; hour &lt;= MAX_HOUR) {</span>
+<span class="fc" id="L37">            return hour;</span>
+        } else {
+<span class="fc" id="L39">            return INVALID_TIME;</span>
+        }
+    }
+
+    /**
+     * Helper method that ensures the minutes is valid (within 0 and 59),
+     * if it is invalid, return -1
+     * @param minutes minutes of the time
+     * @return minutes if it is valid, otherwise return -1
+     */
+    private int validMinutes(int minutes) {
+<span class="fc bfc" id="L50" title="All 4 branches covered.">        if (minutes &gt;= MIN_TIME &amp;&amp; minutes &lt;= MAX_MINUTES_SECONDS) {</span>
+<span class="fc" id="L51">            return minutes;</span>
+        } else {
+<span class="fc" id="L53">            return INVALID_TIME;</span>
+        }
+    }
+
+    /**
+     * Helper method that ensures the seconds is valid (within 0 and 59),
+     * if it is invalid, return -1
+     * @param seconds seconds of the time
+     * @return seconds if it is valid, otherwise return -1
+     */
+    private int validSeconds(int seconds) {
+<span class="fc bfc" id="L64" title="All 4 branches covered.">        if (seconds &gt;= MIN_TIME &amp;&amp; seconds &lt;= MAX_MINUTES_SECONDS) {</span>
+<span class="fc" id="L65">            return seconds;</span>
+        } else {
+<span class="fc" id="L67">            return INVALID_TIME;</span>
+        }
+    }
+
+    /**
+     * Get the hour of the time
+     * @return the hour of the time
+     */
+    public int getHour(){
+<span class="fc" id="L76">        return this.hour;</span>
+    }
+
+    /**
+     * Get the minutes of the time
+     * @return the minutes of the time
+     */
+    public int getMinutes(){
+<span class="fc" id="L84">        return this.minutes;</span>
+    }
+
+    /**
+     * Get the seconds of the time
+     * @return the seconds of the time
+     */
+    public int getSeconds(){
+<span class="fc" id="L92">        return this.seconds;</span>
+    }
+
+    /**
+     * Set the hour
+     * @param hour new hour
+     */
+    public void setHour(int hour){
+<span class="fc" id="L100">        this.hour = hour;</span>
+<span class="fc" id="L101">    }</span>
+
+    /**
+     * Set the minutes
+     * @param minutes new minutes
+     */
+    public void setMinutes(int minutes){
+<span class="fc" id="L108">        this.minutes = minutes;</span>
+<span class="fc" id="L109">    }</span>
+
+    /**
+     * Set the seconds
+     * @param seconds new seconds
+     */
+    public void setSeconds(int seconds){
+<span class="fc" id="L116">        this.seconds = seconds;</span>
+<span class="fc" id="L117">    }</span>
+
+    /**
+     * Helper function to convert the hour, minutes to seconds
+     * @return the total seconds
+     */
+    public int convertToSeconds(){
+<span class="fc" id="L124">        return this.hour * HOUR_TO_SECOND + this.minutes * HOUR_TO_MINUTES + this.seconds;</span>
+    }
+
+    /**
+     * The function to convert the total seconds to hour, minutes and seconds
+     * @param totalTime the total seconds
+     * @return time object with hour, minutes and seconds
+     */
+    public static Time convertToTime(int totalTime){
+<span class="fc" id="L133">        int hour = totalTime / HOUR_TO_SECOND;</span>
+<span class="fc" id="L134">        int minutes = (totalTime % HOUR_TO_SECOND) / HOUR_TO_MINUTES;</span>
+<span class="fc" id="L135">        int seconds = (totalTime % HOUR_TO_SECOND) % HOUR_TO_MINUTES;</span>
+<span class="fc" id="L136">        return new Time(hour, minutes, seconds);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

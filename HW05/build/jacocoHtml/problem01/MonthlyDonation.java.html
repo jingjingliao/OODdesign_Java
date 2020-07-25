@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MonthlyDonation.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW05</a> &gt; <a href="index.source.html" class="el_package">problem01</a> &gt; <span class="el_source">MonthlyDonation.java</span></div><h1>MonthlyDonation.java</h1><pre class="source lang-java linenums">package problem01;
+
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.Period;
+import java.util.Objects;
+
+/**
+ * Monthly donation class
+ */
+public class MonthlyDonation extends AbstractDonation {
+  private LocalDate cancellationDay;
+  private static final int ZERO_AMOUNT = 0;
+  private static final int MAX_MONTH = 12;
+  private static final int ONE_MORE_MONTH = 1;
+
+  /**
+   * Create a constructor with amount and creation time
+   * @param amount  amount
+   * @param creationTime creation time
+   */
+  public MonthlyDonation(int amount, LocalDate creationTime) {
+<span class="fc" id="L23">    super(amount, creationTime);</span>
+<span class="fc" id="L24">    this.cancellationDay = null;</span>
+<span class="fc" id="L25">  }</span>
+
+  /**
+   * Create a constructor with amount and creation time
+   * @param amount amount
+   */
+  public MonthlyDonation(int amount) {
+<span class="fc" id="L32">    super(amount);</span>
+<span class="fc" id="L33">    this.cancellationDay = null;</span>
+<span class="fc" id="L34">  }</span>
+
+  /**
+   * Get the cancellation day
+   * @return cancellation day
+   */
+  public LocalDate getCancellationDay() {
+<span class="fc" id="L41">    return this.cancellationDay;</span>
+  }
+
+  /**
+   * Set cancellation day
+   * @param cancellationDay cancellation day
+   * @throws InvalidDateException if the date is invalid, throw an exception
+   */
+  public void setCancellationDay(LocalDate cancellationDay) throws InvalidDateException {
+<span class="fc" id="L50">    this.cancellationDay = this.setValidCancellationDay(cancellationDay);</span>
+<span class="fc" id="L51">  }</span>
+
+  /**
+   * Helper function that check the cancellation day is valid or not
+   * @param cancellationDay cancellation date
+   * @return true if it is valid, otherwise false
+   */
+  private boolean isValidCancellationDay(LocalDate cancellationDay){
+<span class="fc" id="L59">    return  cancellationDay.isAfter(this.getCreationTime());</span>
+  }
+
+  /**
+   * Helper function that help to set the cancellation date
+   * @param cancellationDay cancellation date
+   * @return cancellation date if date is valid, otherwise throw an exception
+   * @throws InvalidDateException if the date is invalid, throw an exception
+   */
+  private  LocalDate setValidCancellationDay(LocalDate cancellationDay)
+      throws InvalidDateException {
+<span class="fc bfc" id="L70" title="All 2 branches covered.">    if (this.isValidCancellationDay(cancellationDay)){</span>
+<span class="fc" id="L71">      return cancellationDay;</span>
+    }else{
+<span class="fc" id="L73">      throw new InvalidDateException();</span>
+    }
+  }
+
+  /**
+   * Get total amount
+   * @param year calculate the total amount in a specific year
+   * @return total amount in a specific year
+   */
+  @Override
+  public double getTotalAmount(int year) {
+<span class="fc" id="L84">    int totalMonths = this.calculateMonth(year);</span>
+<span class="fc" id="L85">    return totalMonths * this.getAmount();</span>
+  }
+
+  /**
+   * Get months
+   * @param date1 date1
+   * @param date2 date2
+   * @return months
+   */
+  private int months(LocalDate date1, LocalDate date2){
+<span class="fc" id="L95">    Period period = Period.between(date1, date2);</span>
+<span class="fc" id="L96">    return period.getMonths() + ONE_MORE_MONTH;</span>
+  }
+
+  /**
+   * Helper function that get the total month
+   * @param year a given specific year
+   * @return valid total month
+   */
+  private int calculateMonth(int year){
+<span class="fc" id="L105">    int creationYear = this.getCreationTime().getYear();</span>
+<span class="fc bfc" id="L106" title="All 2 branches covered.">    if (this.getCancellationDay() != null){</span>
+<span class="fc" id="L107">      int cancellationYear = this.getCancellationDay().getYear();</span>
+<span class="fc bfc" id="L108" title="All 4 branches covered.">      if (creationYear &lt; year &amp;&amp; cancellationYear &gt; year){</span>
+<span class="fc" id="L109">        return MAX_MONTH;</span>
+<span class="pc bpc" id="L110" title="1 of 4 branches missed.">      }else if (creationYear &lt; year &amp;&amp; cancellationYear == year){</span>
+<span class="fc" id="L111">        return this.getCancellationDay().getMonthValue();</span>
+<span class="fc bfc" id="L112" title="All 4 branches covered.">      }else if (creationYear == year &amp;&amp; cancellationYear &gt; year){</span>
+<span class="fc" id="L113">        return MAX_MONTH - this.getCreationTime().getMonthValue() + ONE_MORE_MONTH;</span>
+<span class="fc bfc" id="L114" title="All 6 branches covered.">      }else if (creationYear == year &amp; cancellationYear == year){</span>
+<span class="fc" id="L115">        return this.months(this.getCreationTime(), this.getCancellationDay());</span>
+      }else{
+<span class="fc" id="L117">        return ZERO_AMOUNT;</span>
+      }
+    } else{
+<span class="pc bpc" id="L120" title="1 of 2 branches missed.">      if (creationYear &lt; year){</span>
+<span class="nc" id="L121">        return MAX_MONTH;</span>
+      }else{
+<span class="fc" id="L123">        return MAX_MONTH - this.getCreationTime().getMonthValue() + ONE_MORE_MONTH;</span>
+      }
+    }
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L130" title="All 2 branches covered.">    if (this == o)</span>
+<span class="fc" id="L131">      return true;</span>
+<span class="pc bpc" id="L132" title="1 of 4 branches missed.">    if (o == null || getClass() != o.getClass())</span>
+<span class="fc" id="L133">      return false;</span>
+<span class="fc" id="L134">    MonthlyDonation monthlyDonation = (MonthlyDonation) o;</span>
+<span class="fc bfc" id="L135" title="All 2 branches covered.">    return Objects.equals(getCreationTime(), monthlyDonation.getCreationTime()) &amp;&amp;</span>
+<span class="pc bpc" id="L136" title="1 of 2 branches missed.">        Objects.equals(getCancellationDay(), monthlyDonation.getCancellationDay()) &amp;&amp;</span>
+<span class="pc bpc" id="L137" title="1 of 2 branches missed.">        Double.compare(getAmount(), monthlyDonation.getAmount()) == 0;</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L142">    return Objects.hash(getCreationTime(), getAmount(), getCancellationDay());</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L147">    return &quot;MonthlyDonation{&quot; +</span>
+<span class="fc" id="L148">        &quot;amount='&quot; + this.getAmount() + '\'' +</span>
+<span class="fc" id="L149">        &quot;creation time='&quot; + this.getCreationTime() + '\'' +</span>
+<span class="fc" id="L150">        &quot;cancellation time='&quot; + this.getCancellationDay() + '\'' +</span>
+        '}';
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

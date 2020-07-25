@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.8.0" timestamp="2020-01-28T17:03:05.647">
+<file name="/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW03/src/test/java/problem01/WindowCleaningServiceTest.java">
+<violation beginline="68" endline="71" begincolumn="10" endcolumn="3" rule="MethodNamingConventions" ruleset="Code Style" package="problem01" class="WindowCleaningServiceTest" method="FloorNumBelowZero" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#methodnamingconventions" priority="1">
+The JUnit 4 test method name 'FloorNumBelowZero' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+</file>
+</pmd>

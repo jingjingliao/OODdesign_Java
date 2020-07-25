@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="926b105f-e292-412f-b1b0-a71d1c96703a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/CSVDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CSVDataReader.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW08" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW08" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW08" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW08" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW08" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Z0cLY4rJkOPuDNkVnYTTxLUzmr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.HW08 [check]">
+    <configuration name="CSVDataReaderTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;CSVDataReaderTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CSVDataReaderTest.IOEException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;CSVDataReaderTest.IOEException&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CSVDataReaderTest.testEquals" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;CSVDataReaderTest.testEquals&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="HW08 [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="check" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TemplateDataReaderTest.testEquals" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;TemplateDataReaderTest.testEquals&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.HW08 [check]" />
+        <item itemvalue="Gradle.CSVDataReaderTest.testEquals" />
+        <item itemvalue="Gradle.CSVDataReaderTest" />
+        <item itemvalue="Gradle.CSVDataReaderTest.IOEException" />
+        <item itemvalue="Gradle.TemplateDataReaderTest.testEquals" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="926b105f-e292-412f-b1b0-a71d1c96703a" name="Default Changelist" comment="" />
+      <created>1583962730353</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583962730353</updated>
+      <workItem from="1583962732066" duration="599000" />
+      <workItem from="1583979398565" duration="202000" />
+      <workItem from="1583982280141" duration="10707000" />
+      <workItem from="1584247836345" duration="19333000" />
+      <workItem from="1584483298745" duration="62000" />
+      <workItem from="1584483441036" duration="14854000" />
+      <workItem from="1584578267201" duration="55000" />
+      <workItem from="1584578374107" duration="103000" />
+      <workItem from="1584590893804" duration="226000" />
+      <workItem from="1584766969608" duration="364000" />
+      <workItem from="1584767561618" duration="8040000" />
+      <workItem from="1584855000596" duration="2167000" />
+      <workItem from="1585160640788" duration="74000" />
+      <workItem from="1585160743028" duration="2368000" />
+      <workItem from="1585178258924" duration="3388000" />
+      <workItem from="1585602636044" duration="787000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1584397012777">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="765" y="67" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1584397012777" />
+    <state x="408" y="204" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584578314949">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="408" y="204" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877@0.23.1440.877" timestamp="1584578314949" />
+    <state x="760" y="318" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584380459417">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="760" y="318" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1584380459417" />
+    <state width="427" height="466" key="DebuggerActiveHint" timestamp="1584575315514">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="427" height="466" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1584575315514" />
+    <state width="1398" height="178" key="GridCell.Tab.0.bottom" timestamp="1585171020300">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="178" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585171020300" />
+    <state width="1398" height="178" key="GridCell.Tab.0.center" timestamp="1585171020299">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="178" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1585171020299" />
+    <state width="1398" height="178" key="GridCell.Tab.0.left" timestamp="1585171020298">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="178" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1585171020298" />
+    <state width="1398" height="178" key="GridCell.Tab.0.right" timestamp="1585171020299">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="178" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1585171020299" />
+    <state width="1818" height="285" key="GridCell.Tab.1.bottom" timestamp="1584578212025">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1818" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584578212025" />
+    <state width="1818" height="285" key="GridCell.Tab.1.center" timestamp="1584578212025">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1818" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1584578212025" />
+    <state width="1818" height="285" key="GridCell.Tab.1.left" timestamp="1584578212024">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1818" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1584578212024" />
+    <state width="1818" height="285" key="GridCell.Tab.1.right" timestamp="1584578212025">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1818" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1584578212025" />
+    <state x="399" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1585160742980">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="399" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1585160742980" />
+    <state x="508" y="195" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1584574374768">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="508" y="195" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.877@0.23.1440.877" timestamp="1584574374768" />
+    <state x="402" y="284" key="extract.method.dialog" timestamp="1584377566081">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="402" y="284" key="extract.method.dialog/0.23.1440.877@0.23.1440.877" timestamp="1584377566081" />
+  </component>
+</project>

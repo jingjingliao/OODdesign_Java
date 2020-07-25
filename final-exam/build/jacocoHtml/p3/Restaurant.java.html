@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Restaurant.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final-exam</a> &gt; <a href="index.source.html" class="el_package">p3</a> &gt; <span class="el_source">Restaurant.java</span></div><h1>Restaurant.java</h1><pre class="source lang-java linenums">package p3;
+import java.util.Objects;
+
+/*
+ * Class Restaurant contains information about restaurant.
+ */
+public class Restaurant {
+
+  private String restaurantName;
+  private String address;
+  private String cuisine;
+
+  /*
+   * Constructor for object Restaurant.
+   * @param restaurantName - restaurant name, as a String
+   * @param address - restaurant address, as a String
+   * @param cuisine - attribute defining the dominant cuisine offered
+   * by the restaurant
+   */
+  public Restaurant(String restaurantName, String address,
+<span class="nc" id="L21">                    String cuisine) {</span>
+<span class="nc" id="L22">    this.restaurantName = restaurantName;</span>
+<span class="nc" id="L23">    this.address = address;</span>
+<span class="nc" id="L24">    this.cuisine = cuisine;</span>
+<span class="nc" id="L25">  }</span>
+
+  /*
+   * Getter for parameter restaurantsName.
+   * @return restaurantsName - String, representing a restaurant's name */
+  public String getRestaurantName() {
+<span class="nc" id="L31">    return restaurantName;</span>
+  }
+
+  /*
+   * Getter for parameter address.
+   * @return address - String, representing a restaurant's address */
+  public String getAddress() {
+<span class="nc" id="L38">    return address;</span>
+  }
+
+  /*
+   * Getter for parameter cuisine.
+   * @return cuisine - String representing the dominant
+   * cuisine offered by the restaurant */
+  public String getCuisine() {
+<span class="nc" id="L46">    return cuisine;</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

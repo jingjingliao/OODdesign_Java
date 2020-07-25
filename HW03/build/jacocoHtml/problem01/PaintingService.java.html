@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PaintingService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW03</a> &gt; <a href="index.source.html" class="el_package">problem01</a> &gt; <span class="el_source">PaintingService.java</span></div><h1>PaintingService.java</h1><pre class="source lang-java linenums">package problem01;
+
+import java.util.Objects;
+
+/**
+ *  Representing a cleaning service, including propertyAddress, propertySize, hasMonthlyService,
+ *  previouslyNumberOfService, numberOfPets
+ */
+public class PaintingService extends AbstractInteriorService {
+  private static final int NON_LARGE_PROPERTY_COMPLETING_TIME = 16;
+  private static final int LARGE_PROPERTY_COMPLETING_TIME = 24;
+
+  /**
+   * Contructs a painting service
+   * @param propertyAddress - property address
+   * @param propertySize - property size, (small, medium and large)
+   * @param hasMonthlyService - whether it has monthly service
+   * @param previouslyNumberOfService - the number of previous service
+   * @param numberOfPets - the number of pets
+   */
+  public PaintingService(String propertyAddress, PropertySize propertySize, boolean hasMonthlyService,
+      int previouslyNumberOfService, int numberOfPets){
+<span class="fc" id="L23">    super(propertyAddress, propertySize, hasMonthlyService, previouslyNumberOfService, numberOfPets);</span>
+<span class="fc" id="L24">  }</span>
+
+  /**
+   * Get complete time
+   * @return complete time
+   */
+  @Override
+  public int getCompleteTime() {
+<span class="fc bfc" id="L32" title="All 2 branches covered.">    switch (propertySize) {</span>
+      case SMALL:
+      case MEDIUM:
+<span class="fc" id="L35">        return NON_LARGE_PROPERTY_COMPLETING_TIME;</span>
+      default:
+<span class="fc" id="L37">        return LARGE_PROPERTY_COMPLETING_TIME;</span>
+    }
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L43" title="All 2 branches covered.">    if (this == o)</span>
+<span class="fc" id="L44">      return true;</span>
+<span class="pc bpc" id="L45" title="1 of 4 branches missed.">    if (o == null || getClass() != o.getClass())</span>
+<span class="fc" id="L46">      return false;</span>
+<span class="fc" id="L47">    PaintingService service = (PaintingService) o;</span>
+<span class="pc bpc" id="L48" title="1 of 2 branches missed.">    return Objects.equals(getPropertyAddress(), service.getPropertyAddress()) &amp;&amp;</span>
+<span class="pc bpc" id="L49" title="1 of 4 branches missed.">        Objects.equals(getPropertySize(), service.getPropertySize()) &amp;&amp;</span>
+        hasMonthlyService == service.hasMonthlyService &amp;&amp;
+<span class="pc bpc" id="L51" title="1 of 2 branches missed.">        getPreviouslyNumberOfService() == service.getPreviouslyNumberOfService() &amp;&amp;</span>
+<span class="pc bpc" id="L52" title="1 of 2 branches missed.">        getNumberOfPets() == service.getNumberOfPets();</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L57">    return Objects.hash(getPropertyAddress(), getPropertySize(), hasMonthlyService,</span>
+<span class="fc" id="L58">        getPreviouslyNumberOfService(), getNumberOfPets());</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L63">    return &quot;PaintingService{&quot; +</span>
+        &quot;numberOfPets=&quot; + numberOfPets +
+        &quot;, propertyAddress='&quot; + propertyAddress + '\'' +
+        &quot;, propertySize=&quot; + propertySize +
+        &quot;, hasMonthlyService=&quot; + hasMonthlyService +
+        &quot;, previouslyNumberOfService=&quot; + previouslyNumberOfService +
+        &quot;, BASE_RATE=&quot; + BASE_RATE +
+        &quot;, every10thDiscount=&quot; + every10thDiscount +
+        &quot;, monthlyServiceDiscount=&quot; + monthlyServiceDiscount +
+        &quot;, Before Discount Calculate Price = &quot; +
+<span class="fc" id="L73">        String.format(&quot;%.2f&quot;, this.beforeDiscountCalculatePrice()) +</span>
+<span class="fc" id="L74">        &quot;, Total Price = &quot; + String.format(&quot;%.2f&quot;, this.calculatePrice()) +</span>
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

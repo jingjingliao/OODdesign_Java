@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>view</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">view.ShowSeats</node>
+    <node x="65.0" y="255.0">view.ShowSeatsTest</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="view.ShowSeatsTest" target="view.ShowSeats">
+      <point x="58.0" y="-102.5" />
+      <point x="239.0" y="230.0" />
+      <point x="271.5" y="230.0" />
+      <point x="90.5" y="102.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="69.5" y="51.5" />
+  <SelectedNodes>
+    <node>view.ShowSeats</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

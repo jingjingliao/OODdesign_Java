@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AbstractInteriorService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW03</a> &gt; <a href="index.source.html" class="el_package">problem01</a> &gt; <span class="el_source">AbstractInteriorService.java</span></div><h1>AbstractInteriorService.java</h1><pre class="source lang-java linenums">package problem01;
+
+import java.util.Objects;
+
+/**
+ * Abstract class representing the shared fields and behavior of interior services
+ */
+public abstract class AbstractInteriorService extends AbstractBasicService {
+
+  protected int numberOfPets;
+  private static final int ONE_PET = 1;
+  private static final int TWO_PETS = 2;
+  private static final int THREE_PETS = 3;
+
+  private static final double LOW_ADDITIONAL_FEE = 0.05;
+  private static final double HIGH_ADDITIONAL_FEE = 0.07;
+  private static final double NO_ADDITIONAL_FEE = 1;
+
+  /**
+   * Construct for abstract interior service
+   * @param propertyAddress - property address
+   * @param propertySize - property size, (small, medium and large)
+   * @param hasMonthlyService - whether it has monthly service
+   * @param previouslyNumberOfService - the number of previous service
+   * @param numberOfPets - number of pets
+   */
+  public AbstractInteriorService(String propertyAddress, PropertySize propertySize,
+      boolean hasMonthlyService, int previouslyNumberOfService, int numberOfPets) {
+<span class="fc" id="L29">    super(propertyAddress, propertySize, hasMonthlyService, previouslyNumberOfService);</span>
+<span class="fc" id="L30">    this.numberOfPets = numberOfPets;</span>
+<span class="fc" id="L31">  }</span>
+
+  /**
+   * Get number of pets
+   * @return number of pets
+   */
+  public int getNumberOfPets() {
+<span class="fc" id="L38">    return this.numberOfPets;</span>
+  }
+
+  /**
+   * Get complete time
+   * @return complete time
+   */
+  public abstract int getCompleteTime();
+
+  /**
+   * Get addtional fee
+   * @return addtional fee
+   */
+  public double getAdditionalFee() {
+<span class="fc bfc" id="L52" title="All 4 branches covered.">    if (this.numberOfPets == ONE_PET || this.numberOfPets == TWO_PETS) {</span>
+<span class="fc" id="L53">      return LOW_ADDITIONAL_FEE;</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">    } else if (this.numberOfPets &gt;= THREE_PETS) {</span>
+<span class="fc" id="L55">      return HIGH_ADDITIONAL_FEE;</span>
+    } else {
+<span class="fc" id="L57">      return NO_ADDITIONAL_FEE;</span>
+    }
+  }
+
+  /**
+   * Calculate price without discount
+   * @return price without discount
+   */
+  @Override
+  public double beforeDiscountCalculatePrice() {
+<span class="fc" id="L67">    int completeTime = this.getCompleteTime();</span>
+<span class="fc" id="L68">    double additionalFee = this.getAdditionalFee();</span>
+<span class="fc" id="L69">    return this.BASE_RATE * completeTime * (RATE + additionalFee);</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

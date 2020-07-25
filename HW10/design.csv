@@ -1,0 +1,3 @@
+Singleton 
+- Where: static method creatTheater() in theater class in model package 
+- Why: ensures data consistency of theater throughout the whole reservaiton system

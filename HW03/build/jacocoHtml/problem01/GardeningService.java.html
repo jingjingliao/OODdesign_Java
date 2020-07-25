@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GardeningService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW03</a> &gt; <a href="index.source.html" class="el_package">problem01</a> &gt; <span class="el_source">GardeningService.java</span></div><h1>GardeningService.java</h1><pre class="source lang-java linenums">package problem01;
+
+import java.util.Objects;
+
+/**
+ * Representing a gardening service, including propertyAddress, propertySize, hasMonthlyService,
+ * and previouslyNumberOfService
+ */
+public class GardeningService extends AbstractExteriorService {
+  private final static int WASTE_REMOVAL_FEE = 20;
+
+  /**
+   * Constructs a gardening service
+   * @param propertyAddress - property address
+   * @param propertySize - property size, (small, medium and large)
+   * @param hasMonthlyService - whether it has monthly service
+   * @param previouslyNumberOfService - the number of previous service
+   */
+  public GardeningService(String propertyAddress, PropertySize propertySize,
+      boolean hasMonthlyService, int previouslyNumberOfService) {
+<span class="fc" id="L21">    super(propertyAddress, propertySize, hasMonthlyService, previouslyNumberOfService);</span>
+<span class="fc" id="L22">  }</span>
+
+  /**
+   * Calculate price before discount
+   * @return price before discount
+   */
+  @Override
+  public double beforeDiscountCalculatePrice() {
+<span class="fc" id="L30">    int completeTime = this.getCompleteTime();</span>
+<span class="fc" id="L31">    return this.BASE_RATE * completeTime + WASTE_REMOVAL_FEE;</span>
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L36" title="All 2 branches covered.">    if (this == o)</span>
+<span class="fc" id="L37">      return true;</span>
+<span class="pc bpc" id="L38" title="1 of 4 branches missed.">    if (o == null || getClass() != o.getClass())</span>
+<span class="fc" id="L39">      return false;</span>
+<span class="fc" id="L40">    GardeningService service = (GardeningService) o;</span>
+<span class="pc bpc" id="L41" title="1 of 2 branches missed.">    return Objects.equals(getPropertyAddress(), service.getPropertyAddress()) &amp;&amp;</span>
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">        Objects.equals(getPropertySize(), service.getPropertySize()) &amp;&amp;</span>
+<span class="pc bpc" id="L43" title="1 of 4 branches missed.">        getPreviouslyNumberOfService() == service.getPreviouslyNumberOfService() &amp;&amp;</span>
+        hasMonthlyService == service.hasMonthlyService;
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L49">    return Objects.hash(getPropertyAddress(), getPropertySize(), hasMonthlyService,</span>
+<span class="fc" id="L50">        getPreviouslyNumberOfService());</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L55">    return &quot;GardeningService{&quot; +</span>
+        &quot;propertyAddress='&quot; + propertyAddress + '\'' +
+        &quot;, propertySize=&quot; + propertySize +
+        &quot;, hasMonthlyService=&quot; + hasMonthlyService +
+        &quot;, previouslyNumberOfService=&quot; + previouslyNumberOfService +
+        &quot;, BASE_RATE=&quot; + BASE_RATE +
+        &quot;, every10thDiscount=&quot; + every10thDiscount +
+        &quot;, monthlyServiceDiscount=&quot; + monthlyServiceDiscount +
+        &quot;, wasteRemovalFee=&quot; + WASTE_REMOVAL_FEE +
+        &quot;, Before Discount Calculate Price = &quot; +
+<span class="fc" id="L65">        String.format(&quot;%.2f&quot;, this.beforeDiscountCalculatePrice()) +</span>
+<span class="fc" id="L66">        &quot;, Total Price = &quot; + String.format(&quot;%.2f&quot;, this.calculatePrice()) +</span>
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

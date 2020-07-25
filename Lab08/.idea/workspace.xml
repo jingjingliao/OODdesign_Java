@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad300106-5d68-43ff-86b8-51946f05a16f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab07/src/main/java/problem01/FrequencyCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab07/src/main/java/problem01/FrequencyCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problem01/TrendingTopics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problem01/TrendingTopics.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1abBfSUArJnhhOgwh9BSWGsh6hD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TrendingTopics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problem01.TrendingTopics" />
+      <module name="Lab08.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="problem01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TrendingTopics" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad300106-5d68-43ff-86b8-51946f05a16f" name="Default Changelist" comment="" />
+      <created>1586994515085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586994515085</updated>
+      <workItem from="1586994516982" duration="6264000" />
+      <workItem from="1587090078784" duration="494000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1157" y="397" key="#com.intellij.ide.util.MemberChooser" timestamp="1586997464332">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1157" y="397" key="#com.intellij.ide.util.MemberChooser/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586997464332" />
+    <state width="1878" height="199" key="GridCell.Tab.0.bottom" timestamp="1587010620408">
+      <screen x="1920" y="158" width="1440" height="877" />
+    </state>
+    <state width="1878" height="365" key="GridCell.Tab.0.bottom/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586995122396" />
+    <state width="1878" height="199" key="GridCell.Tab.0.bottom/1920.158.1440.877/0.23.1920.1057@1920.158.1440.877" timestamp="1587010620408" />
+    <state width="1878" height="199" key="GridCell.Tab.0.center" timestamp="1587010620407">
+      <screen x="1920" y="158" width="1440" height="877" />
+    </state>
+    <state width="1878" height="365" key="GridCell.Tab.0.center/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586995122395" />
+    <state width="1878" height="199" key="GridCell.Tab.0.center/1920.158.1440.877/0.23.1920.1057@1920.158.1440.877" timestamp="1587010620407" />
+    <state width="1878" height="199" key="GridCell.Tab.0.left" timestamp="1587010620406">
+      <screen x="1920" y="158" width="1440" height="877" />
+    </state>
+    <state width="1878" height="365" key="GridCell.Tab.0.left/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586995122394" />
+    <state width="1878" height="199" key="GridCell.Tab.0.left/1920.158.1440.877/0.23.1920.1057@1920.158.1440.877" timestamp="1587010620406" />
+    <state width="1878" height="199" key="GridCell.Tab.0.right" timestamp="1587010620408">
+      <screen x="1920" y="158" width="1440" height="877" />
+    </state>
+    <state width="1878" height="365" key="GridCell.Tab.0.right/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586995122395" />
+    <state width="1878" height="199" key="GridCell.Tab.0.right/1920.158.1440.877/0.23.1920.1057@1920.158.1440.877" timestamp="1587010620408" />
+  </component>
+</project>

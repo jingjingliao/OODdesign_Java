@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="controller.CommandLineValidationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-04-14T22:52:05" hostname="Jingjings-MacBook-Pro.local" time="0.015">
+  <properties/>
+  <testcase name="invalidLength" classname="controller.CommandLineValidationTest" time="0.002"/>
+  <testcase name="notDigitReserveNum" classname="controller.CommandLineValidationTest" time="0.001"/>
+  <testcase name="notReserve" classname="controller.CommandLineValidationTest" time="0.001"/>
+  <testcase name="invalidReserveNum" classname="controller.CommandLineValidationTest" time="0.001"/>
+  <testcase name="invalidInput" classname="controller.CommandLineValidationTest" time="0.0"/>
+  <testcase name="validateDone" classname="controller.CommandLineValidationTest" time="0.002"/>
+  <testcase name="validateShow" classname="controller.CommandLineValidationTest" time="0.004"/>
+  <testcase name="validateReserve" classname="controller.CommandLineValidationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

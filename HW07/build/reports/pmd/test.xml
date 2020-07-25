@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.8.0" timestamp="2020-03-03T15:19:50.760">
+<file name="/Users/jingjing/Documents/Team_repo_Chia_Wei_Lin_Chuan_Ti_Chen_Jingjing_Liao/HW07/src/test/java/onlineForms/CheckBoxTest.java">
+<violation beginline="31" endline="31" begincolumn="21" endcolumn="41" rule="EqualsNull" ruleset="Error Prone" package="onlineForms" class="CheckBoxTest" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#equalsnull" priority="1">
+Avoid using equals() to compare against null
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/Team_repo_Chia_Wei_Lin_Chuan_Ti_Chen_Jingjing_Liao/HW07/src/test/java/onlineForms/FieldTest.java">
+<violation beginline="41" endline="41" begincolumn="21" endcolumn="34" rule="EqualsNull" ruleset="Error Prone" package="onlineForms" class="FieldTest" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#equalsnull" priority="1">
+Avoid using equals() to compare against null
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/Team_repo_Chia_Wei_Lin_Chuan_Ti_Chen_Jingjing_Liao/HW07/src/test/java/onlineForms/FreeTextTest.java">
+<violation beginline="30" endline="30" begincolumn="17" endcolumn="37" rule="EqualsNull" ruleset="Error Prone" package="onlineForms" class="FreeTextTest" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#equalsnull" priority="1">
+Avoid using equals() to compare against null
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/Team_repo_Chia_Wei_Lin_Chuan_Ti_Chen_Jingjing_Liao/HW07/src/test/java/onlineForms/NumberTest.java">
+<violation beginline="103" endline="103" begincolumn="17" endcolumn="36" rule="EqualsNull" ruleset="Error Prone" package="onlineForms" class="NumberTest" method="testEquality" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#equalsnull" priority="1">
+Avoid using equals() to compare against null
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/Team_repo_Chia_Wei_Lin_Chuan_Ti_Chen_Jingjing_Liao/HW07/src/test/java/onlineForms/PasswordTest.java">
+<violation beginline="34" endline="34" begincolumn="21" endcolumn="41" rule="EqualsNull" ruleset="Error Prone" package="onlineForms" class="PasswordTest" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#equalsnull" priority="1">
+Avoid using equals() to compare against null
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/Team_repo_Chia_Wei_Lin_Chuan_Ti_Chen_Jingjing_Liao/HW07/src/test/java/onlineForms/PhoneTest.java">
+<violation beginline="29" endline="29" begincolumn="17" endcolumn="34" rule="EqualsNull" ruleset="Error Prone" package="onlineForms" class="PhoneTest" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#equalsnull" priority="1">
+Avoid using equals() to compare against null
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/Team_repo_Chia_Wei_Lin_Chuan_Ti_Chen_Jingjing_Liao/HW07/src/test/java/onlineForms/RadioButtonTest.java">
+<violation beginline="25" endline="25" begincolumn="21" endcolumn="35" rule="EqualsNull" ruleset="Error Prone" package="onlineForms" class="RadioButtonTest" method="testEquals" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#equalsnull" priority="1">
+Avoid using equals() to compare against null
+</violation>
+</file>
+</pmd>

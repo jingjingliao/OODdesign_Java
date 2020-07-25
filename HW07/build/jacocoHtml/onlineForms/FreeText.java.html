@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FreeText.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW07</a> &gt; <a href="index.source.html" class="el_package">onlineForms</a> &gt; <span class="el_source">FreeText.java</span></div><h1>FreeText.java</h1><pre class="source lang-java linenums">package onlineForms;
+
+import java.util.Objects;
+
+/**
+ * Represents a FreeText Validator.
+ */
+public class FreeText implements IValidator&lt;String&gt; {
+
+  private int maxNumOfLine;
+  private int maxNumOfCharPerLine;
+
+  /**
+   * The constructor of the FreeText class.
+   * @param maxNumOfLine the maximum number of line as an int
+   * @param maxNumOfCharPerLine the maximum number of characters per line as an int
+   */
+<span class="nc" id="L18">  public FreeText(int maxNumOfLine, int maxNumOfCharPerLine) {</span>
+<span class="nc" id="L19">    this.maxNumOfLine = maxNumOfLine;</span>
+<span class="nc" id="L20">    this.maxNumOfCharPerLine = maxNumOfCharPerLine;</span>
+<span class="nc" id="L21">  }</span>
+
+  /**
+   * Determines if the provided input meets the requirements. To be valid, the input must be no
+   * longer than the number of lines multiplied by the number of characters allowed per line.
+   * @param input the input as a String
+   * @return true if the length of input is not longer than the required total length.
+   */
+  @Override
+  public boolean isValid(String input) {
+<span class="nc bnc" id="L31" title="All 2 branches missed.">    return input.length() &lt;= (this.maxNumOfCharPerLine * this.maxNumOfLine);</span>
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="nc bnc" id="L36" title="All 2 branches missed.">    if (this == o) {</span>
+<span class="nc" id="L37">      return true;</span>
+    }
+<span class="nc bnc" id="L39" title="All 2 branches missed.">    if (!(o instanceof FreeText)) {</span>
+<span class="nc" id="L40">      return false;</span>
+    }
+<span class="nc" id="L42">    FreeText freeText = (FreeText) o;</span>
+<span class="nc bnc" id="L43" title="All 4 branches missed.">    return maxNumOfLine == freeText.maxNumOfLine &amp;&amp;</span>
+        maxNumOfCharPerLine == freeText.maxNumOfCharPerLine;
+  }
+
+  @Override
+  public int hashCode() {
+<span class="nc" id="L49">    return Objects.hash(maxNumOfLine, maxNumOfCharPerLine);</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="nc" id="L54">    return &quot;FreeText{&quot; +</span>
+        &quot;maxNumOfLine=&quot; + maxNumOfLine +
+        &quot;, maxNumOfCharPerLine=&quot; + maxNumOfCharPerLine +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

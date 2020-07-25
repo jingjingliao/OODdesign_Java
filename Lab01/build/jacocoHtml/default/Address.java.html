@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Address.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Lab01</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Address.java</span></div><h1>Address.java</h1><pre class="source lang-java linenums">/**
+ * Represents an Address with their details--streetNumber and streetName
+ * cityName stateAcronym zipCode countryName*
+ * @author jingjing
+ *
+ */
+public class Address {
+    private String streetNumber;
+    private String streetName;
+    private String cityName;
+    private String stateAcronym;
+    private String zipCode;
+    private String countryName;
+
+    /**
+     * Creates a new Address given the streetNumber, streetName, cityName, stateAcronym
+     * zipCode, countryName
+     * @param streetNumber the address's streetNumber
+     * @param streetName the address's streetName
+     * @param cityName the address's cityName
+     * @param stateAcronym the address's stateAcronym
+     * @param zipCode the address's zipCode
+     * @param countryName the address's countryName
+     */
+    public Address(String streetNumber, String streetName, String cityName,
+<span class="fc" id="L26">                   String stateAcronym, String zipCode, String countryName){</span>
+<span class="fc" id="L27">        this.streetNumber = streetNumber;</span>
+<span class="fc" id="L28">        this.streetName = streetName;</span>
+<span class="fc" id="L29">        this.cityName = cityName;</span>
+<span class="fc" id="L30">        this.stateAcronym = stateAcronym;</span>
+<span class="fc" id="L31">        this.zipCode = zipCode;</span>
+<span class="fc" id="L32">        this.countryName = countryName;</span>
+<span class="fc" id="L33">    }</span>
+
+    /**
+     * @return the street number
+     */
+    public String getStreetNumber(){
+<span class="fc" id="L39">        return this.streetNumber;</span>
+    }
+
+    /**
+     * @return the street name
+     */
+    public String getStreetName(){
+<span class="fc" id="L46">        return this.streetName;</span>
+    }
+
+    /**
+     * @return the city name
+     */
+    public String getCityName(){
+<span class="fc" id="L53">        return this.cityName;</span>
+    }
+
+    /**
+     * @return the state acronym
+     */
+    public String getStateAcronym(){
+<span class="fc" id="L60">        return this.stateAcronym;</span>
+    }
+
+    /**
+     * @return return the zip code
+     */
+    public String getZipCode(){
+<span class="fc" id="L67">        return this.zipCode;</span>
+    }
+
+    /**
+     * @return the country name
+     */
+    public String getCountryName(){
+<span class="fc" id="L74">        return this.countryName;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

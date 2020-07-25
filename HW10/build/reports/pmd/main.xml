@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.8.0" timestamp="2020-04-14T14:21:07.272">
+<file name="/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW10/src/main/java/controller/CommandLineValidation.java">
+<violation beginline="33" endline="33" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="CommandLineValidation" method="checkLength" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="34" endline="34" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="CommandLineValidation" method="checkLength" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="49" endline="49" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="CommandLineValidation" method="processArgs" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="50" endline="50" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="CommandLineValidation" method="processArgs" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="55" endline="55" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="CommandLineValidation" method="processArgs" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="56" endline="56" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="CommandLineValidation" method="processArgs" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="68" endline="68" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="CommandLineValidation" method="isValidateNum" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="69" endline="69" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="CommandLineValidation" method="isValidateNum" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="72" endline="72" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="CommandLineValidation" method="isValidateNum" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="73" endline="73" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="CommandLineValidation" method="isValidateNum" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW10/src/main/java/controller/ReservationService.java">
+<violation beginline="19" endline="19" begincolumn="26" endcolumn="41" rule="VariableNamingConventions" ruleset="Code Style" package="controller" class="ReservationService" variable="WHEELCHAIR_QUERY" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'WHEELCHAIR_QUERY' is not final.
+</violation>
+<violation beginline="19" endline="19" begincolumn="26" endcolumn="41" rule="FieldNamingConventions" ruleset="Code Style" package="controller" class="ReservationService" variable="WHEELCHAIR_QUERY" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The static field name 'WHEELCHAIR_QUERY' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="19" endline="19" begincolumn="26" endcolumn="41" rule="VariableNamingConventions" ruleset="Code Style" package="controller" class="ReservationService" variable="WHEELCHAIR_QUERY" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'WHEELCHAIR_QUERY' starts with uppercase character.
+</violation>
+<violation beginline="20" endline="20" begincolumn="25" endcolumn="34" rule="VariableNamingConventions" ruleset="Code Style" package="controller" class="ReservationService" variable="NAME_QUERY" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'NAME_QUERY' is not final.
+</violation>
+<violation beginline="20" endline="20" begincolumn="25" endcolumn="34" rule="FieldNamingConventions" ruleset="Code Style" package="controller" class="ReservationService" variable="NAME_QUERY" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The static field name 'NAME_QUERY' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="20" endline="20" begincolumn="25" endcolumn="34" rule="VariableNamingConventions" ruleset="Code Style" package="controller" class="ReservationService" variable="NAME_QUERY" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'NAME_QUERY' starts with uppercase character.
+</violation>
+<violation beginline="36" endline="36" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="ReservationService" method="service" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="40" endline="40" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="ReservationService" method="service" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="74" endline="74" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="ReservationService" method="isValidwheelChairAnswer" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW10/src/main/java/controller/ReservationSystem.java">
+<violation beginline="19" endline="19" begincolumn="28" endcolumn="41" rule="FieldNamingConventions" ruleset="Code Style" package="controller" class="ReservationSystem" variable="wheelChairRow1" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The constant name 'wheelChairRow1' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="19" endline="19" begincolumn="28" endcolumn="41" rule="VariableNamingConventions" ruleset="Code Style" package="controller" class="ReservationSystem" variable="wheelChairRow1" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables that are final and static should be all capitals, 'wheelChairRow1' is not all capitals.
+</violation>
+<violation beginline="20" endline="20" begincolumn="28" endcolumn="41" rule="FieldNamingConventions" ruleset="Code Style" package="controller" class="ReservationSystem" variable="wheelChairRow2" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The constant name 'wheelChairRow2' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="20" endline="20" begincolumn="28" endcolumn="41" rule="VariableNamingConventions" ruleset="Code Style" package="controller" class="ReservationSystem" variable="wheelChairRow2" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables that are final and static should be all capitals, 'wheelChairRow2' is not all capitals.
+</violation>
+<violation beginline="26" endline="26" begincolumn="25" endcolumn="34" rule="VariableNamingConventions" ruleset="Code Style" package="controller" class="ReservationSystem" variable="TODO_QUERY" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'TODO_QUERY' is not final.
+</violation>
+<violation beginline="26" endline="26" begincolumn="25" endcolumn="34" rule="FieldNamingConventions" ruleset="Code Style" package="controller" class="ReservationSystem" variable="TODO_QUERY" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The static field name 'TODO_QUERY' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="26" endline="26" begincolumn="25" endcolumn="34" rule="VariableNamingConventions" ruleset="Code Style" package="controller" class="ReservationSystem" variable="TODO_QUERY" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'TODO_QUERY' starts with uppercase character.
+</violation>
+<violation beginline="27" endline="27" begincolumn="25" endcolumn="36" rule="VariableNamingConventions" ruleset="Code Style" package="controller" class="ReservationSystem" variable="RESERVE_OVER" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'RESERVE_OVER' is not final.
+</violation>
+<violation beginline="27" endline="27" begincolumn="25" endcolumn="36" rule="FieldNamingConventions" ruleset="Code Style" package="controller" class="ReservationSystem" variable="RESERVE_OVER" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The static field name 'RESERVE_OVER' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="27" endline="27" begincolumn="25" endcolumn="36" rule="VariableNamingConventions" ruleset="Code Style" package="controller" class="ReservationSystem" variable="RESERVE_OVER" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'RESERVE_OVER' starts with uppercase character.
+</violation>
+<violation beginline="38" endline="38" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="ReservationSystem" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="44" endline="44" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="ReservationSystem" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="49" endline="49" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" package="controller" class="ReservationSystem" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+<file name="/Users/jingjing/Documents/GitHub/Student_repo_Jingjing_Liao/HW10/src/main/java/view/ShowSeats.java">
+<violation beginline="10" endline="83" begincolumn="8" endcolumn="1" rule="ClassNamingConventions" ruleset="Code Style" package="view" class="ShowSeats" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#classnamingconventions" priority="1">
+The utility class name 'ShowSeats' doesn't match '[A-Z][a-zA-Z0-9]+(Utils?|Helper)'
+</violation>
+<violation beginline="22" endline="22" begincolumn="5" endcolumn="22" rule="SystemPrintln" ruleset="Best Practices" package="view" class="ShowSeats" method="showSeats" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="70" endline="70" begincolumn="5" endcolumn="22" rule="SystemPrintln" ruleset="Best Practices" package="view" class="ShowSeats" method="noSeatsAvailable" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="81" endline="81" begincolumn="5" endcolumn="22" rule="SystemPrintln" ruleset="Best Practices" package="view" class="ShowSeats" method="sucessfullyReserveSeat" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+</pmd>

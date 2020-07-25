@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Band.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW05</a> &gt; <a href="index.source.html" class="el_package">problem02</a> &gt; <span class="el_source">Band.java</span></div><h1>Band.java</h1><pre class="source lang-java linenums">package problem02;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
+/**
+ * Band class representing the name of this band and a list of recording artists
+ */
+public class Band extends AbstractGroup {
+  private String name;
+  private List&lt;RecordingArtist&gt; recordingArtist;
+
+  /**
+   * Construct a band with its name
+   * @param name name
+   */
+<span class="fc" id="L18">  public Band(String name) {</span>
+<span class="fc" id="L19">    this.name = name;</span>
+<span class="fc" id="L20">    this.recordingArtist = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L21">  }</span>
+
+  /**
+   * Get the name of this band
+   * @return the name of this band
+   */
+  public String getName() {
+<span class="fc" id="L28">    return name;</span>
+  }
+
+  /**
+   * Get the collection of artists
+   * @return the collection of artists
+   */
+  public List&lt;RecordingArtist&gt; getRecordingArtist() {
+<span class="fc" id="L36">    return recordingArtist;</span>
+  }
+
+  /**
+   * Add artists into the collection
+   * @param artist artists
+   */
+  public void addRecordingArtist(RecordingArtist artist){
+<span class="fc" id="L44">    this.recordingArtist.add(artist);</span>
+<span class="fc" id="L45">  }</span>
+
+  /**
+   * Check whether the given artists is in the collection
+   * @param artist artists
+   * @return true if in the collection, otherwise false
+   */
+  public boolean artistInBand(RecordingArtist artist){
+<span class="fc bfc" id="L53" title="All 2 branches covered.">    for (RecordingArtist artists: recordingArtist){</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">      if (artists.equals(artist)){</span>
+<span class="fc" id="L55">        return true;</span>
+      }
+<span class="fc" id="L57">    } return false;</span>
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L62" title="All 2 branches covered.">    if (this == o) return true;</span>
+<span class="pc bpc" id="L63" title="2 of 4 branches missed.">    if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L64">    Band band = (Band) o;</span>
+<span class="fc" id="L65">    return Objects.equals(getName(), band.getName());</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L70">    return Objects.hash(getName());</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L75">    return &quot;Band{&quot; +</span>
+        &quot;name='&quot; + name + '\'' +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

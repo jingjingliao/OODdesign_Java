@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d8cf02e-1c2c-4f41-a4e7-a983c580cb0d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/HomebakeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab06/src/main/java/problem02/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab07/src/main/java/problem01/FrequencyCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab07/src/main/java/problem01/FrequencyCount.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW10" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW10" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW10" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW10" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HW10" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1aNlWWabhDRbFxb3UfXHYJV1jT9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="view" />
+      <recent name="model" />
+      <recent name="controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.HW10 [check]">
+    <configuration name="HW10 [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="check" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReservationServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;controller.ReservationServiceTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReservationServiceTest.reserveService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;controller.ReservationServiceTest.reserveService&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReservationServiceTest.service" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;controller.ReservationServiceTest.service&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReservationServiceTest.showService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;controller.ReservationServiceTest.showService&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.HW10 [check]" />
+      <item itemvalue="Gradle.ReservationServiceTest.service" />
+      <item itemvalue="Gradle.ReservationServiceTest.reserveService" />
+      <item itemvalue="Gradle.ReservationServiceTest.showService" />
+      <item itemvalue="Gradle.ReservationServiceTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.HW10 [check]" />
+        <item itemvalue="Gradle.ReservationServiceTest.reserveService" />
+        <item itemvalue="Gradle.ReservationServiceTest" />
+        <item itemvalue="Gradle.ReservationServiceTest.showService" />
+        <item itemvalue="Gradle.ReservationServiceTest.service" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d8cf02e-1c2c-4f41-a4e7-a983c580cb0d" name="Default Changelist" comment="" />
+      <created>1586583964423</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586583964423</updated>
+      <workItem from="1586583969568" duration="62128000" />
+      <workItem from="1586895484093" duration="15023000" />
+      <workItem from="1586919998925" duration="1401000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="300" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586795973135">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="300" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1586795973135" />
+    <state x="400" y="230" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586647865738" />
+    <state x="1413" y="259" key="#com.intellij.ide.util.MemberChooser" timestamp="1586904451339">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1066" y="219" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1586797832891" />
+    <state x="1413" y="259" key="#com.intellij.ide.util.MemberChooser/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586904451339" />
+    <state x="741" y="418" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586885069336">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="741" y="418" width="451" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586885069336" />
+    <state x="878" y="257" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586884498480">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="878" y="257" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1586884498480" />
+    <state x="1171" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586800925921" />
+    <state width="420" height="466" key="DebuggerActiveHint" timestamp="1586753731974">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="420" height="466" key="DebuggerActiveHint/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586753731974" />
+    <state width="2103" height="331" key="GridCell.Tab.0.bottom" timestamp="1586904769861">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1510" height="237" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1586884853991" />
+    <state width="2103" height="331" key="GridCell.Tab.0.bottom/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586904769861" />
+    <state width="2103" height="331" key="GridCell.Tab.0.center" timestamp="1586904769860">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1510" height="237" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1586884853990" />
+    <state width="2103" height="331" key="GridCell.Tab.0.center/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586904769860" />
+    <state width="2103" height="331" key="GridCell.Tab.0.left" timestamp="1586904769859">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1510" height="237" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1586884853989" />
+    <state width="2103" height="331" key="GridCell.Tab.0.left/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586904769859" />
+    <state width="2103" height="331" key="GridCell.Tab.0.right" timestamp="1586904769861">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1510" height="237" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1586884853991" />
+    <state width="2103" height="331" key="GridCell.Tab.0.right/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586904769861" />
+    <state width="2103" height="374" key="GridCell.Tab.1.bottom" timestamp="1586904560663">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1046" height="273" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1586882977528" />
+    <state width="2103" height="374" key="GridCell.Tab.1.bottom/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586904560663" />
+    <state width="2103" height="374" key="GridCell.Tab.1.center" timestamp="1586904560662">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1046" height="273" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1586882977527" />
+    <state width="2103" height="374" key="GridCell.Tab.1.center/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586904560662" />
+    <state width="2103" height="374" key="GridCell.Tab.1.left" timestamp="1586904560662">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1046" height="273" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1586882977527" />
+    <state width="2103" height="374" key="GridCell.Tab.1.left/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586904560662" />
+    <state width="2103" height="374" key="GridCell.Tab.1.right" timestamp="1586904560663">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1046" height="273" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1586882977527" />
+    <state width="2103" height="374" key="GridCell.Tab.1.right/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586904560663" />
+    <state x="639" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1586583970301">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="639" y="384" key="com.intellij.ide.util.TipDialog/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586583970301" />
+    <state x="746" y="285" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586898728439">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="746" y="285" key="com.intellij.testIntegration.createTest.CreateTestDialog/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586898728439" />
+    <state x="255" y="117" width="1119" height="772" key="new project wizard" timestamp="1586925313243">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="255" y="117" width="1119" height="772" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1586925313243" />
+    <state x="609" y="153" key="new project wizard/1920.158.1440.877/0.23.1920.1057@0.23.1920.1057" timestamp="1586904847317" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/model/RowTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

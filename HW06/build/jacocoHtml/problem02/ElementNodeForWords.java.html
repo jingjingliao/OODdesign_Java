@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ElementNodeForWords.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW06-1</a> &gt; <a href="index.source.html" class="el_package">problem02</a> &gt; <span class="el_source">ElementNodeForWords.java</span></div><h1>ElementNodeForWords.java</h1><pre class="source lang-java linenums">package problem02;
+
+import java.util.Objects;
+
+/**
+ * The element node which includes String word and the rest
+ */
+public class ElementNodeForWords implements ILinkedListForWords {
+  private String word;
+  private ILinkedListForWords rest;
+
+  /**
+   * Construct an element node with word and rest
+   * @param word String word
+   * @param rest linkedlist rest
+   */
+<span class="fc" id="L17">  public ElementNodeForWords(String word,  ILinkedListForWords rest){</span>
+<span class="fc" id="L18">    this.word = word;</span>
+<span class="fc" id="L19">    this.rest = rest;</span>
+<span class="fc" id="L20">  }</span>
+
+  /**
+   * Gets the number of elements in the list.
+   *
+   * @return THe number of elements in the list.
+   */
+  @Override
+  public Integer count() {
+<span class="fc" id="L29">    return 1 + this.rest.count();</span>
+  }
+
+  /**
+   * Get the word at the head of the list.
+   * @return The String word at the head of the list or null if the list is empty.
+   */
+  @Override
+  public String getWord() {
+<span class="fc" id="L38">    return this.word;</span>
+  }
+
+  /**
+   * Get the rest of the list.
+   *
+   * @return The rest of the list or null if the list is empty.
+   */
+  @Override
+  public ILinkedListForWords getRest() {
+<span class="fc" id="L48">    return this.rest;</span>
+  }
+
+
+  /**
+   * insert an element at the head of a list
+   * @param word String word
+   * @return a new linkedlist with new item in front
+   */
+  @Override
+  public ILinkedListForWords insert(String word) {
+<span class="fc" id="L59">    return new ElementNodeForWords(word, this);</span>
+  }
+
+  /**
+   * Check whether it conatains a specific word
+   * @param s a String s
+   * @return true if it contains, otherwise false
+   */
+  @Override
+  public Boolean contains(String s) {
+<span class="pc bpc" id="L69" title="1 of 2 branches missed.">    if (this.word == null)</span>
+<span class="nc" id="L70">      return false;</span>
+<span class="fc bfc" id="L71" title="All 2 branches covered.">    if (this.word.equals(s))</span>
+<span class="fc" id="L72">      return true;</span>
+    else {
+<span class="fc" id="L74">      return this.rest.contains(s);</span>
+    }
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="pc bpc" id="L80" title="1 of 2 branches missed.">    if (this == o) return true;</span>
+<span class="fc bfc" id="L81" title="All 4 branches covered.">    if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="fc" id="L82">    ElementNodeForWords that = (ElementNodeForWords) o;</span>
+<span class="fc bfc" id="L83" title="All 2 branches covered.">    return Objects.equals(word, that.word) &amp;&amp;</span>
+<span class="pc bpc" id="L84" title="1 of 2 branches missed.">        Objects.equals(rest, that.rest);</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="fc" id="L89">    return Objects.hash(word, rest);</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="fc" id="L94">    return &quot;ElementNode{&quot; +</span>
+        &quot;word='&quot; + word + '\'' +
+        &quot;, rest=&quot; + rest +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
